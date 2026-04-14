@@ -25,16 +25,16 @@ export default function Navbar() {
     )?.[1] ?? "Dashboard";
 
   return (
-    <header className="sticky top-0 z-30 flex items-center justify-between border-b border-white/[0.06] bg-[#0a0b14]/80 backdrop-blur-xl px-6 py-3.5">
+    <header className="sticky top-0 z-30 flex items-center justify-between border-b" style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)', backdropFilter: 'blur(16px)' }}>
       {/* Page title */}
-      <div>
-        <h2 className="text-base font-semibold text-slate-200">{title}</h2>
+      <div className="px-6 py-3.5">
+        <h2 className="text-base font-semibold" style={{ color: 'var(--color-foreground)' }}>{title}</h2>
       </div>
 
       {/* Right side: user placeholder */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 px-6 py-3.5">
         {/* Notification dot */}
-        <button className="relative flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition hover:bg-white/[0.04] hover:text-slate-200">
+        <button className="relative flex h-8 w-8 items-center justify-center rounded-lg transition hover:bg-black/5 hover:dark:bg-white/5" style={{ color: 'var(--color-foreground)' }}>
           <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
             <path d="M13.73 21a2 2 0 0 1-3.46 0" />

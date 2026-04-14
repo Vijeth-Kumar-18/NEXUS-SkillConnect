@@ -1,0 +1,101 @@
+StudentID,Name,Degree,ExpectedGraduation,TopSkills,Projects,CGPA,TargetRole
+S001,Elizabeth Hernandez,"M.S. Computer Science",2026,"Go | Docker","Recommendation Engine | Microservices Migration",2.83,DevOps Engineer
+S002,Jordan Jones,"M.S. Data Science",2025,"Kafka | React | MongoDB | Go","CI/CD Pipeline Setup | Stock Prediction Model | Recommendation Engine",3.67,Frontend Engineer
+S003,Elizabeth Moore,"M.S. Data Science",2024,"Go | MongoDB | Docker | Python","E-commerce Backend | Real-time Chat App",3.77,Frontend Engineer
+S004,Sarah Moore,"B.A. Information Systems",2025,"Docker | PyTorch","Social Media Dashboard | Crypto Tracker",3.26,Product Manager
+S005,Richard Thompson,"B.A. Information Systems",2025,"SQL | GraphQL","Real-time Chat App",3.58,Backend Engineer
+S006,Joseph Martinez,"M.S. Data Science",2025,"React | Java | Kubernetes | GraphQL | Docker","E-commerce Backend | Real-time Chat App",3.36,DevOps Engineer
+S007,Susan White,"M.S. Data Science",2025,"Next.js | AWS | MongoDB | Node.js","Portfolio Website",3.24,Frontend Engineer
+S008,Charles Thompson,"B.S. Computer Science",2026,"PyTorch | TensorFlow | TypeScript","IoT Data Pipeline",3.56,Software Engineer
+S009,Jennifer Lee,"M.S. Computer Science",2024,"AWS | Docker | Python | Next.js","CI/CD Pipeline Setup | Social Media Dashboard | Portfolio Website",3.39,Data Scientist
+S010,James Hernandez,"B.S. Computer Science",2025,"C++ | AWS | GraphQL | PostgreSQL | Java","Stock Prediction Model | Microservices Migration | Recommendation Engine",3.50,UX Researcher
+S011,William Johnson,"B.A. Information Systems",2026,"React | Node.js | Redis","IoT Data Pipeline",3.32,Machine Learning Engineer
+S012,Charles Lopez,"B.A. Information Systems",2026,"GraphQL | React | Node.js | PyTorch | Spark","Recommendation Engine | IoT Data Pipeline",3.77,Software Engineer
+S013,Charles Moore,"M.S. Data Science",2025,"Java | Python | Go | System Design","Recommendation Engine | Crypto Tracker",3.07,Machine Learning Engineer
+S014,Michael Smith,"B.A. Information Systems",2025,"Agile | AWS | Next.js","Microservices Migration",3.35,Software Engineer
+S015,Robert Thompson,"B.S. Computer Science",2024,"TypeScript | SQL | React","Crypto Tracker",2.93,DevOps Engineer
+S016,Taylor Smith,"B.A. Information Systems",2025,"Go | Redis | Spark | AWS","Crypto Tracker",3.61,Security Analyst
+S017,Sarah Davis,"B.A. Information Systems",2025,"PostgreSQL | Kubernetes","Stock Prediction Model",2.87,Machine Learning Engineer
+S018,Linda Rodriguez,"M.S. Computer Science",2024,"Python | Node.js | PostgreSQL","Crypto Tracker | Real-time Chat App | Recommendation Engine",3.64,UX Researcher
+S019,Elizabeth Johnson,"B.S. Computer Science",2025,"Node.js | Spark | Python | PyTorch | SQL","Stock Prediction Model",3.01,UX Researcher
+S020,Sam Perez,"M.S. Data Science",2025,"Java | Python | Redis","E-commerce Backend | Real-time Chat App | Crypto Tracker",3.94,Backend Engineer
+S021,Jordan White,"B.S. Computer Science",2026,"SQL | AWS | PostgreSQL","IoT Data Pipeline",3.46,Product Manager
+S022,Charles Martin,"M.S. Data Science",2024,"TensorFlow | Kafka | React | SQL | MongoDB","Social Media Dashboard",3.90,UX Researcher
+S023,Taylor Davis,"B.A. Information Systems",2024,"PostgreSQL | AWS | PyTorch | SQL","Real-time Chat App | E-commerce Backend | Social Media Dashboard",3.27,Data Scientist
+S024,Michael Lee,"M.S. Data Science",2024,"PostgreSQL | Redis | Agile","Crypto Tracker",3.20,UX Researcher
+S025,Linda Anderson,"M.S. Computer Science",2025,"Kubernetes | Java | TensorFlow","E-commerce Backend | Real-time Chat App | Crypto Tracker",3.32,Product Manager
+S026,Jordan Perez,"M.S. Computer Science",2025,"Spark | Java | TensorFlow | SQL","Recommendation Engine",3.58,UX Researcher
+S027,James Rodriguez,"B.A. Information Systems",2026,"Spark | Redis","CI/CD Pipeline Setup | E-commerce Backend | Real-time Chat App",3.11,UX Researcher
+S028,Taylor Gonzalez,"M.S. Data Science",2025,"React | System Design | Node.js","CI/CD Pipeline Setup",3.58,Data Scientist
+S029,Jennifer Jones,"B.A. Information Systems",2026,"Python | Node.js | AWS | MongoDB","CI/CD Pipeline Setup | Social Media Dashboard",3.55,Security Analyst
+S030,Sam Rodriguez,"M.S. Computer Science",2024,"GraphQL | Python","E-commerce Backend | Stock Prediction Model | Portfolio Website",3.27,Machine Learning Engineer
+S031,Jessica Moore,"M.S. Computer Science",2024,"Redis | Go","Recommendation Engine | E-commerce Backend",3.62,Security Analyst
+S032,Charles Brown,"B.S. Computer Science",2024,"Python | Node.js | SQL","CI/CD Pipeline Setup | Social Media Dashboard",2.92,Machine Learning Engineer
+S033,Elizabeth Rodriguez,"M.S. Data Science",2024,"SQL | Redis | TensorFlow | TypeScript | GraphQL","Stock Prediction Model | CI/CD Pipeline Setup | Real-time Chat App",3.52,Software Engineer
+S034,William Lee,"B.A. Information Systems",2024,"Redis | React","Crypto Tracker | Microservices Migration",3.68,Data Scientist
+S035,Jennifer Williams,"B.S. Computer Science",2024,"Go | AWS | PostgreSQL | Docker | TensorFlow","Microservices Migration | Crypto Tracker",3.22,Machine Learning Engineer
+S036,Charles Gonzalez,"M.S. Data Science",2026,"SQL | React | Java | Redis | System Design","E-commerce Backend | Real-time Chat App | Microservices Migration",3.05,Frontend Engineer
+S037,James Rodriguez,"M.S. Computer Science",2026,"Kafka | Redis | Spark","Real-time Chat App | E-commerce Backend | Social Media Dashboard",2.91,UX Researcher
+S038,Susan Jackson,"B.S. Computer Science",2024,"PostgreSQL | Agile","Stock Prediction Model | IoT Data Pipeline",3.06,Backend Engineer
+S039,Jennifer Garcia,"M.S. Computer Science",2026,"Go | Node.js | React | Redis","Stock Prediction Model",3.81,UX Researcher
+S040,Jessica Thompson,"M.S. Computer Science",2024,"Spark | Go | TensorFlow | AWS | Kafka","Portfolio Website",3.00,Backend Engineer
+S041,Taylor Garcia,"M.S. Data Science",2026,"React | Docker | Node.js | Python","Stock Prediction Model",3.35,Software Engineer
+S042,Karen Rodriguez,"B.S. Computer Science",2025,"TensorFlow | Java | Spark | Kafka","E-commerce Backend | Social Media Dashboard | IoT Data Pipeline",3.37,Product Manager
+S043,David Jones,"M.S. Data Science",2025,"Kubernetes | Java","Social Media Dashboard | Microservices Migration | Portfolio Website",3.97,Machine Learning Engineer
+S044,Linda Smith,"B.S. Computer Science",2025,"React | Redis | Node.js | Go","Microservices Migration | Recommendation Engine | Social Media Dashboard",3.74,Machine Learning Engineer
+S045,Joseph Thomas,"B.S. Computer Science",2024,"React | TensorFlow | Redis | Docker | System Design","Microservices Migration | IoT Data Pipeline",3.87,UX Researcher
+S046,Jessica Brown,"B.A. Information Systems",2026,"MongoDB | Kubernetes | Java | TensorFlow","Portfolio Website",3.47,Software Engineer
+S047,Alex Jackson,"M.S. Computer Science",2024,"Next.js | Docker | Kafka | Python | AWS","E-commerce Backend | Portfolio Website",3.93,DevOps Engineer
+S048,David Jones,"B.S. Computer Science",2024,"Redis | PyTorch | Kafka | React | Kubernetes","Microservices Migration",3.63,DevOps Engineer
+S049,Linda Taylor,"M.S. Computer Science",2026,"React | Java | GraphQL","Stock Prediction Model",3.15,Machine Learning Engineer
+S050,Robert Thomas,"B.S. Computer Science",2024,"GraphQL | Kafka | Docker | PyTorch","Stock Prediction Model",3.16,Frontend Engineer
+S051,Jennifer Miller,"M.S. Data Science",2026,"Kafka | AWS | PostgreSQL","Portfolio Website",3.86,UX Researcher
+S052,Karen Lopez,"M.S. Computer Science",2026,"Next.js | Redis","Stock Prediction Model",3.49,UX Researcher
+S053,Jessica Lopez,"B.A. Information Systems",2025,"Python | MongoDB | PyTorch","Crypto Tracker | Real-time Chat App",3.49,Frontend Engineer
+S054,Sarah Rodriguez,"M.S. Computer Science",2025,"Docker | Go | Spark | PostgreSQL","Portfolio Website",3.74,Machine Learning Engineer
+S055,Sarah Wilson,"B.S. Computer Science",2026,"PostgreSQL | C++ | PyTorch | Python","Recommendation Engine | CI/CD Pipeline Setup",3.97,Data Scientist
+S056,Taylor Lee,"M.S. Computer Science",2024,"Docker | TensorFlow","E-commerce Backend | Recommendation Engine",3.35,Frontend Engineer
+S057,Barbara Smith,"M.S. Computer Science",2026,"React | Next.js | Kafka","Microservices Migration | CI/CD Pipeline Setup",2.84,UX Researcher
+S058,Barbara Jones,"M.S. Computer Science",2026,"GraphQL | PostgreSQL | System Design | Spark | Agile","E-commerce Backend | Real-time Chat App | Recommendation Engine",3.60,Frontend Engineer
+S059,Robert Lopez,"M.S. Computer Science",2026,"TypeScript | GraphQL","Real-time Chat App | CI/CD Pipeline Setup | IoT Data Pipeline",2.83,UX Researcher
+S060,Sarah Johnson,"B.S. Computer Science",2026,"React | GraphQL | C++ | Docker","CI/CD Pipeline Setup",3.53,Machine Learning Engineer
+S061,Thomas Miller,"M.S. Data Science",2025,"Kubernetes | MongoDB | Python | TypeScript | Node.js","Recommendation Engine",3.06,Site Reliability Engineer
+S062,Charles Moore,"B.S. Computer Science",2024,"SQL | Spark | Java","IoT Data Pipeline",3.04,Backend Engineer
+S063,Elizabeth Moore,"M.S. Computer Science",2025,"GraphQL | SQL","IoT Data Pipeline | E-commerce Backend",2.83,Backend Engineer
+S064,David White,"B.S. Computer Science",2025,"Go | React","Microservices Migration",3.06,Product Manager
+S065,Barbara Rodriguez,"B.A. Information Systems",2025,"Spark | Redis | Kafka | React | PostgreSQL","Crypto Tracker | Microservices Migration",3.63,Frontend Engineer
+S066,Richard Wilson,"M.S. Data Science",2025,"Docker | PostgreSQL | Next.js | TypeScript | Java","E-commerce Backend | Real-time Chat App | Social Media Dashboard",3.99,Backend Engineer
+S067,Taylor Wilson,"B.S. Computer Science",2026,"Java | C++","Stock Prediction Model",3.32,Backend Engineer
+S068,James Davis,"M.S. Computer Science",2025,"C++ | Next.js | MongoDB","Crypto Tracker | Microservices Migration",3.58,DevOps Engineer
+S069,Elizabeth Moore,"M.S. Computer Science",2024,"Spark | Redis | SQL","IoT Data Pipeline | E-commerce Backend",3.21,Backend Engineer
+S070,John Martinez,"B.S. Computer Science",2024,"PostgreSQL | Java","Crypto Tracker | Social Media Dashboard | Microservices Migration",3.77,Frontend Engineer
+S071,Michael Rodriguez,"B.A. Information Systems",2026,"SQL | TensorFlow | Kafka | Redis | Kubernetes","E-commerce Backend | Crypto Tracker",3.35,Security Analyst
+S072,John Jones,"M.S. Data Science",2024,"Next.js | GraphQL","Portfolio Website | Real-time Chat App",3.08,DevOps Engineer
+S073,Susan Thompson,"B.A. Information Systems",2025,"Redis | Node.js","Recommendation Engine",3.71,UX Researcher
+S074,James Thompson,"M.S. Data Science",2026,"Kafka | Docker | React | Kubernetes | Java","E-commerce Backend | Real-time Chat App | Stock Prediction Model",3.48,Software Engineer
+S075,Linda Rodriguez,"M.S. Data Science",2025,"TensorFlow | Kubernetes | Kafka | Docker | System Design","Crypto Tracker | Stock Prediction Model | Real-time Chat App",2.84,UX Researcher
+S076,William Anderson,"M.S. Computer Science",2025,"Java | SQL","Stock Prediction Model | Portfolio Website",2.92,DevOps Engineer
+S077,Joseph Lee,"M.S. Computer Science",2025,"Go | PostgreSQL","Microservices Migration | Social Media Dashboard | Recommendation Engine",2.92,Backend Engineer
+S078,Michael Martin,"M.S. Computer Science",2025,"System Design | React | Go | Python | Next.js","Microservices Migration | Recommendation Engine | Portfolio Website",2.83,Machine Learning Engineer
+S079,Mary Taylor,"M.S. Data Science",2026,"Redis | Go | MongoDB | Node.js","Social Media Dashboard",2.82,Software Engineer
+S080,William Taylor,"B.A. Information Systems",2026,"TypeScript | Go","Crypto Tracker | E-commerce Backend",3.19,Site Reliability Engineer
+S081,Charles Perez,"M.S. Computer Science",2024,"SQL | React | Agile | Redis","Real-time Chat App",3.56,UX Researcher
+S082,John Thomas,"M.S. Data Science",2025,"AWS | SQL | Node.js | Redis | Kubernetes","E-commerce Backend",3.96,UX Researcher
+S083,Robert Taylor,"B.A. Information Systems",2025,"Docker | Node.js | Java | Kubernetes","E-commerce Backend | Real-time Chat App",3.68,Machine Learning Engineer
+S084,Richard Martinez,"B.A. Information Systems",2026,"AWS | React","Social Media Dashboard | Stock Prediction Model",3.18,Security Analyst
+S085,Alex White,"B.A. Information Systems",2026,"Go | React | TypeScript | Agile","Microservices Migration | Stock Prediction Model",3.18,Frontend Engineer
+S086,Barbara Taylor,"M.S. Data Science",2024,"AWS | System Design","Microservices Migration | Recommendation Engine | Stock Prediction Model",3.81,Site Reliability Engineer
+S087,Thomas Martinez,"M.S. Data Science",2026,"PyTorch | Docker | Kafka | Go","Stock Prediction Model | Microservices Migration",3.56,Product Manager
+S088,Michael Rodriguez,"M.S. Data Science",2025,"Go | Next.js | Redis | TensorFlow | TypeScript","Recommendation Engine | Crypto Tracker",3.02,Software Engineer
+S089,John Davis,"M.S. Data Science",2024,"React | TypeScript | Node.js | Agile | GraphQL","E-commerce Backend",3.81,Data Scientist
+S090,William Smith,"M.S. Data Science",2024,"Go | Docker | Agile | Kubernetes","Social Media Dashboard",3.54,Data Scientist
+S091,Charles Jackson,"M.S. Computer Science",2024,"React | Node.js | Kafka | System Design | Python","Social Media Dashboard",3.58,UX Researcher
+S092,Michael Martin,"M.S. Data Science",2024,"Docker | Next.js","Recommendation Engine | Microservices Migration",3.24,DevOps Engineer
+S093,Sarah Martin,"M.S. Computer Science",2025,"Go | C++ | Kafka | Next.js","Stock Prediction Model | E-commerce Backend",2.92,Site Reliability Engineer
+S094,Taylor Wilson,"M.S. Data Science",2026,"PyTorch | Go","CI/CD Pipeline Setup",3.03,Software Engineer
+S095,Taylor Jackson,"B.S. Computer Science",2026,"Python | AWS","Crypto Tracker",3.99,Software Engineer
+S096,Jennifer Smith,"M.S. Data Science",2025,"PyTorch | PostgreSQL","Recommendation Engine | Microservices Migration | E-commerce Backend",3.86,Machine Learning Engineer
+S097,Sam Davis,"M.S. Data Science",2026,"Docker | AWS | PyTorch | C++","Real-time Chat App",3.08,Data Scientist
+S098,Elizabeth White,"B.S. Computer Science",2026,"Python | PostgreSQL | TensorFlow | Go","Microservices Migration | Real-time Chat App",3.11,DevOps Engineer
+S099,Mary White,"B.S. Computer Science",2025,"Go | Java | MongoDB | Kubernetes | TypeScript","Crypto Tracker",3.72,Backend Engineer
+S100,Karen Miller,"B.S. Computer Science",2025,"GraphQL | MongoDB | Node.js | Docker | Java","Portfolio Website | E-commerce Backend",3.23,Backend Engineer

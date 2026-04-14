@@ -16,6 +16,7 @@
   --color-weak-bg: rgba(251, 191, 36, 0.12);
   --color-missing: #f87171;
   --color-missing-bg: rgba(248, 113, 113, 0.12);
+  --color-border: rgba(255, 255, 255, 0.06);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
