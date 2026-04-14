@@ -17,8 +17,8 @@ export default function LoginPage() {
 
       <div className="relative z-10 glass rounded-2xl p-8 w-full max-w-sm">
         <div className="text-center mb-6">
-          <h1 className="text-xl font-bold gradient-text">Placement System</h1>
-          <p className="text-xs text-slate-500 mt-1">Sign in to your account</p>
+          <h1 className="text-3xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-cyan-300 to-purple-400 mb-1">NEXUS</h1>
+          <p className="text-[10px] text-cyan-200/80 mt-1 uppercase tracking-[0.3em] font-bold">Placement Intelligence</p>
         </div>
 
         <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
