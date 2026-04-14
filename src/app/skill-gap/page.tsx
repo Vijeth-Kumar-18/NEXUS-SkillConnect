@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
-import { data, analyzeSkillGap } from "@/data/skillGapData";
+import { Company, SkillGapResult, Student } from "@/data/skillGapData";
+import { fetchJson } from "@/lib/apiClient";
 
 import PageWrapper from "@/components/layout/PageWrapper";
 import StudentSelector from "@/components/skill-gap/StudentSelector";
@@ -13,18 +14,78 @@ import PriorityBars from "@/components/skill-gap/PriorityBars";
 import Roadmap from "@/components/skill-gap/Roadmap";
 
 export default function SkillGapPage() {
-  const [studentIndex, setStudentIndex] = useState(0);
+  const [student, setStudent] = useState<Student>({ name: "Student", skills: [] });
+  const [companies, setCompanies] = useState<Company[]>([]);
   const [companyIndex, setCompanyIndex] = useState(0);
+  const [result, setResult] = useState<SkillGapResult>({
+    student: { name: "Student", skills: [] },
+    company: { name: "Company", role: "Role", requiredSkills: [] },
+    analyzedSkills: [],
+    readinessPercent: 0,
+    roadmap: [],
+  });
 
-  const student = data.students[studentIndex];
-  const company = data.companies[companyIndex];
+  useEffect(() => {
+    Promise.all([
+      fetchJson<{ companies: Array<{ id: string; name: string; role: string }> }>("/api/companies"),
+      fetchJson<{ name: string; skills: string[] }>("/api/students/me/profile"),
+    ])
+      .then(([companyData, profile]) => {
+        setCompanies(
+          companyData.companies.map((company) => ({
+            name: company.name,
+            role: company.role,
+            requiredSkills: [],
+          }))
+        );
+        setStudent({
+          name: profile.name,
+          skills: profile.skills.map((name) => ({ name, level: 2 })),
+        });
+      })
+      .catch(() => {
+        setCompanies([]);
+      });
+  }, []);
 
-  const result = useMemo(
-    () => analyzeSkillGap(student, company),
-    [student, company]
+  useEffect(() => {
+    async function loadGap() {
+      const companyResponse = await fetchJson<{ companies: Array<{ id: string; name: string; role: string }> }>("/api/companies");
+      const selected = companyResponse.companies[companyIndex];
+      if (!selected) {
+        return;
+      }
+
+      const gap = await fetchJson<{
+        readinessPercent: number;
+        analyzedSkills: SkillGapResult["analyzedSkills"];
+        roadmap: string[];
+      }>(`/api/skill-gap?companyId=${encodeURIComponent(selected.id)}`);
+
+      setResult({
+        student,
+        company: {
+          name: selected.name,
+          role: selected.role,
+          requiredSkills: [],
+        },
+        analyzedSkills: gap.analyzedSkills,
+        readinessPercent: gap.readinessPercent,
+        roadmap: gap.roadmap,
+      });
+    }
+
+    if (companies.length) {
+      loadGap().catch(() => undefined);
+    }
+  }, [companyIndex, companies.length, student]);
+
+  const selectionKey = `${student.name}-${companyIndex}`;
+
+  const selectedCompany = useMemo(
+    () => companies[companyIndex] || { name: "Company", role: "Role", requiredSkills: [] },
+    [companies, companyIndex]
   );
-
-  const selectionKey = `${studentIndex}-${companyIndex}`;
 
   return (
     <PageWrapper>
@@ -53,7 +114,7 @@ export default function SkillGapPage() {
           </span>
           <span className="inline-flex items-center gap-2 glass rounded-full px-3 py-1.5 text-xs font-medium text-slate-300">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
-            {company.name} · {company.role}
+            {selectedCompany.name} · {selectedCompany.role}
           </span>
         </div>
       </motion.div>
@@ -61,12 +122,12 @@ export default function SkillGapPage() {
       {/* ── Selectors ─────────────────────────────────── */}
       <section className="flex flex-col sm:flex-row gap-4 mb-8">
         <StudentSelector
-          students={data.students}
-          selectedIndex={studentIndex}
-          onChange={setStudentIndex}
+          students={[student]}
+          selectedIndex={0}
+          onChange={() => undefined}
         />
         <CompanySelector
-          companies={data.companies}
+          companies={companies}
           selectedIndex={companyIndex}
           onChange={setCompanyIndex}
         />

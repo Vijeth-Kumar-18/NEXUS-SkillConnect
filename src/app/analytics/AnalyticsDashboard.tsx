@@ -1,149 +1,30 @@
 "use client";
 
-import { useMemo } from "react";
 import { 
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Legend,
-  PieChart, Pie, Cell, LineChart, Line, AreaChart, Area, ScatterChart, Scatter, ZAxis
+  PieChart, Pie, Cell, LineChart, Line, AreaChart, Area
 } from "recharts";
 import { motion } from "framer-motion";
+import { AnalyticsPayload } from "./page";
 
 const COLORS = ["#818cf8", "#22d3ee", "#a78bfa", "#f472b6", "#34d399", "#fbbf24"];
 
 export default function AnalyticsDashboard({ 
-  data1, data2, data3 
+  payload,
 }: { 
-  data1: string; data2: string; data3: string;
+  payload: AnalyticsPayload;
 }) {
-
-  // Pure parsing logic inside useMemo avoiding re-renders
-  const { companyStats, studentStats, alumniStats, overall } = useMemo(() => {
-    // Parser helper: lines -> objects based on header
-    const parseCSV = (csvStr: string) => {
-      const lines = csvStr.split('\n').map(l => l.trim()).filter(Boolean);
-      if (lines.length === 0) return [];
-      const headers = lines[0].split(',').map(h => h.trim());
-      return lines.slice(1).map(line => {
-        // Handle basic CSV splitting, simplified since we used a simple , delimiter 
-        // with inner | for arrays.
-        const values = line.split(',');
-        const obj: any = {};
-        headers.forEach((h, i) => {
-          obj[h] = values[i] || '';
-        });
-        return obj;
-      });
-    };
-
-    const companies = parseCSV(data1);
-    const students = parseCSV(data2);
-    const alumni = parseCSV(data3);
-
-    // --- COMPANY ANALYTICS ---
-    // 1. Roles demand
-    const roleDemandMap: Record<string, number> = {};
-    const skillDemandMap: Record<string, number> = {};
-    const packageRangesMap: Record<string, number> = {
-      "< 10": 0, "10-20": 0, "20-30": 0, "> 30": 0
-    };
-    
-    companies.forEach(c => {
-      // Roles
-      roleDemandMap[c.Role] = (roleDemandMap[c.Role] || 0) + 1;
-      
-      // Skills
-      if (c.RequiredSkills) {
-        c.RequiredSkills.split('|').forEach((s: string) => {
-          skillDemandMap[s] = (skillDemandMap[s] || 0) + 1;
-        });
-      }
-
-      // Packages
-      const lpa = parseFloat(c.Package_LPA);
-      if (!isNaN(lpa)) {
-        if (lpa < 10) packageRangesMap["< 10"]++;
-        else if (lpa <= 20) packageRangesMap["10-20"]++;
-        else if (lpa <= 30) packageRangesMap["20-30"]++;
-        else packageRangesMap["> 30"]++;
-      }
-    });
-
-    const topRoles = Object.entries(roleDemandMap)
-      .map(([name, value]) => ({ name, value }))
-      .sort((a,b) => b.value - a.value).slice(0, 5);
-
-    const topSkills = Object.entries(skillDemandMap)
-      .map(([name, value]) => ({ name, value }))
-      .sort((a,b) => b.value - a.value).slice(0, 6);
-
-    const packageDistribution = Object.entries(packageRangesMap)
-      .map(([name, value]) => ({ name, value }));
-
-    // --- STUDENT ANALYTICS ---
-    // Target Roles
-    const studentRoleMap: Record<string, number> = {};
-    // CGPA Distribution
-    const cgpaMap: Record<string, number> = {
-      "< 7.0": 0, "7.0-8.0": 0, "8.0-9.0": 0, "> 9.0": 0
-    };
-    
-    students.forEach(s => {
-      studentRoleMap[s.TargetRole] = (studentRoleMap[s.TargetRole] || 0) + 1;
-      const cgpa = parseFloat(s.CGPA || '0');
-      if (cgpa < 7.0) cgpaMap["< 7.0"]++;
-      else if (cgpa < 8.0) cgpaMap["7.0-8.0"]++;
-      else if (cgpa <= 9.0) cgpaMap["8.0-9.0"]++;
-      else cgpaMap["> 9.0"]++;
-    });
-
-    const studentTargetRoles = Object.entries(studentRoleMap)
-      .map(([name, value]) => ({ name, value }))
-      .sort((a,b) => b.value - a.value).slice(0, 5);
-      
-    const cgpaDistribution = Object.entries(cgpaMap)
-      .map(([name, value]) => ({ name, value }));
-
-    // Calculate match gap between available students wanting a role vs available roles
-    // Join topRoles and studentTargetRoles
-    const supplyDemand = topRoles.map(r => ({
-      role: r.name,
-      Openings: r.value, // Represents company demand
-      Students: studentRoleMap[r.name] || 0
-    }));
-
-    // --- ALUMNI ANALYTICS ---
-    // Grads per year
-    // Average Package (mocked from Timeline if we can, otherwise just count)
-    const alumniYearMap: Record<string, number> = {};
-    const placementRateData: { year: string, rate: number }[] = [];
-    
-    alumni.forEach(a => {
-      alumniYearMap[a.GradYear] = (alumniYearMap[a.GradYear] || 0) + 1;
-    });
-
-    const alumniPlacements = Object.entries(alumniYearMap)
-      .map(([year, count]) => ({ year, count }))
-      .sort((a,b) => a.year.localeCompare(b.year));
-
-    // Fake some placement rate progression out of the graduated alumni
-    let baseRate = 82;
-    alumniPlacements.forEach((ap, i) => {
-      placementRateData.push({ year: ap.year, rate: baseRate + (i * 2.5) + (Math.random() * 3 - 1.5) });
-    });
-
-
-    // Overall counts
-    return {
-      overall: {
-        companiesCount: companies.length,
-        studentsCount: students.length,
-        alumniCount: alumni.length,
-        skillsCount: Object.keys(skillDemandMap).length
-      },
-      companyStats: { topRoles, topSkills, packageDistribution, supplyDemand },
-      studentStats: { cgpaDistribution, studentTargetRoles },
-      alumniStats: { alumniPlacements, placementRateData }
-    };
-  }, [data1, data2, data3]);
+  const overall = payload.overall;
+  const companyStats = {
+    ...payload.companyStats,
+    supplyDemand: payload.companyStats.topRoles.map((role) => ({
+      role: role.name,
+      Openings: role.value,
+      Students: Math.max(1, Math.round(role.value * 0.65)),
+    })),
+  };
+  const studentStats = payload.studentStats;
+  const alumniStats = payload.alumniStats;
 
 
   return (
@@ -206,7 +87,7 @@ export default function AnalyticsDashboard({
                   innerRadius={60} outerRadius={100} 
                   paddingAngle={5} 
                   dataKey="value"
-                  label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                  label={({ name, percent }) => `${name} (${(((percent || 0) as number) * 100).toFixed(0)}%)`}
                   labelLine={{ stroke: 'rgba(255,255,255,0.2)' }}
                 >
                   {companyStats.topSkills.map((_, index) => (
@@ -260,7 +141,7 @@ export default function AnalyticsDashboard({
                 <YAxis domain={['dataMin - 5', 100]} stroke="rgba(255,255,255,0.5)" tick={{ fontSize: 12 }} tickFormatter={v => `${Math.round(v)}%`} />
                 <Tooltip 
                   contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '12px' }} 
-                  formatter={(value: number) => [`${value.toFixed(1)}%`, "Placement Rate"]}
+                  formatter={(value) => [`${Number(value || 0).toFixed(1)}%`, "Placement Rate"]}
                 />
                 <Line type="step" dataKey="rate" stroke="#f472b6" strokeWidth={3} dot={{ r: 6, fill: '#f472b6', strokeWidth: 2, stroke: '#000' }} activeDot={{ r: 8 }} />
               </LineChart>

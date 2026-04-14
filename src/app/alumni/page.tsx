@@ -1,16 +1,20 @@
+"use client";
+
 import PageWrapper from "@/components/layout/PageWrapper";
 import AlumniCard from "@/components/alumni/AlumniCard";
 import CareerTimeline from "@/components/alumni/CareerTimeline";
 import Card from "@/components/common/Card";
+import { useEffect, useMemo, useState } from "react";
+import { fetchJson } from "@/lib/apiClient";
 
-const alumni = [
-  { name: "Ravi Kumar", batch: "2023", company: "Google", role: "SDE-2" },
-  { name: "Priya Sharma", batch: "2022", company: "Amazon", role: "SDE-1" },
-  { name: "Amit Patel", batch: "2024", company: "Microsoft", role: "SWE" },
-  { name: "Neha Gupta", batch: "2021", company: "Meta", role: "Product Manager" },
-  { name: "Suresh Das", batch: "2025", company: "Atlassian", role: "Frontend Engineer" },
-  { name: "Meera Singh", batch: "2023", company: "Uber", role: "Backend Developer" },
-];
+interface AlumniItem {
+  id: string;
+  name: string;
+  batch: string;
+  company: string;
+  role: string;
+  timeline: string;
+}
 
 const sampleTimeline = [
   { year: "2022", title: "Intern — SDE", company: "Google" },
@@ -20,6 +24,30 @@ const sampleTimeline = [
 ];
 
 export default function AlumniPage() {
+  const [alumni, setAlumni] = useState<AlumniItem[]>([]);
+
+  useEffect(() => {
+    fetchJson<{ alumni: AlumniItem[] }>("/api/alumni")
+      .then((data) => setAlumni(data.alumni.slice(0, 12)))
+      .catch(() => setAlumni([]));
+  }, []);
+
+  const sampleTimeline = useMemo(() => {
+    const pick = alumni[0];
+    if (!pick) {
+      return [
+        { year: "2022", title: "Intern", company: "Company" },
+        { year: "2023", title: "Full-Time", company: "Company" },
+      ];
+    }
+
+    return pick.timeline.split("->").map((step, index) => ({
+      year: `${Number(pick.batch) + index}`,
+      title: step.trim(),
+      company: pick.company,
+    }));
+  }, [alumni]);
+
   return (
     <PageWrapper>
       <div className="mb-6">
@@ -54,7 +82,7 @@ export default function AlumniPage() {
         {/* Career timeline */}
         <div className="flex flex-col gap-6">
           <div className="p-5 glass rounded-2xl border-t-4 border-t-emerald-500">
-            <h3 className="text-sm font-bold uppercase tracking-widest text-emerald-500 mb-4">Sample Path: Ravi Kumar</h3>
+            <h3 className="text-sm font-bold uppercase tracking-widest text-emerald-500 mb-4">Sample Path: {alumni[0]?.name || "Alumni"}</h3>
             <CareerTimeline steps={sampleTimeline} />
           </div>
 

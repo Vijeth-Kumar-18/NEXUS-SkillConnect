@@ -1,7 +1,36 @@
+"use client";
+
 import PageWrapper from "@/components/layout/PageWrapper";
 import Card from "@/components/common/Card";
+import { useEffect, useState } from "react";
+import { fetchJson } from "@/lib/apiClient";
 
 export default function AdminPage() {
+  const [counts, setCounts] = useState({ companies: 0, students: 0, alumni: 0, skills: 0 });
+  const [seedStatus, setSeedStatus] = useState("");
+
+  useEffect(() => {
+    fetchJson<{ counts: { companies: number; students: number; alumni: number; skills: number } }>("/api/admin/overview")
+      .then((data) => setCounts(data.counts))
+      .catch(() => undefined);
+  }, []);
+
+  async function loadOverview() {
+    const data = await fetchJson<{ counts: { companies: number; students: number; alumni: number; skills: number } }>("/api/admin/overview");
+    setCounts(data.counts);
+  }
+
+  async function runSeed() {
+    setSeedStatus("Seeding data into Neo4j...");
+    try {
+      const result = await fetchJson<{ companies: number; students: number; alumni: number }>("/api/admin/seed", { method: "POST" });
+      setSeedStatus(`Seeded ${result.students} students, ${result.companies} companies, ${result.alumni} alumni`);
+      await loadOverview();
+    } catch (err) {
+      setSeedStatus(err instanceof Error ? err.message : "Seed failed");
+    }
+  }
+
   return (
     <PageWrapper>
       <div className="mb-8">
@@ -34,6 +63,23 @@ export default function AdminPage() {
             </div>
           </Card>
         ))}
+      </div>
+
+      <div className="mt-8">
+        <Card className="border-t-4 border-t-indigo-500">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-indigo-400">Dataset Import</h3>
+              <p className="text-xs text-slate-400 mt-2">
+                Students: {counts.students} · Companies: {counts.companies} · Alumni: {counts.alumni} · Skills: {counts.skills}
+              </p>
+              {seedStatus ? <p className="text-xs text-cyan-300 mt-1">{seedStatus}</p> : null}
+            </div>
+            <button onClick={runSeed} className="px-4 py-2 rounded-lg bg-indigo-500/20 border border-indigo-500/40 text-xs font-bold uppercase tracking-wider text-indigo-300 hover:bg-indigo-500/30 transition">
+              Import Data1/Data2/Data3
+            </button>
+          </div>
+        </Card>
       </div>
     </PageWrapper>
   );

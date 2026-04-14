@@ -1,7 +1,45 @@
+"use client";
+
 import PageWrapper from "@/components/layout/PageWrapper";
 import Card from "@/components/common/Card";
+import { useEffect, useMemo, useState } from "react";
+import { fetchJson } from "@/lib/apiClient";
+
+interface ProfilePayload {
+  id: string;
+  name: string;
+  degree: string;
+  expectedGraduation: string;
+  cgpa: number;
+  github: string;
+  linkedin: string;
+  targetRole: string;
+  skills: string[];
+}
 
 export default function ProfilePage() {
+  const [profile, setProfile] = useState<ProfilePayload | null>(null);
+
+  useEffect(() => {
+    fetchJson<ProfilePayload>("/api/students/me/profile")
+      .then((data) => setProfile(data))
+      .catch(() => setProfile(null));
+  }, []);
+
+  const details = useMemo(
+    () => [
+      ["Full Name", profile?.name || "Student"],
+      ["University ID", profile?.id || "N/A"],
+      ["Degree Path", profile?.degree || "N/A"],
+      ["Expected Graduation", profile?.expectedGraduation || "N/A"],
+      ["CGPA", profile ? profile.cgpa.toFixed(2) : "N/A"],
+      ["Target Role", profile?.targetRole || "N/A"],
+      ["GitHub", profile?.github || "N/A"],
+      ["LinkedIn", profile?.linkedin || "N/A"],
+    ],
+    [profile]
+  );
+
   return (
     <PageWrapper>
       <div className="mb-6">
@@ -21,9 +59,9 @@ export default function ProfilePage() {
               </div>
               <div className="absolute right-1 bottom-4 bg-emerald-500 h-6 w-6 rounded-full border-4 border-[#0a0b14]"></div>
             </div>
-            <p className="text-2xl font-bold text-slate-200">Abhi</p>
-            <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mt-1">B.Tech CSE</p>
-            <p className="text-xs font-semibold text-slate-600 mt-1">Batch 2026</p>
+            <p className="text-2xl font-bold text-slate-200">{profile?.name || "Student"}</p>
+            <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mt-1">{profile?.degree || "Degree"}</p>
+            <p className="text-xs font-semibold text-slate-600 mt-1">Batch {profile?.expectedGraduation || "2026"}</p>
           </div>
           
           <div className="mt-8 flex justify-center gap-4">
@@ -38,15 +76,7 @@ export default function ProfilePage() {
             Detailed Properties
           </h3>
           <div className="space-y-4">
-            {[
-              ["Full Name", "Abhi"],
-              ["University ID", "NEX-22-0498"],
-              ["Contact Email", "abhi@nexus.edu"],
-              ["Degree Path", "B.Tech Computer Science"],
-              ["CGPA", "8.5 (High Honors)"],
-              ["LeetCode Link", "leetcode.com/abhi_nexus"],
-              ["GitHub Node", "github.com/abhi-dev"],
-            ].map(([label, value]) => (
+            {details.map(([label, value]) => (
               <div key={label} className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-white/[0.04] pb-3 group">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-slate-500 group-hover:text-cyan-400 transition-colors mb-1 sm:mb-0">{label}</span>
                 <span className="text-sm font-bold text-slate-300 bg-white/[0.02] px-3 py-1.5 rounded-lg border border-white/5">{value}</span>

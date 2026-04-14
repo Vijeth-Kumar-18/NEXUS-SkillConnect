@@ -32,7 +32,7 @@ const step = {
     opacity: 1,
     x: 0,
     scale: 1,
-    transition: { duration: 0.4, ease: "easeOut" },
+    transition: { duration: 0.4 },
   },
 };
 

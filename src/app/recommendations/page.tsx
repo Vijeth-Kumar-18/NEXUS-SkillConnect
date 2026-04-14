@@ -1,15 +1,27 @@
+"use client";
+
 import PageWrapper from "@/components/layout/PageWrapper";
 import Card from "@/components/common/Card";
+import { useEffect, useState } from "react";
+import { fetchJson } from "@/lib/apiClient";
 
-const recommendations = [
-  { company: "Amazon", role: "SDE I", match: 85, tags: ["Cloud", "System Design"], deadline: "2 Days Left" },
-  { company: "Microsoft", role: "Cloud Support", match: 78, tags: ["Azure", "Networking"], deadline: "1 Week" },
-  { company: "Google", role: "SDE", match: 62, tags: ["DSA", "Problem Solving"], deadline: "Next Month" },
-  { company: "Infosys", role: "Systems Engineer", match: 45, tags: ["Java", "SQL"], deadline: "Hiring Now" },
-  { company: "TCS", role: "Software Engineer", match: 40, tags: ["C++", "Aptitude"], deadline: "Hiring Now" },
-];
+interface RecommendationItem {
+  companyId: string;
+  company: string;
+  role: string;
+  match: number;
+  tags: string[];
+}
 
 export default function RecommendationsPage() {
+  const [recommendations, setRecommendations] = useState<RecommendationItem[]>([]);
+
+  useEffect(() => {
+    fetchJson<{ recommendations: RecommendationItem[] }>("/api/recommendations")
+      .then((data) => setRecommendations(data.recommendations))
+      .catch(() => setRecommendations([]));
+  }, []);
+
   return (
     <PageWrapper>
       <div className="mb-6">
@@ -64,7 +76,7 @@ export default function RecommendationsPage() {
                     <span className={`text-2xl font-black ${color} drop-shadow-md`}>
                       {rec.match}%
                     </span>
-                    <p className="text-[10px] font-bold text-slate-500 mt-1">{rec.deadline}</p>
+                    <p className="text-[10px] font-bold text-slate-500 mt-1">Live Ranking</p>
                   </div>
                 </div>
                 

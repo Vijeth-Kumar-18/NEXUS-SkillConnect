@@ -1,12 +1,53 @@
+"use client";
+
 import PageWrapper from "@/components/layout/PageWrapper";
 import Card from "@/components/common/Card";
 import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
+import { fetchJson } from "@/lib/apiClient";
+
+interface DashboardPayload {
+  profile: {
+    name: string;
+    degree: string;
+    expectedGraduation: string;
+    targetRole: string;
+  };
+  stats: {
+    skillsTracked: number;
+    averageMatch: number;
+    companiesTargeted: number;
+    mockInterviews: number;
+  };
+  topRecommendations: Array<{ company: string; role: string; match: number; missingSkills: string[] }>;
+  alerts: string[];
+}
 
 export default function DashboardPage() {
+  const [payload, setPayload] = useState<DashboardPayload | null>(null);
+
+  useEffect(() => {
+    fetchJson<DashboardPayload>("/api/dashboard")
+      .then((data) => setPayload(data))
+      .catch(() => setPayload(null));
+  }, []);
+
+  const roadmapItems = useMemo(
+    () =>
+      (payload?.alerts || []).slice(0, 4).map((skill, index) => ({
+        task: `Improve ${skill}`,
+        impact: index < 2 ? "High Impact for top companies" : "Placement readiness boost",
+        progress: `${Math.max(10, 70 - index * 15)}%`,
+      })),
+    [payload]
+  );
+
+  const recommendations = payload?.topRecommendations || [];
+
   return (
     <PageWrapper>
       <div className="mb-8">
-        <h1 className="text-3xl font-extrabold tracking-tight gradient-text mb-2">Welcome back, Abhi</h1>
+        <h1 className="text-3xl font-extrabold tracking-tight gradient-text mb-2">Welcome back, {payload?.profile?.name || "Student"}</h1>
         <p className="text-sm font-medium" style={{ color: 'var(--color-weak)' }}>
           Here is your comprehensive placement readiness OS.
         </p>
@@ -15,10 +56,10 @@ export default function DashboardPage() {
       {/* Stats row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         {[
-          { label: "Skills Tracked", value: "14", trend: "+3 this week", color: "text-indigo-500" },
-          { label: "Average Match", value: "78%", trend: "+5% improvement", color: "text-emerald-500" },
-          { label: "Companies Targeted", value: "8", trend: "Active Applications", color: "text-cyan-500" },
-          { label: "Mock Interviews", value: "5", trend: "2 scheduled", color: "text-amber-500" },
+          { label: "Skills Tracked", value: String(payload?.stats?.skillsTracked || 0), trend: "Live from Neo4j", color: "text-indigo-500" },
+          { label: "Average Match", value: `${payload?.stats?.averageMatch || 0}%`, trend: "Dynamic match engine", color: "text-emerald-500" },
+          { label: "Companies Targeted", value: String(payload?.stats?.companiesTargeted || 0), trend: "Recommended opportunities", color: "text-cyan-500" },
+          { label: "Mock Interviews", value: String(payload?.stats?.mockInterviews || 0), trend: "Round practice estimate", color: "text-amber-500" },
         ].map((stat, i) => (
           <Card key={i} className="relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -48,15 +89,15 @@ export default function DashboardPage() {
               <span className="absolute bottom-0 right-0 h-4 w-4 rounded-full bg-emerald-500 border-2 border-[#0a0b14]"></span>
             </div>
             <div>
-              <p className="text-lg font-bold" style={{ color: 'var(--color-foreground)' }}>Abhishek Kumar</p>
-              <p className="text-xs font-medium tracking-wide mt-1" style={{ color: 'var(--color-foreground)', opacity: 0.6 }}>B.Tech CSE • Class of 2026</p>
+              <p className="text-lg font-bold" style={{ color: 'var(--color-foreground)' }}>{payload?.profile?.name || "Student"}</p>
+              <p className="text-xs font-medium tracking-wide mt-1" style={{ color: 'var(--color-foreground)', opacity: 0.6 }}>{payload?.profile?.degree || "Degree"} • Class of {payload?.profile?.expectedGraduation || "2026"}</p>
             </div>
           </div>
           
           <div className="pt-4 border-t" style={{ borderColor: 'var(--color-border)' }}>
             <p className="text-[10px] uppercase font-bold tracking-widest mb-3" style={{ color: 'var(--color-foreground)', opacity: 0.5 }}>Top Skills</p>
             <div className="flex flex-wrap gap-2">
-              {['React', 'Node.js', 'Python', 'System Design', 'AWS'].map(skill => (
+              {(payload?.alerts || ["Java", "DSA", "System Design", "SQL", "React"]).slice(0, 5).map(skill => (
                 <span key={skill} className="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">
                   {skill}
                 </span>
@@ -75,12 +116,10 @@ export default function DashboardPage() {
           </div>
           
           <div className="space-y-4">
-            {[
-              { task: "Master Dynamic Programming", impact: "High Impact for Amazon", progress: "60%" },
-              { task: "Learn System Design Basics", impact: "Required for Google SDE", progress: "20%" },
-              { task: "Build a Full-stack Project", impact: "Portfolio boost", progress: "85%" },
-              { task: "Practice Behavioral Questions", impact: "Crucial for Culture Fit", progress: "10%" }
-            ].map((insight, idx) => (
+            {(roadmapItems.length ? roadmapItems : [
+              { task: "Complete profile", impact: "Improve recommendation quality", progress: "40%" },
+              { task: "Add skill levels", impact: "Boost match accuracy", progress: "30%" },
+            ]).map((insight, idx) => (
               <div key={idx} className="flex flex-col gap-2 p-4 rounded-xl border transition-colors hover:bg-black/5 hover:dark:bg-white/5 cursor-default" style={{ borderColor: 'var(--color-border)' }}>
                 <div className="flex justify-between items-center">
                   <div>
@@ -108,11 +147,13 @@ export default function DashboardPage() {
             <Link href="/companies" className="text-[10px] uppercase font-bold text-indigo-400 hover:text-indigo-300 pl-2">View All</Link>
           </div>
           <div className="space-y-4">
-            {[
-              { name: "Google", role: "Software Engineer", date: "Oct 15, 2026", type: "On-Campus" },
-              { name: "Amazon", role: "SDE I", date: "Oct 22, 2026", type: "Virtual" },
-              { name: "Microsoft", role: "Cloud Support", date: "Nov 02, 2026", type: "On-Campus" },
-            ].map((company, i) => (
+            {(recommendations.slice(0, 3).map((item, index) => ({
+              name: item.company,
+              role: item.role,
+              date: `${item.match}% Match`,
+              type: "Recommended",
+              key: `${item.company}-${index}`,
+            })) || []).map((company, i) => (
               <div key={i} className="flex justify-between items-center p-3 rounded-lg border border-transparent hover:border-indigo-500/20 hover:bg-indigo-500/5 transition">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-lg flex items-center justify-center font-bold text-lg bg-black/5 dark:bg-white/5 border" style={{ borderColor: 'var(--color-border)', color: 'var(--color-foreground)' }}>
@@ -140,11 +181,11 @@ export default function DashboardPage() {
             <Link href="/alumni" className="text-[10px] uppercase font-bold text-indigo-400 hover:text-indigo-300 pl-2">Explore Graph</Link>
           </div>
           <div className="space-y-4">
-            {[
-              { name: "Priya Sharma", role: "Senior Engineer at Netflix", shift: "Promoted this month" },
-              { name: "Rahul Verma", role: "SDE II at Amazon", shift: "Switched from TCS" },
-              { name: "Neha Gupta", role: "Product Manager at Meta", shift: "New Role" },
-            ].map((alumni, i) => (
+            {(recommendations.slice(0, 3).map((item) => ({
+              name: item.company,
+              role: `Target role: ${item.role}`,
+              shift: item.missingSkills.length ? `Prepare: ${item.missingSkills[0]}` : "Strong fit",
+            })) || []).map((alumni, i) => (
               <div key={i} className="flex gap-3 items-start p-3 rounded-lg cursor-pointer hover:bg-black/5 hover:dark:bg-white/5 transition">
                 <div className="h-2 w-2 rounded-full mt-2 shrink-0 bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.5)]"></div>
                 <div>

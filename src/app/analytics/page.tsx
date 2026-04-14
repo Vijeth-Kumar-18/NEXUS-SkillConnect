@@ -1,24 +1,46 @@
-import fs from 'fs';
-import path from 'path';
-import PageWrapper from '@/components/layout/PageWrapper';
-import AnalyticsDashboard from './AnalyticsDashboard';
+"use client";
 
-export default async function AnalyticsPage() {
-  const data1Path = path.join(process.cwd(), 'Data1.txt');
-  const data2Path = path.join(process.cwd(), 'Data2.txt');
-  const data3Path = path.join(process.cwd(), 'Data3.txt');
+import { useEffect, useState } from "react";
+import PageWrapper from "@/components/layout/PageWrapper";
+import AnalyticsDashboard from "./AnalyticsDashboard";
+import { fetchJson } from "@/lib/apiClient";
 
-  let rawData1 = '';
-  let rawData2 = '';
-  let rawData3 = '';
+export interface AnalyticsPayload {
+  overall: {
+    companiesCount: number;
+    studentsCount: number;
+    alumniCount: number;
+    skillsCount: number;
+  };
+  companyStats: {
+    topRoles: Array<{ name: string; value: number }>;
+    topSkills: Array<{ name: string; value: number }>;
+    packageDistribution: Array<{ name: string; value: number }>;
+  };
+  studentStats: {
+    cgpaDistribution: Array<{ name: string; value: number }>;
+  };
+  alumniStats: {
+    alumniPlacements: Array<{ year: string; count: number }>;
+    placementRateData: Array<{ year: string; rate: number }>;
+  };
+}
 
-  try {
-    if (fs.existsSync(data1Path)) rawData1 = fs.readFileSync(data1Path, 'utf-8');
-    if (fs.existsSync(data2Path)) rawData2 = fs.readFileSync(data2Path, 'utf-8');
-    if (fs.existsSync(data3Path)) rawData3 = fs.readFileSync(data3Path, 'utf-8');
-  } catch (err) {
-    console.error('Could not read mock datasets', err);
-  }
+const fallback: AnalyticsPayload = {
+  overall: { companiesCount: 0, studentsCount: 0, alumniCount: 0, skillsCount: 0 },
+  companyStats: { topRoles: [], topSkills: [], packageDistribution: [] },
+  studentStats: { cgpaDistribution: [] },
+  alumniStats: { alumniPlacements: [], placementRateData: [] },
+};
+
+export default function AnalyticsPage() {
+  const [payload, setPayload] = useState<AnalyticsPayload>(fallback);
+
+  useEffect(() => {
+    fetchJson<AnalyticsPayload>("/api/analytics")
+      .then((data) => setPayload(data))
+      .catch(() => setPayload(fallback));
+  }, []);
 
   return (
     <PageWrapper>
@@ -27,11 +49,11 @@ export default async function AnalyticsPage() {
           Data <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">Analytics</span>
         </h1>
         <p className="text-lg font-medium text-slate-300 max-w-3xl leading-relaxed">
-          Deep structural analysis connecting enterprise job demand to the university cohort's active skill sets. Built natively on generated mock datasets (Data1.txt, Data2.txt & Data3.txt).
+          Graph-native analytics from Neo4j on role demand, skill trends, and alumni outcomes.
         </p>
       </div>
 
-      <AnalyticsDashboard data1={rawData1} data2={rawData2} data3={rawData3} />
+      <AnalyticsDashboard payload={payload} />
     </PageWrapper>
   );
 }

@@ -1,17 +1,29 @@
+"use client";
+
 import PageWrapper from "@/components/layout/PageWrapper";
 import Card from "@/components/common/Card";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { fetchJson } from "@/lib/apiClient";
 
-const companies = [
-  { id: "google", name: "Google", role: "SDE I", type: "Product", skills: 8, match: "High Priority" },
-  { id: "amazon", name: "Amazon", role: "SDE I", type: "E-Commerce", skills: 6, match: "Moderate Priority" },
-  { id: "microsoft", name: "Microsoft", role: "Cloud Support", type: "Product", skills: 7, match: "Good Match" },
-  { id: "infosys", name: "Infosys", role: "Systems Engineer", type: "Service", skills: 4, match: "Safety" },
-  { id: "tcs", name: "TCS", role: "Digital Innovator", type: "Service", skills: 5, match: "Safety" },
-  { id: "netflix", name: "Netflix", role: "Senior Engineer", type: "Streaming", skills: 9, match: "Aspirational" },
-];
+interface CompanyListItem {
+  id: string;
+  name: string;
+  role: string;
+  type: string;
+  skills: number;
+  matchLabel: string;
+}
 
 export default function CompaniesPage() {
+  const [companies, setCompanies] = useState<CompanyListItem[]>([]);
+
+  useEffect(() => {
+    fetchJson<{ companies: CompanyListItem[] }>("/api/companies")
+      .then((data) => setCompanies(data.companies))
+      .catch(() => setCompanies([]));
+  }, []);
+
   return (
     <PageWrapper>
       <div className="mb-6">
@@ -51,7 +63,7 @@ export default function CompaniesPage() {
                 </div>
                 <div className="p-2 rounded-lg bg-black/20 border border-white/5 flex flex-col items-center justify-center text-center">
                   <p className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Category</p>
-                  <p className="text-[10px] font-black text-emerald-400 uppercase mt-1">{company.match}</p>
+                  <p className="text-[10px] font-black text-emerald-400 uppercase mt-1">{company.matchLabel}</p>
                 </div>
               </div>
             </Card>
