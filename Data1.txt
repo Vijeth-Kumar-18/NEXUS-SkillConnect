@@ -99,3 +99,1004 @@ J097,Airbnb,Software Engineer,"PyTorch | Python | Next.js | Spark",6,"Toronto, C
 J098,Uber,Product Manager,"C++ | Go | System Design | Java",5,"Toronto, Canada",24,Mid-Level
 J099,Meta,Backend Engineer,"Kubernetes | Python | PyTorch",5,"Boston, MA",47,Senior
 J100,Snowflake,Backend Engineer,"Redis | Agile | System Design | SQL | Java | Kafka",3,"New York, NY",30,Entry Level
+
+Apple ,Machine Learning Engineer,Data Analysis|Spark|Machine Learning|PyTorch,5,Bangalore,33.9,Lead
+Oracle Inc,Security Engineer,Python|Go|C++|Next.js,3,Dublin,10.0,Entry
+Uber LLC,Cloud Architect,Rust|AWS|Agile|Spark,5,Pune,44.2,Entry
+Square ,Backend Developer,NoSQL|Node.js|Hadoop|Kubernetes,3,Austin,43.1,Mid
+Uber Labs,Cloud Architect,System Design|Agile|GraphQL|Rust,4,Tokyo,26.6,Entry
+Apple LLC,UI/UX Designer,Spark|Machine Learning|Agile|AWS,3,Tokyo,30.9,Mid
+Uber LLC,Machine Learning Engineer,GraphQL|Data Analysis|AWS,4,Bangalore,16.6,Staff
+Stripe Tech,UI/UX Designer,Rust|Go|Hadoop|Kubernetes,7,Toronto,20.2,Mid
+Uber ,Data Analyst,System Design|Machine Learning|Python|GraphQL,5,Austin,18.1,Lead
+Uber ,Software Engineer,Java|System Design|PyTorch|Spark,5,Chicago,22.8,Senior
+Snap LLC,Full Stack Developer,SQL|GraphQL|Deep Learning|Hadoop,7,Singapore,34.5,Entry
+Tesla Tech,Backend Developer,System Design|Rust|JavaScript|Python,6,Tokyo,31.6,Staff
+Meta Corp,Frontend Developer,Agile|React|C++|Java,3,Austin,32.9,Mid
+Snap Labs,Full Stack Developer,Deep Learning|Kubernetes|SQL|Java,6,Chicago,35.0,Senior
+Meta Tech,Security Engineer,System Design|Agile|C++|Deep Learning,6,Seattle,45.3,Entry
+Airbnb Software,Backend Developer,System Design|Next.js|Data Analysis|Rust,3,Hyderabad,15.8,Entry
+IBM Corp,Blockchain Developer,Hadoop|Machine Learning|Data Analysis,3,Austin,22.6,Staff
+Apple Inc,Data Scientist,AWS|System Design,3,Toronto,26.1,Senior
+Google Tech,Security Engineer,Go|Java|Rust,7,Boston,14.9,Mid
+Cisco Software,Software Engineer,Kubernetes|JavaScript|Hadoop|System Design,3,Los Angeles,22.4,Lead
+Netflix LLC,Frontend Developer,JavaScript|Node.js|SQL|Deep Learning,3,Remote,11.1,Entry
+Netflix Tech,Big Data Engineer,React|Python|TypeScript|Machine Learning,5,London,41.0,Lead
+Airbnb Labs,Product Manager,JavaScript|Kafka|SQL|Deep Learning,6,Tokyo,32.0,Mid
+IBM LLC,Blockchain Developer,Agile|Hadoop|TensorFlow|Machine Learning,6,New York,32.6,Mid
+Slack Labs,Data Scientist,Go|Docker|Rust|Kafka,3,Los Angeles,10.8,Senior
+Pinterest Tech,AI Engineer,Java|Deep Learning|AWS|SQL,5,Austin,11.8,Entry
+Adobe LLC,Product Manager,React|TensorFlow|JavaScript|NoSQL,5,Seattle,19.8,Senior
+Cisco Tech,Backend Developer,Hadoop|Next.js|Java|Kubernetes,5,Dublin,13.0,Mid
+Tesla ,Machine Learning Engineer,Go|System Design|Node.js|TensorFlow,3,Boston,20.5,Senior
+Amazon Corp,Frontend Developer,TensorFlow|C++|Docker|JavaScript,3,Los Angeles,37.7,Senior
+Uber Software,DevOps Engineer,Java|Kafka|Deep Learning|Machine Learning,6,New York,38.0,Entry
+Microsoft ,Security Engineer,C++|Node.js|Python|TypeScript,3,Toronto,34.1,Lead
+Google Software,Blockchain Developer,NoSQL|Go|GraphQL|System Design,6,London,27.4,Mid
+Lyft Studios,Backend Developer,Docker|AWS|NoSQL,4,San Francisco,28.0,Staff
+Meta LLC,Frontend Developer,GraphQL|React|Go|Kafka,6,Los Angeles,10.1,Lead
+Pinterest Tech,Software Engineer,Machine Learning|PyTorch|TensorFlow|Node.js,3,Austin,30.8,Staff
+Salesforce LLC,Data Analyst,Agile|Machine Learning|Next.js,7,Dublin,32.9,Lead
+Apple Labs,Backend Developer,Data Analysis|System Design|Docker,4,San Francisco,28.8,Entry
+Google Software,UI/UX Designer,TensorFlow|Kafka|Go|AWS,5,Tokyo,10.6,Mid
+Intel Labs,Frontend Developer,SQL|NoSQL|Kubernetes|System Design,6,Los Angeles,27.3,Entry
+Slack LLC,Software Engineer,Data Analysis|Deep Learning|Docker|Next.js,4,Austin,13.7,Mid
+Uber Corp,Data Scientist,C++|AWS|Spark|Node.js,6,San Francisco,42.4,Senior
+Netflix Software,UI/UX Designer,Data Analysis|Go|System Design|Agile,6,Seattle,25.9,Mid
+Slack LLC,Data Analyst,GraphQL|C++|PyTorch|Docker,3,San Francisco,24.5,Lead
+Netflix Corp,Data Scientist,TensorFlow|Go|System Design|TypeScript,3,Boston,40.6,Mid
+Adobe Studios,Data Analyst,React|Python|Go|SQL,4,Los Angeles,11.4,Staff
+Slack Tech,Blockchain Developer,Kubernetes|Rust|Next.js|Agile,3,Tokyo,25.8,Lead
+Adobe Software,Product Manager,TypeScript|Go|Python|SQL,3,New York,10.1,Mid
+Oracle ,Blockchain Developer,C++|Python|Machine Learning|Next.js,3,Seattle,13.9,Entry
+Dropbox Corp,Machine Learning Engineer,Kubernetes|Machine Learning|TypeScript|C++,6,Remote,23.0,Lead
+Microsoft Inc,Cloud Architect,TypeScript|Hadoop|TensorFlow|SQL,7,Chicago,22.7,Lead
+Dropbox Tech,Software Engineer,Agile|Spark|Data Analysis|Docker,5,Remote,15.0,Entry
+Apple Corp,DevOps Engineer,Agile|NoSQL|Deep Learning|GraphQL,6,Boston,34.0,Entry
+Snap LLC,Data Analyst,C++|Data Analysis|TensorFlow|PyTorch,7,Bangalore,26.1,Senior
+Twitter ,Software Engineer,GraphQL|Go|React|Next.js,5,Austin,27.5,Senior
+IBM Inc,Software Engineer,Python|Kafka|Data Analysis|Go,5,San Francisco,30.9,Lead
+Salesforce ,AI Engineer,React|Kafka|Machine Learning|Kubernetes,6,Toronto,16.0,Mid
+IBM ,Cloud Architect,TensorFlow|Deep Learning|Java|SQL,5,Tokyo,14.1,Entry
+Stripe LLC,Machine Learning Engineer,Java|Hadoop|SQL|System Design,5,Chicago,23.4,Staff
+Adobe Software,AI Engineer,PyTorch|GraphQL|SQL|Rust,7,Bangalore,28.5,Entry
+Netflix Software,AI Engineer,Hadoop|Kafka|Rust|Data Analysis,3,Boston,33.6,Entry
+Pinterest Studios,Machine Learning Engineer,Spark|Node.js|Python|SQL,6,Boston,33.6,Entry
+Adobe LLC,Data Scientist,Python|C++|JavaScript|PyTorch,3,Pune,22.0,Mid
+Uber ,Security Engineer,Kubernetes|Machine Learning|PyTorch|Node.js,4,Seattle,10.4,Mid
+Apple Software,Product Manager,Java|Agile|Node.js|SQL,4,Tokyo,21.2,Senior
+Cisco Tech,UI/UX Designer,NoSQL|PyTorch|Rust|Spark,7,Boston,24.6,Entry
+Uber Tech,Product Manager,Kubernetes|Docker|Python|Java,6,Dublin,18.2,Entry
+Meta Tech,Full Stack Developer,SQL|Java|Data Analysis|Kafka,3,Berlin,31.6,Lead
+Salesforce Studios,Data Analyst,JavaScript|Machine Learning|Hadoop|Kubernetes,4,Singapore,25.7,Staff
+Pinterest LLC,Product Manager,TypeScript|Python|Hadoop,4,Boston,16.6,Mid
+Adobe Labs,Machine Learning Engineer,Kubernetes|Data Analysis|Python,6,Tokyo,10.8,Mid
+Tesla Studios,Blockchain Developer,Agile|PyTorch|Kafka|TypeScript,4,Pune,25.7,Lead
+Amazon ,Big Data Engineer,GraphQL|Deep Learning|Docker|Node.js,3,San Francisco,18.3,Senior
+IBM Studios,UI/UX Designer,GraphQL|PyTorch|Kubernetes|Node.js,3,Remote,19.1,Lead
+Intel Tech,Blockchain Developer,C++|TensorFlow|AWS,4,Bangalore,32.5,Mid
+Pinterest Studios,AI Engineer,Next.js|Kubernetes|AWS|GraphQL,3,Pune,28.4,Senior
+Slack Inc,Blockchain Developer,JavaScript|Rust|TensorFlow,6,Hyderabad,31.1,Staff
+Intel Inc,Blockchain Developer,Docker|SQL|Spark|C++,4,Seattle,25.9,Mid
+Meta Studios,Data Scientist,TensorFlow|Hadoop|C++|AWS,6,London,11.7,Lead
+Intel Inc,Cloud Architect,Deep Learning|Data Analysis|Spark|AWS,6,Austin,30.8,Mid
+Lyft Studios,Machine Learning Engineer,Spark|Agile|AWS|Java,6,Chicago,33.2,Senior
+Amazon Studios,Cloud Architect,Rust|NoSQL|Spark,6,Chicago,28.9,Mid
+Amazon Software,Data Scientist,Java|Next.js|SQL,6,Dublin,17.1,Entry
+Amazon Software,Full Stack Developer,Kubernetes|AWS|Spark|C++,5,Singapore,32.8,Staff
+Oracle Software,AI Engineer,GraphQL|Agile|Next.js|Deep Learning,5,Berlin,22.9,Senior
+Twitter Software,Backend Developer,AWS|JavaScript|Java,5,Dublin,13.7,Lead
+Adobe Labs,Software Engineer,GraphQL|TypeScript|JavaScript,3,Singapore,48.7,Entry
+Adobe Inc,AI Engineer,System Design|GraphQL|Node.js|TensorFlow,7,Boston,48.2,Entry
+Salesforce Studios,Blockchain Developer,C++|Data Analysis|System Design,5,Bangalore,36.3,Staff
+IBM LLC,Big Data Engineer,GraphQL|PyTorch|Docker,5,Bangalore,30.2,Lead
+Cisco Studios,Big Data Engineer,Go|AWS|React|C++,3,Remote,31.7,Mid
+Netflix Inc,Data Scientist,Agile|Rust|PyTorch|Java,3,Bangalore,11.0,Senior
+Lyft Labs,Software Engineer,React|Hadoop|AWS|TypeScript,7,Boston,34.4,Staff
+Pinterest Inc,Cloud Architect,Machine Learning|Next.js|Data Analysis,7,Chicago,27.5,Staff
+Adobe Tech,UI/UX Designer,Docker|SQL|Kafka|GraphQL,3,Chicago,19.9,Senior
+Snap LLC,Security Engineer,PyTorch|JavaScript|React|NoSQL,3,Tokyo,37.3,Entry
+Uber Inc,Cloud Architect,Kubernetes|C++|Machine Learning|Rust,3,Chicago,19.2,Staff
+Adobe Inc,Full Stack Developer,Node.js|Kubernetes|Docker,6,Pune,28.8,Entry
+Dropbox Inc,Cloud Architect,Agile|JavaScript|TensorFlow|Data Analysis,5,Boston,24.1,Staff
+Amazon Labs,Full Stack Developer,Node.js|AWS|Kubernetes|Java,4,Hyderabad,40.8,Staff
+Stripe Software,Product Manager,AWS|Deep Learning|Spark|Kubernetes,4,Tokyo,11.1,Senior
+Adobe Tech,Product Manager,Python|Kafka|NoSQL|Go,3,Dublin,10.1,Entry
+Cisco Inc,Blockchain Developer,Docker|Machine Learning|TypeScript|C++,3,Chicago,30.8,Staff
+Cisco Corp,UI/UX Designer,React|GraphQL|Java,6,Chicago,26.4,Lead
+Lyft Tech,Big Data Engineer,Java|NoSQL|React,4,New York,37.6,Entry
+Dropbox Tech,Product Manager,Go|SQL|C++|AWS,4,Tokyo,32.8,Lead
+Cisco Tech,Product Manager,Data Analysis|Machine Learning|JavaScript|System Design,4,Berlin,48.9,Lead
+Meta Tech,Cloud Architect,GraphQL|Java|Hadoop|Kubernetes,4,Los Angeles,11.9,Entry
+Amazon Labs,Product Manager,Machine Learning|Rust|TensorFlow|Kubernetes,5,Pune,42.7,Lead
+Oracle Tech,AI Engineer,Kubernetes|Docker|Rust,5,Remote,16.2,Lead
+Google Tech,Software Engineer,Docker|Java|SQL|System Design,5,Bangalore,17.5,Senior
+Airbnb ,Big Data Engineer,React|Data Analysis|NoSQL|Next.js,5,New York,20.8,Entry
+Twitter Tech,Security Engineer,Data Analysis|System Design|Go,6,New York,14.4,Entry
+Apple LLC,AI Engineer,Machine Learning|Rust|PyTorch|Go,4,London,29.1,Mid
+Airbnb LLC,Machine Learning Engineer,Hadoop|TypeScript|NoSQL,7,Remote,11.8,Lead
+Netflix Tech,Machine Learning Engineer,Python|Kubernetes|Kafka,3,London,40.4,Entry
+IBM Labs,Security Engineer,Hadoop|Node.js|PyTorch|Java,4,Boston,35.0,Entry
+Apple Tech,Big Data Engineer,JavaScript|PyTorch|NoSQL|SQL,5,Berlin,11.6,Mid
+Twitter Studios,Machine Learning Engineer,React|Go|PyTorch|Next.js,5,Boston,21.9,Mid
+Dropbox Software,DevOps Engineer,System Design|Python|Spark|Go,4,Hyderabad,33.7,Staff
+Airbnb Software,Frontend Developer,Next.js|Deep Learning|Docker,3,Seattle,14.8,Senior
+Intel Tech,Backend Developer,Next.js|Data Analysis,7,Toronto,32.4,Senior
+Oracle Corp,Blockchain Developer,Python|Machine Learning|GraphQL|Data Analysis,5,Los Angeles,26.7,Mid
+Cisco Inc,Frontend Developer,Data Analysis|Node.js|Kubernetes,3,Toronto,20.8,Lead
+Slack Labs,UI/UX Designer,Kafka|TensorFlow|Python|Go,6,Seattle,45.2,Entry
+IBM Labs,Software Engineer,PyTorch|NoSQL|Node.js|Rust,3,San Francisco,32.7,Senior
+Netflix ,Product Manager,Kafka|Agile|Docker|React,5,San Francisco,10.5,Mid
+Oracle Studios,Machine Learning Engineer,Rust|Python,4,London,26.0,Lead
+Google Tech,Frontend Developer,Java|Python|Deep Learning,3,Austin,19.9,Staff
+Intel Corp,Big Data Engineer,Rust|Kafka|Java|C++,4,Pune,13.9,Lead
+Pinterest LLC,Security Engineer,Kubernetes|Rust|Python|NoSQL,5,Seattle,35.0,Lead
+Amazon Corp,Frontend Developer,TypeScript|C++|Spark|Kafka,5,Hyderabad,31.7,Staff
+Amazon ,Software Engineer,Rust|Kafka|PyTorch|Hadoop,4,Singapore,16.5,Entry
+Slack ,Backend Developer,GraphQL|Node.js|Data Analysis,6,Tokyo,32.0,Entry
+Microsoft Studios,Backend Developer,Docker|SQL|Go|Data Analysis,7,Tokyo,25.5,Mid
+Adobe Software,UI/UX Designer,Go|AWS|GraphQL|Spark,7,London,27.6,Mid
+Airbnb Tech,AI Engineer,NoSQL|Machine Learning|AWS,6,Dublin,49.5,Mid
+Tesla Studios,AI Engineer,Data Analysis|Agile|AWS|Java,6,Toronto,18.7,Senior
+Google Inc,DevOps Engineer,Hadoop|Rust|C++|System Design,5,Bangalore,45.6,Mid
+Apple Tech,Data Analyst,TensorFlow|TypeScript|SQL|Kubernetes,4,Boston,45.4,Entry
+Microsoft Software,Frontend Developer,Deep Learning|JavaScript|Docker|System Design,7,Boston,30.9,Senior
+Adobe Corp,Full Stack Developer,Next.js|React|Kubernetes|AWS,4,Singapore,12.6,Senior
+Stripe Labs,Full Stack Developer,GraphQL|TypeScript|TensorFlow,4,Hyderabad,16.5,Mid
+Dropbox ,Data Analyst,Kubernetes|Hadoop|Node.js|React,6,Austin,10.9,Senior
+Cisco LLC,Cloud Architect,System Design|Rust|SQL,5,Singapore,13.6,Entry
+IBM Studios,Frontend Developer,TensorFlow|C++|Machine Learning|Kubernetes,5,Pune,11.5,Mid
+Microsoft Inc,Software Engineer,Python|SQL|PyTorch|Machine Learning,5,San Francisco,20.7,Staff
+IBM Inc,Big Data Engineer,Machine Learning|Go|Java,6,Tokyo,22.0,Mid
+Amazon Software,Cloud Architect,PyTorch|Python|Agile|Data Analysis,5,Tokyo,43.3,Entry
+Cisco LLC,Backend Developer,Kafka|Node.js|SQL|TensorFlow,5,Remote,21.6,Entry
+Adobe LLC,Big Data Engineer,Python|Deep Learning|Go|Docker,4,London,36.0,Entry
+Square Corp,AI Engineer,Go|JavaScript|C++|Python,5,Singapore,19.0,Entry
+Netflix Software,Data Scientist,Go|GraphQL|SQL,7,Seattle,31.6,Entry
+Square LLC,Product Manager,Deep Learning|Spark|TensorFlow|Next.js,3,Seattle,41.0,Staff
+Google Studios,Blockchain Developer,Agile|Java|SQL|Machine Learning,5,Hyderabad,16.2,Entry
+Lyft Labs,Backend Developer,Kubernetes|Java|AWS,3,Boston,27.0,Staff
+Uber LLC,Blockchain Developer,AWS|Kubernetes|SQL,3,Berlin,17.7,Senior
+Pinterest Labs,Security Engineer,Machine Learning|React|Python|Go,5,Chicago,30.4,Lead
+Meta Studios,Security Engineer,NoSQL|PyTorch|Next.js,4,Toronto,31.0,Senior
+Airbnb Tech,DevOps Engineer,C++|Python|System Design|NoSQL,5,Chicago,26.4,Mid
+Amazon Software,Frontend Developer,PyTorch|Spark|Deep Learning|TypeScript,7,San Francisco,45.0,Mid
+Airbnb Studios,Security Engineer,Next.js|System Design|PyTorch|Docker,6,Pune,22.5,Senior
+Tesla Corp,Frontend Developer,Docker|Python|Node.js,3,Tokyo,28.1,Lead
+Meta Studios,UI/UX Designer,AWS|Go|Data Analysis|Node.js,4,Remote,29.8,Staff
+Oracle Software,Backend Developer,System Design|Deep Learning|Machine Learning|Spark,6,Pune,14.7,Entry
+Salesforce Studios,Software Engineer,Rust|Spark|PyTorch,4,Chicago,20.0,Mid
+Netflix Corp,Security Engineer,Machine Learning|TypeScript|Spark|Node.js,3,Pune,38.9,Entry
+Snap Inc,Cloud Architect,System Design|NoSQL|Kafka|Python,3,Tokyo,27.6,Entry
+Salesforce ,AI Engineer,Docker|Spark|Machine Learning|Data Analysis,5,Toronto,19.3,Senior
+Tesla ,Security Engineer,TensorFlow|Node.js|JavaScript|Docker,5,Dublin,35.4,Mid
+Airbnb Labs,UI/UX Designer,Hadoop|GraphQL|Java|TypeScript,4,Seattle,21.8,Lead
+Dropbox Studios,Software Engineer,System Design|TypeScript|React,5,Chicago,28.6,Mid
+Oracle Inc,Data Analyst,React|TypeScript|Spark,6,Pune,15.1,Lead
+Apple LLC,Backend Developer,Machine Learning|Spark|PyTorch|TypeScript,5,Tokyo,35.0,Lead
+Stripe LLC,Backend Developer,Spark|Java|Python|Data Analysis,6,Boston,24.4,Staff
+Slack Inc,Data Analyst,PyTorch|React|Kubernetes|Agile,7,Los Angeles,38.9,Mid
+Lyft Corp,Blockchain Developer,Rust|Kafka|React,6,Bangalore,46.3,Staff
+IBM Inc,Backend Developer,Agile|Machine Learning|NoSQL|Kubernetes,4,Tokyo,12.7,Senior
+Dropbox ,Blockchain Developer,Go|Deep Learning|SQL|Agile,3,Hyderabad,33.8,Staff
+Tesla Corp,Backend Developer,Deep Learning|React|Agile|Next.js,3,Tokyo,48.7,Mid
+Lyft Inc,Data Scientist,Hadoop|Spark|Agile,7,Pune,27.8,Lead
+Adobe Software,Software Engineer,TypeScript|Deep Learning|PyTorch,4,Toronto,28.6,Staff
+Uber Inc,Data Scientist,Agile|Python|NoSQL|TensorFlow,3,Dublin,11.3,Lead
+Netflix Tech,Data Scientist,GraphQL|Hadoop|Agile|Rust,3,Dublin,31.5,Staff
+Microsoft Studios,Blockchain Developer,JavaScript|Go|Machine Learning|Java,7,San Francisco,20.2,Lead
+Intel Tech,Blockchain Developer,Spark|Next.js|Rust|System Design,5,New York,33.6,Mid
+Google LLC,UI/UX Designer,Kafka|Hadoop|SQL|NoSQL,5,Toronto,18.7,Lead
+Meta LLC,Blockchain Developer,Rust|Data Analysis|Agile|Node.js,5,Toronto,34.1,Entry
+Snap Tech,Blockchain Developer,Spark|Rust|Kubernetes|Machine Learning,3,Tokyo,30.7,Entry
+Adobe Tech,Big Data Engineer,Python|Rust|Java|Kubernetes,3,Toronto,29.0,Staff
+Twitter Studios,UI/UX Designer,NoSQL|Machine Learning,5,Pune,12.8,Senior
+Uber Tech,UI/UX Designer,Python|Data Analysis|System Design|Kafka,3,New York,30.7,Staff
+Amazon Tech,Full Stack Developer,PyTorch|Machine Learning|Next.js|Python,4,Los Angeles,16.3,Lead
+Uber Software,Blockchain Developer,GraphQL|Kafka|Machine Learning,6,London,28.8,Staff
+Snap Inc,DevOps Engineer,Next.js|Machine Learning|Deep Learning,6,Austin,32.0,Mid
+Pinterest LLC,Big Data Engineer,Kafka|SQL|Deep Learning|System Design,4,London,32.7,Entry
+Pinterest Software,Data Scientist,NoSQL|C++|Docker|Go,4,Remote,20.2,Senior
+Amazon Labs,Big Data Engineer,Machine Learning|NoSQL|Data Analysis|Agile,6,Austin,33.0,Staff
+Intel Software,Blockchain Developer,Spark|NoSQL|System Design|PyTorch,7,Tokyo,11.5,Staff
+IBM Labs,Product Manager,Hadoop|Data Analysis|Deep Learning|Kafka,5,Dublin,18.4,Staff
+Twitter Labs,Backend Developer,Rust|JavaScript|Hadoop|C++,3,Bangalore,44.8,Mid
+Apple LLC,Security Engineer,PyTorch|TypeScript|Agile|AWS,7,Chicago,27.4,Lead
+Lyft Studios,AI Engineer,NoSQL|PyTorch|Hadoop|Python,3,Chicago,23.2,Mid
+Amazon ,Product Manager,SQL|PyTorch|Docker|Agile,7,Seattle,12.0,Senior
+Cisco Tech,Full Stack Developer,Node.js|TensorFlow|GraphQL,3,Chicago,15.2,Senior
+Apple Labs,Data Analyst,TensorFlow|Go|Docker|Node.js,3,Boston,44.8,Staff
+Cisco ,Blockchain Developer,Go|System Design|Spark|GraphQL,7,London,48.0,Lead
+Netflix LLC,Cloud Architect,C++|Kafka|Python|React,7,Los Angeles,20.6,Mid
+Apple Labs,Machine Learning Engineer,Kubernetes|Python|JavaScript|Hadoop,3,Singapore,16.8,Senior
+Salesforce ,Data Scientist,React|Java|TensorFlow|JavaScript,6,Dublin,26.2,Lead
+Square Tech,Big Data Engineer,GraphQL|TypeScript|Machine Learning|JavaScript,7,London,45.7,Mid
+IBM Studios,Backend Developer,Rust|Deep Learning|TensorFlow|Java,6,Hyderabad,31.0,Senior
+Salesforce Corp,Data Analyst,System Design|Next.js|Docker,5,Seattle,12.2,Staff
+Intel Studios,AI Engineer,Docker|Node.js|Agile,3,Los Angeles,43.0,Entry
+Stripe Studios,Product Manager,AWS|Machine Learning|Deep Learning,5,San Francisco,21.3,Entry
+Square ,Software Engineer,JavaScript|Go|Machine Learning|C++,7,Singapore,10.9,Staff
+Airbnb Corp,Software Engineer,Node.js|SQL|System Design|React,5,Singapore,34.8,Lead
+IBM Software,Security Engineer,Data Analysis|Java|Machine Learning|AWS,3,Chicago,30.9,Entry
+Slack Tech,Blockchain Developer,Java|Kafka|Spark|Hadoop,6,Singapore,33.4,Entry
+Salesforce Labs,Full Stack Developer,Hadoop|PyTorch|SQL|Go,3,Berlin,45.4,Entry
+Slack Corp,Full Stack Developer,Data Analysis|SQL|Kafka|Hadoop,6,Berlin,22.8,Staff
+Netflix Studios,Backend Developer,Deep Learning|Machine Learning|Node.js|Agile,6,Austin,30.2,Senior
+Lyft Labs,Security Engineer,Docker|Rust|Node.js|Machine Learning,6,Remote,40.6,Lead
+Adobe Tech,Data Analyst,Rust|Docker|Kubernetes,3,Bangalore,14.0,Entry
+Microsoft Labs,Product Manager,C++|Node.js|Deep Learning|Kafka,3,Chicago,13.6,Staff
+Tesla Inc,Machine Learning Engineer,NoSQL|Java|Hadoop,4,Seattle,16.0,Staff
+Pinterest Labs,Security Engineer,Spark|TypeScript|Hadoop|Kafka,4,Chicago,11.0,Senior
+Apple Labs,AI Engineer,AWS|Go|SQL|Data Analysis,7,Remote,42.6,Mid
+Dropbox Labs,DevOps Engineer,Rust|GraphQL|PyTorch|Node.js,6,Los Angeles,10.7,Senior
+Google LLC,Security Engineer,Go|Java|Hadoop,4,Los Angeles,49.0,Senior
+Microsoft ,Blockchain Developer,React|JavaScript|Java|PyTorch,4,Toronto,26.6,Mid
+Stripe Tech,Product Manager,Machine Learning|React|Agile|Docker,6,Toronto,25.8,Lead
+Salesforce Inc,Security Engineer,Java|JavaScript|Hadoop|C++,3,Berlin,27.8,Senior
+Oracle Labs,Frontend Developer,NoSQL|Java|Spark|TensorFlow,3,Los Angeles,12.6,Staff
+Stripe Labs,Software Engineer,AWS|Deep Learning|React|System Design,6,London,20.8,Staff
+Airbnb Studios,Frontend Developer,JavaScript|React|PyTorch|Python,4,Berlin,26.3,Senior
+Oracle Tech,Cloud Architect,Spark|Kubernetes|JavaScript|Rust,7,Tokyo,46.3,Senior
+IBM LLC,Cloud Architect,Docker|SQL|Next.js|Spark,3,Dublin,11.3,Entry
+Salesforce Studios,Full Stack Developer,JavaScript|Node.js|TensorFlow|Deep Learning,6,Toronto,18.6,Lead
+Twitter Tech,Product Manager,Data Analysis|Rust|System Design|Node.js,6,Austin,27.5,Lead
+Amazon Studios,Software Engineer,Docker|System Design|Spark|TypeScript,7,Toronto,25.1,Lead
+Airbnb ,UI/UX Designer,C++|React|TensorFlow,6,Seattle,12.6,Entry
+Microsoft LLC,Cloud Architect,PyTorch|C++|SQL,6,Austin,21.5,Entry
+Microsoft Labs,Security Engineer,AWS|GraphQL|NoSQL|System Design,7,Remote,26.0,Lead
+Adobe Studios,UI/UX Designer,Machine Learning|C++|Python,6,Dublin,36.3,Lead
+Netflix Labs,Big Data Engineer,Machine Learning|NoSQL|Node.js|Next.js,6,Dublin,31.3,Staff
+Oracle Corp,Software Engineer,JavaScript|GraphQL|NoSQL|Spark,4,New York,11.8,Senior
+Uber Inc,DevOps Engineer,C++|SQL|NoSQL|Rust,6,Austin,34.8,Lead
+Netflix Inc,Full Stack Developer,AWS|GraphQL|TensorFlow|Go,4,Pune,33.9,Mid
+Airbnb ,Blockchain Developer,NoSQL|Node.js|GraphQL|Next.js,4,Berlin,25.4,Lead
+Intel Labs,AI Engineer,AWS|NoSQL|Data Analysis,6,Dublin,27.3,Entry
+Amazon Software,AI Engineer,System Design|Deep Learning|Spark|Go,7,Los Angeles,33.5,Mid
+Microsoft LLC,AI Engineer,Next.js|Spark|Rust|Agile,4,Boston,23.3,Staff
+Meta LLC,UI/UX Designer,Node.js|Hadoop|Go|JavaScript,4,Singapore,46.3,Entry
+Tesla Corp,Software Engineer,Java|React|Agile|Kafka,5,Bangalore,15.1,Entry
+IBM Software,Machine Learning Engineer,Rust|SQL|Kubernetes|Agile,4,New York,33.6,Senior
+Lyft Inc,Frontend Developer,JavaScript|Python|GraphQL|Deep Learning,4,Singapore,10.2,Mid
+IBM ,AI Engineer,Data Analysis|PyTorch|Java,4,Singapore,38.8,Staff
+Airbnb Software,Big Data Engineer,Data Analysis|Spark|Go|Node.js,6,Remote,33.9,Mid
+Adobe Inc,Cloud Architect,Spark|React|TensorFlow|Kubernetes,4,Tokyo,11.0,Entry
+Twitter Studios,Machine Learning Engineer,Kafka|NoSQL|System Design,6,Austin,17.7,Lead
+Meta LLC,UI/UX Designer,TypeScript|Node.js|Spark,6,Remote,18.2,Mid
+Square Labs,Security Engineer,Agile|C++|SQL|GraphQL,3,Hyderabad,10.3,Entry
+Airbnb Tech,Software Engineer,React|Rust|TypeScript|Data Analysis,6,San Francisco,23.9,Mid
+Microsoft Studios,Software Engineer,PyTorch|Python|Machine Learning|AWS,6,Austin,30.2,Senior
+Apple ,Software Engineer,Agile|Data Analysis|AWS|Python,3,Austin,33.8,Senior
+Salesforce Corp,Big Data Engineer,AWS|Next.js|JavaScript|GraphQL,5,Pune,20.6,Staff
+Netflix Software,Frontend Developer,PyTorch|Next.js|React,5,Remote,45.6,Senior
+Airbnb Software,Data Scientist,Docker|Hadoop|Deep Learning,7,Bangalore,16.5,Lead
+Google Software,Data Scientist,TypeScript|Hadoop|C++,4,Hyderabad,33.2,Entry
+Oracle LLC,Security Engineer,GraphQL|AWS|SQL|Python,6,Dublin,35.5,Lead
+Microsoft ,Data Analyst,Rust|Docker|Go|React,4,Boston,35.4,Entry
+Netflix Corp,Frontend Developer,NoSQL|SQL|Rust|Agile,3,Hyderabad,23.0,Staff
+Tesla Inc,DevOps Engineer,PyTorch|Kafka|Data Analysis|Deep Learning,3,Dublin,24.2,Senior
+Apple ,Backend Developer,Java|Kafka|Deep Learning|Node.js,7,New York,10.1,Lead
+Google Tech,DevOps Engineer,Node.js|Docker|Go|System Design,3,Singapore,34.2,Mid
+Stripe LLC,UI/UX Designer,Deep Learning|JavaScript|Next.js|AWS,3,Los Angeles,19.1,Entry
+Pinterest ,Full Stack Developer,Data Analysis|Hadoop|Rust,4,San Francisco,14.2,Mid
+Stripe LLC,DevOps Engineer,Next.js|NoSQL|Node.js|Spark,4,Austin,18.6,Entry
+Oracle Corp,Data Scientist,React|System Design|TensorFlow|Deep Learning,7,Los Angeles,29.7,Mid
+Twitter ,Software Engineer,PyTorch|GraphQL|TensorFlow|Kafka,6,Singapore,31.7,Senior
+Square LLC,AI Engineer,Kubernetes|Rust|GraphQL|TensorFlow,4,Hyderabad,18.0,Entry
+Netflix Corp,Big Data Engineer,Go|Next.js|JavaScript|Deep Learning,3,Seattle,48.5,Lead
+Dropbox LLC,Product Manager,Deep Learning|PyTorch|Machine Learning|SQL,4,Boston,11.2,Lead
+Salesforce Software,Machine Learning Engineer,Deep Learning|C++|PyTorch|Hadoop,7,Dublin,42.8,Entry
+Meta Software,Cloud Architect,Rust|Agile|TypeScript|Hadoop,5,Austin,33.1,Lead
+Lyft Studios,Software Engineer,GraphQL|Deep Learning|Next.js,6,San Francisco,21.1,Lead
+Amazon Labs,Full Stack Developer,Node.js|Rust|NoSQL|Hadoop,4,San Francisco,10.1,Lead
+Cisco Labs,Cloud Architect,React|TensorFlow|GraphQL|JavaScript,4,Berlin,40.7,Mid
+Twitter Tech,Backend Developer,Machine Learning|GraphQL|SQL|TensorFlow,5,Singapore,10.1,Senior
+IBM Software,Software Engineer,JavaScript|Go|Data Analysis|C++,3,Toronto,32.2,Entry
+Netflix Studios,Machine Learning Engineer,TensorFlow|Machine Learning|Data Analysis|TypeScript,5,Remote,12.3,Entry
+Salesforce LLC,Security Engineer,Rust|Java|AWS|TensorFlow,5,Tokyo,18.1,Staff
+Lyft ,Security Engineer,Agile|Kubernetes|PyTorch,7,Boston,21.3,Lead
+Amazon LLC,Data Analyst,React|GraphQL|Next.js|Kubernetes,6,Boston,21.0,Entry
+IBM Corp,Backend Developer,Rust|TensorFlow|Agile,4,Hyderabad,12.8,Lead
+Cisco Tech,DevOps Engineer,React|Docker|Java,7,Boston,44.0,Staff
+Uber Labs,Software Engineer,TypeScript|Next.js|PyTorch|Kafka,3,Tokyo,49.4,Mid
+Amazon Corp,Frontend Developer,Kubernetes|Java|Python|Deep Learning,4,Toronto,27.4,Staff
+Airbnb Tech,Software Engineer,GraphQL|AWS|PyTorch|Java,7,Chicago,21.9,Senior
+Uber Studios,Machine Learning Engineer,Agile|Kubernetes|Python|TypeScript,5,Remote,25.4,Staff
+Intel Corp,Frontend Developer,Python|SQL|Kubernetes|Rust,5,Los Angeles,45.5,Staff
+Airbnb ,Cloud Architect,Kafka|Deep Learning|Hadoop,7,Berlin,30.0,Senior
+Uber ,Data Scientist,TensorFlow|SQL|Python|Next.js,7,Singapore,33.5,Mid
+Intel LLC,Blockchain Developer,Next.js|Node.js|TensorFlow|Kafka,3,Pune,20.5,Senior
+Twitter Tech,Full Stack Developer,Hadoop|Kafka|Python|Agile,7,Pune,23.4,Lead
+Microsoft Tech,Software Engineer,Deep Learning|Python|Node.js|Agile,5,Los Angeles,32.7,Entry
+Apple Software,Machine Learning Engineer,TensorFlow|Agile|Data Analysis|System Design,7,Dublin,26.3,Staff
+Microsoft Labs,AI Engineer,NoSQL|Spark|Java|SQL,3,Austin,44.9,Staff
+Square ,Software Engineer,React|Node.js|Spark,6,Boston,15.6,Lead
+Intel Inc,Backend Developer,Data Analysis|Python|Kafka|Kubernetes,6,London,47.1,Entry
+Pinterest Studios,Cloud Architect,SQL|Kubernetes|JavaScript|React,3,San Francisco,45.4,Senior
+Lyft Tech,Blockchain Developer,Data Analysis|Next.js|Docker|Machine Learning,5,Berlin,28.8,Senior
+Pinterest Tech,DevOps Engineer,Hadoop|Docker|Go|Node.js,3,Toronto,25.6,Senior
+Twitter Corp,UI/UX Designer,SQL|Deep Learning|React|GraphQL,7,Austin,45.9,Lead
+Intel ,Data Analyst,JavaScript|GraphQL|Python|System Design,7,Austin,14.5,Staff
+Snap Software,Product Manager,Java|Docker|Spark|Next.js,4,Los Angeles,29.8,Staff
+Twitter ,Big Data Engineer,Hadoop|Docker|Machine Learning,3,New York,32.2,Lead
+Tesla Inc,Data Scientist,System Design|Agile|Next.js|Spark,4,Remote,18.4,Entry
+Salesforce Inc,Product Manager,PyTorch|TensorFlow|Docker|NoSQL,3,Seattle,15.7,Senior
+Slack Inc,DevOps Engineer,Python|SQL|Deep Learning,6,Hyderabad,10.4,Entry
+Uber Studios,UI/UX Designer,React|Deep Learning|Go|PyTorch,6,Seattle,41.5,Lead
+Pinterest ,Full Stack Developer,Java|Agile|Spark|Kubernetes,4,Austin,10.8,Entry
+Tesla Labs,Frontend Developer,Docker|Hadoop|Java,5,Remote,29.7,Mid
+Airbnb LLC,Frontend Developer,NoSQL|Hadoop|Go|Python,3,Tokyo,40.6,Entry
+Tesla Software,Software Engineer,Agile|Java|System Design,7,Toronto,22.7,Lead
+Oracle Labs,AI Engineer,Agile|Kafka|System Design|Java,6,Berlin,13.5,Entry
+Lyft Inc,Blockchain Developer,Node.js|Deep Learning|Agile|Spark,6,San Francisco,35.4,Lead
+Oracle Inc,Cloud Architect,C++|Kafka|Agile|TensorFlow,6,Hyderabad,26.0,Entry
+IBM Inc,Data Analyst,GraphQL|System Design|Docker,6,Berlin,44.2,Mid
+Lyft Corp,Backend Developer,Spark|C++|AWS|Hadoop,3,Bangalore,32.1,Staff
+Salesforce Software,Big Data Engineer,Agile|TensorFlow|Rust|Kafka,5,San Francisco,18.4,Senior
+Netflix LLC,Backend Developer,TensorFlow|Machine Learning|Spark|TypeScript,4,Chicago,11.5,Senior
+Lyft Tech,Blockchain Developer,JavaScript|Rust|TypeScript|Node.js,7,New York,32.8,Lead
+Lyft Tech,Machine Learning Engineer,Java|NoSQL|Next.js|Deep Learning,4,Hyderabad,13.7,Entry
+Dropbox Corp,Blockchain Developer,Kubernetes|Python|Machine Learning|Spark,6,Tokyo,34.6,Senior
+Salesforce Studios,UI/UX Designer,C++|NoSQL|Deep Learning|Python,4,Chicago,26.5,Senior
+Oracle Studios,Machine Learning Engineer,TensorFlow|Kubernetes|AWS|Docker,6,Berlin,30.5,Entry
+Lyft Studios,Security Engineer,JavaScript|Machine Learning|TensorFlow|Node.js,5,San Francisco,28.2,Entry
+Slack Corp,Backend Developer,TensorFlow|Docker|Agile,7,London,28.3,Staff
+Microsoft LLC,Security Engineer,Next.js|PyTorch|Python,6,Austin,26.2,Entry
+Microsoft Inc,Frontend Developer,Machine Learning|Hadoop|NoSQL,6,New York,26.1,Senior
+Salesforce Corp,Frontend Developer,Rust|AWS|Docker,5,Berlin,11.4,Lead
+Snap Labs,Data Analyst,Kafka|C++|React|JavaScript,6,London,10.3,Entry
+Oracle LLC,Machine Learning Engineer,Machine Learning|Hadoop|GraphQL|Spark,3,Chicago,19.2,Mid
+Uber Labs,AI Engineer,Next.js|Deep Learning|Agile|Rust,5,Los Angeles,28.3,Mid
+Adobe Tech,Full Stack Developer,C++|NoSQL|Next.js|Python,3,Tokyo,33.0,Mid
+Slack Tech,AI Engineer,Kubernetes|SQL|System Design,7,New York,33.2,Lead
+Google LLC,Data Analyst,Deep Learning|Docker|TensorFlow,7,Bangalore,48.7,Lead
+Cisco Studios,AI Engineer,TensorFlow|Docker|Deep Learning|GraphQL,5,Singapore,19.7,Lead
+Adobe Corp,Product Manager,JavaScript|React|PyTorch,6,Boston,25.8,Mid
+Netflix Corp,Software Engineer,Spark|C++|TypeScript|Go,4,Dublin,41.1,Staff
+Oracle LLC,Product Manager,Spark|AWS|React|TypeScript,5,Austin,13.5,Entry
+Uber Corp,Frontend Developer,Go|Spark|Deep Learning|React,7,Pune,33.3,Lead
+Twitter Studios,Software Engineer,C++|GraphQL|SQL|Data Analysis,6,Singapore,34.7,Entry
+Twitter Studios,Frontend Developer,AWS|PyTorch|Next.js|System Design,5,Los Angeles,16.4,Senior
+Netflix Studios,Data Scientist,Go|TypeScript|Node.js|Data Analysis,7,Toronto,47.4,Entry
+Stripe Software,Product Manager,PyTorch|TypeScript|SQL|Data Analysis,5,San Francisco,38.4,Staff
+Dropbox LLC,Machine Learning Engineer,GraphQL|Rust|Machine Learning|Kubernetes,3,Toronto,32.0,Mid
+Cisco Studios,UI/UX Designer,Deep Learning|Go|AWS|Docker,7,Dublin,38.5,Lead
+Stripe Corp,Product Manager,Machine Learning|Rust|Python|Node.js,7,London,33.1,Entry
+Microsoft Studios,Security Engineer,Deep Learning|Docker|Agile|Rust,7,Dublin,12.0,Lead
+Pinterest LLC,Machine Learning Engineer,SQL|Node.js|PyTorch|TypeScript,3,Bangalore,12.5,Entry
+IBM Corp,Backend Developer,PyTorch|NoSQL|Docker|TypeScript,4,Bangalore,22.8,Mid
+Airbnb Studios,Cloud Architect,GraphQL|Hadoop|AWS|Data Analysis,7,Hyderabad,36.7,Senior
+Intel Studios,DevOps Engineer,Go|Java|SQL|TypeScript,7,Seattle,12.9,Entry
+Salesforce Tech,Data Scientist,Java|Docker|Machine Learning|Go,4,Dublin,45.8,Senior
+Pinterest Corp,Data Analyst,C++|System Design|Java|GraphQL,7,Chicago,17.0,Lead
+Twitter ,Full Stack Developer,PyTorch|Python|Node.js|GraphQL,7,Toronto,16.9,Staff
+Cisco Labs,DevOps Engineer,Java|React|TensorFlow|Deep Learning,6,Tokyo,28.2,Staff
+Oracle Inc,Backend Developer,Machine Learning|Agile|Kubernetes|SQL,5,Tokyo,23.5,Lead
+Oracle LLC,Product Manager,Machine Learning|PyTorch|Node.js|Deep Learning,5,Pune,12.3,Entry
+Snap Corp,AI Engineer,SQL|Deep Learning|Rust|Python,5,Seattle,33.1,Staff
+Uber Studios,UI/UX Designer,Machine Learning|JavaScript|Next.js|TensorFlow,3,Berlin,33.8,Mid
+Microsoft Labs,Big Data Engineer,NoSQL|Agile|Deep Learning|Spark,4,Pune,31.9,Lead
+Snap Tech,DevOps Engineer,System Design|C++|Python|React,4,Austin,31.9,Staff
+IBM ,Security Engineer,GraphQL|Hadoop|Rust,3,Austin,27.1,Entry
+Square Corp,Cloud Architect,Machine Learning|Java|JavaScript|TensorFlow,7,Hyderabad,14.6,Staff
+Cisco Studios,Blockchain Developer,TensorFlow|GraphQL|TypeScript|System Design,5,Singapore,16.7,Mid
+Stripe Labs,Big Data Engineer,Data Analysis|React|Python|TensorFlow,6,New York,15.9,Senior
+Slack Software,Data Analyst,NoSQL|Next.js|JavaScript|Python,5,San Francisco,28.5,Lead
+Twitter Inc,Blockchain Developer,System Design|GraphQL|PyTorch,6,Dublin,10.6,Lead
+Apple Software,Security Engineer,Spark|TensorFlow|AWS|Java,4,Pune,28.8,Mid
+Stripe LLC,Blockchain Developer,Next.js|Kafka|GraphQL,7,London,17.3,Lead
+Snap Corp,DevOps Engineer,System Design|Kafka|JavaScript,3,San Francisco,21.7,Mid
+Stripe Labs,DevOps Engineer,Next.js|Kafka|NoSQL,6,New York,32.7,Senior
+Pinterest Corp,Frontend Developer,Docker|Rust|SQL|GraphQL,5,Chicago,31.8,Entry
+Airbnb Studios,Cloud Architect,Java|System Design,7,Remote,27.0,Lead
+Amazon Inc,Full Stack Developer,Next.js|Java|React|Go,7,Remote,37.4,Entry
+Dropbox Software,Frontend Developer,React|AWS|SQL|TensorFlow,7,Hyderabad,11.7,Entry
+Netflix Tech,DevOps Engineer,Agile|Python|Go|Deep Learning,3,Toronto,12.6,Senior
+Airbnb Corp,UI/UX Designer,PyTorch|Node.js|NoSQL|GraphQL,4,Berlin,50.0,Mid
+Square Corp,Cloud Architect,PyTorch|Kafka|Next.js|TensorFlow,5,Seattle,12.6,Mid
+Lyft Labs,AI Engineer,Java|Node.js|Next.js,5,Berlin,23.5,Entry
+Netflix Tech,Security Engineer,System Design|Next.js|Machine Learning|JavaScript,4,Tokyo,32.7,Senior
+Uber Inc,Security Engineer,Java|SQL|Kubernetes|NoSQL,7,San Francisco,19.3,Staff
+Tesla Software,UI/UX Designer,Kafka|Agile|Hadoop|C++,4,Dublin,28.9,Mid
+Google Corp,UI/UX Designer,Agile|TensorFlow|Next.js|Node.js,3,Berlin,32.6,Mid
+Tesla Labs,Security Engineer,Rust|Node.js|Java|Go,3,Toronto,16.3,Senior
+IBM Labs,Backend Developer,Docker|Java|Kubernetes|Machine Learning,5,Toronto,17.2,Senior
+Airbnb Inc,UI/UX Designer,Deep Learning|React|Java|System Design,6,Bangalore,21.7,Staff
+Stripe ,Big Data Engineer,Python|Kubernetes|AWS,4,Tokyo,31.9,Entry
+Lyft Tech,Blockchain Developer,AWS|PyTorch|Rust,6,Bangalore,31.7,Entry
+Pinterest Software,AI Engineer,Deep Learning|Machine Learning|Node.js,4,Pune,14.2,Staff
+Dropbox Inc,Data Scientist,TypeScript|Node.js|Next.js|Python,7,New York,26.9,Staff
+Apple Tech,Frontend Developer,Docker|Rust|AWS,3,Berlin,21.5,Mid
+Google Corp,Software Engineer,Spark|Rust|JavaScript|Java,5,Berlin,11.3,Mid
+Stripe Studios,Software Engineer,AWS|Python|Hadoop|Go,3,Tokyo,20.7,Staff
+Amazon Corp,AI Engineer,Machine Learning|PyTorch|NoSQL,4,Toronto,21.2,Lead
+Cisco Studios,Backend Developer,JavaScript|Kubernetes|SQL|Rust,6,Chicago,13.3,Lead
+Cisco Inc,Product Manager,Rust|Kafka|Go|React,5,San Francisco,28.0,Mid
+Oracle Labs,DevOps Engineer,Go|Machine Learning|Data Analysis|TensorFlow,5,Tokyo,31.5,Staff
+Pinterest ,Blockchain Developer,TensorFlow|Agile|Python|Docker,3,Tokyo,31.8,Entry
+Salesforce Corp,Cloud Architect,TypeScript|Next.js|Kafka|Python,6,Tokyo,33.6,Staff
+IBM Studios,Cloud Architect,Spark|AWS|Next.js|PyTorch,5,Tokyo,22.8,Entry
+Airbnb Labs,UI/UX Designer,Java|Machine Learning|SQL|Kafka,4,Pune,30.6,Senior
+Lyft Tech,Backend Developer,Machine Learning|Data Analysis|TypeScript|TensorFlow,3,Berlin,27.8,Senior
+Adobe Studios,Blockchain Developer,SQL|JavaScript|Rust,6,Berlin,36.0,Mid
+Adobe ,Frontend Developer,Docker|NoSQL|Spark|Rust,6,Los Angeles,10.2,Senior
+Microsoft LLC,Data Scientist,Java|Node.js|Machine Learning|TypeScript,7,Singapore,25.6,Mid
+Adobe LLC,Data Analyst,Next.js|TensorFlow|NoSQL|Docker,7,Pune,31.5,Staff
+Tesla ,Product Manager,JavaScript|Machine Learning|Go|Java,3,Singapore,14.4,Entry
+Slack LLC,Blockchain Developer,SQL|PyTorch|TensorFlow,3,Los Angeles,26.6,Lead
+Salesforce Labs,Data Scientist,Docker|NoSQL|React|Kafka,7,Chicago,35.6,Senior
+Apple LLC,Frontend Developer,Rust|Node.js|System Design|Docker,4,Bangalore,23.5,Senior
+Adobe ,Security Engineer,Agile|C++|TensorFlow|TypeScript,4,Boston,33.3,Lead
+Salesforce Tech,AI Engineer,Go|NoSQL|TypeScript,5,Pune,30.9,Staff
+Uber Corp,Frontend Developer,JavaScript|Hadoop|Next.js|PyTorch,5,Los Angeles,27.0,Entry
+Salesforce ,Full Stack Developer,NoSQL|Hadoop|Machine Learning,6,Bangalore,15.4,Senior
+Intel Studios,Product Manager,JavaScript|Machine Learning|C++|Data Analysis,7,London,27.8,Mid
+Slack Studios,Cloud Architect,Kafka|Machine Learning|GraphQL|SQL,7,Boston,26.2,Staff
+Google Inc,Machine Learning Engineer,Spark|Docker|Machine Learning|PyTorch,4,Chicago,29.0,Senior
+Pinterest Corp,Machine Learning Engineer,TypeScript|Go|Next.js|Java,5,Boston,31.6,Staff
+Google Software,Full Stack Developer,AWS|Go|TypeScript|JavaScript,3,San Francisco,24.5,Staff
+Pinterest Inc,Blockchain Developer,Deep Learning|PyTorch|Kubernetes|TypeScript,4,Boston,37.7,Senior
+Apple Corp,Frontend Developer,System Design|Kafka|SQL|Node.js,7,Toronto,33.6,Mid
+Dropbox Tech,Product Manager,TensorFlow|Docker|Agile|Node.js,6,Hyderabad,22.4,Entry
+Google LLC,Blockchain Developer,Node.js|System Design|C++|PyTorch,7,Austin,38.3,Entry
+Pinterest Studios,Machine Learning Engineer,Data Analysis|NoSQL|Docker,5,Tokyo,30.9,Lead
+Snap Corp,Blockchain Developer,JavaScript|System Design|Kafka|Hadoop,5,Remote,13.5,Senior
+Square Studios,Big Data Engineer,TensorFlow|NoSQL|Java,7,Boston,45.5,Mid
+Adobe Studios,Software Engineer,TypeScript|Kafka|GraphQL|Go,7,Boston,22.4,Lead
+Intel Labs,Cloud Architect,Node.js|SQL|Kubernetes|Data Analysis,5,New York,17.4,Senior
+Intel Inc,Product Manager,PyTorch|Kubernetes|Data Analysis|Spark,6,Singapore,26.9,Entry
+Snap LLC,Big Data Engineer,React|GraphQL|Next.js|Kubernetes,5,San Francisco,43.5,Lead
+IBM Labs,AI Engineer,Spark|Deep Learning|PyTorch|C++,4,Dublin,46.2,Lead
+Tesla Corp,AI Engineer,Data Analysis|TensorFlow|Docker|Kafka,6,Hyderabad,12.5,Mid
+Oracle Labs,Frontend Developer,Data Analysis|JavaScript|AWS,4,San Francisco,30.5,Staff
+Adobe Studios,Blockchain Developer,TypeScript|SQL|System Design|Docker,4,Hyderabad,11.9,Staff
+Snap LLC,Product Manager,PyTorch|JavaScript|Docker|Java,5,Singapore,44.9,Senior
+Snap ,Software Engineer,Go|AWS|NoSQL|Next.js,4,New York,10.8,Lead
+Netflix LLC,Blockchain Developer,PyTorch|GraphQL|C++|Python,5,Toronto,42.8,Lead
+Meta Software,Full Stack Developer,C++|AWS|System Design|Go,5,Chicago,21.0,Mid
+Slack Corp,Blockchain Developer,SQL|Java|Machine Learning|Kafka,5,San Francisco,14.4,Entry
+Meta LLC,Blockchain Developer,SQL|Deep Learning|Data Analysis|Rust,7,Toronto,12.3,Entry
+Uber Inc,Big Data Engineer,Hadoop|JavaScript|Java|Agile,4,Seattle,29.5,Senior
+Adobe Inc,Data Scientist,Next.js|Deep Learning|TypeScript,4,San Francisco,26.6,Entry
+Slack Labs,Blockchain Developer,Deep Learning|C++|Python|Spark,5,Remote,34.4,Senior
+Uber Studios,Software Engineer,Data Analysis|System Design|Python|TypeScript,7,Boston,19.1,Senior
+Oracle Tech,Product Manager,AWS|JavaScript|React|GraphQL,3,Austin,33.4,Mid
+Oracle Inc,Frontend Developer,Agile|Data Analysis|Rust,4,Tokyo,13.2,Entry
+Apple Corp,UI/UX Designer,Hadoop|Data Analysis|Docker|Node.js,4,Chicago,23.6,Staff
+Adobe LLC,Software Engineer,System Design|Next.js|Rust|Hadoop,6,Singapore,27.6,Entry
+Cisco ,AI Engineer,AWS|Kafka|Hadoop,5,Chicago,32.8,Mid
+Uber LLC,Machine Learning Engineer,Hadoop|PyTorch|Python|Kubernetes,7,Remote,24.7,Senior
+Intel Corp,Big Data Engineer,Docker|Hadoop|GraphQL|React,6,New York,29.5,Lead
+Oracle Software,AI Engineer,JavaScript|C++|Go|TensorFlow,3,Austin,25.2,Entry
+Square ,Product Manager,JavaScript|Agile|Deep Learning|PyTorch,5,New York,29.2,Mid
+Cisco ,Software Engineer,AWS|Python|Node.js|Docker,7,Remote,29.1,Entry
+Meta LLC,Machine Learning Engineer,Next.js|Deep Learning|Kubernetes|Spark,3,Boston,40.4,Mid
+Stripe Inc,Data Analyst,Agile|Data Analysis|Kafka,5,Seattle,41.8,Lead
+Adobe Studios,Frontend Developer,Next.js|Machine Learning|JavaScript|C++,3,Singapore,25.1,Staff
+Slack Corp,Machine Learning Engineer,SQL|Go|Python|C++,4,Bangalore,37.5,Mid
+Cisco Inc,Software Engineer,C++|Machine Learning|AWS|Agile,7,San Francisco,34.5,Entry
+Lyft Tech,Data Scientist,JavaScript|PyTorch|NoSQL|System Design,5,Pune,46.6,Lead
+Square Corp,Backend Developer,Machine Learning|Node.js|System Design|Hadoop,3,New York,19.3,Staff
+Cisco ,Software Engineer,GraphQL|Deep Learning|Data Analysis|Python,7,Dublin,17.3,Senior
+Dropbox Studios,Cloud Architect,Node.js|Kubernetes|Agile|Data Analysis,4,New York,35.8,Staff
+Slack Inc,Software Engineer,JavaScript|Python|GraphQL|Go,3,Tokyo,13.5,Entry
+Meta ,UI/UX Designer,AWS|Kubernetes|Docker|Kafka,5,Austin,33.7,Entry
+Twitter Corp,Big Data Engineer,Rust|Deep Learning|Spark|SQL,3,Tokyo,17.2,Mid
+Oracle ,Machine Learning Engineer,NoSQL|TypeScript|Data Analysis|C++,7,Seattle,30.9,Lead
+Snap Software,Software Engineer,Python|React|GraphQL,6,Seattle,35.6,Lead
+Oracle Corp,Data Scientist,Rust|Agile,4,San Francisco,14.6,Entry
+Stripe LLC,Big Data Engineer,TypeScript|Rust|GraphQL|Kafka,5,Bangalore,16.3,Senior
+Stripe ,Data Scientist,TypeScript|JavaScript|Agile,5,Remote,12.7,Mid
+Intel Corp,Big Data Engineer,Docker|JavaScript|System Design|Go,7,Los Angeles,19.6,Staff
+Pinterest LLC,Data Scientist,C++|JavaScript|Go|PyTorch,6,Seattle,26.7,Staff
+Lyft Tech,Product Manager,PyTorch|Deep Learning,3,Chicago,21.7,Senior
+Snap Corp,Software Engineer,JavaScript|Rust|Agile|Go,5,Boston,16.5,Entry
+Adobe Studios,Data Scientist,Spark|C++|Agile|PyTorch,5,London,21.8,Entry
+IBM Corp,Data Analyst,GraphQL|TensorFlow|Kafka|Kubernetes,6,Berlin,29.5,Entry
+Tesla LLC,Big Data Engineer,JavaScript|Deep Learning|GraphQL|Node.js,4,Bangalore,23.3,Entry
+Square Tech,Cloud Architect,Kafka|PyTorch|Go,3,Hyderabad,24.9,Lead
+Salesforce Studios,Frontend Developer,Next.js|Node.js|Kubernetes|TypeScript,6,London,20.7,Mid
+Salesforce Studios,Machine Learning Engineer,TypeScript|Docker|JavaScript|System Design,7,Hyderabad,18.9,Staff
+Snap Studios,Product Manager,Python|Docker|Node.js,3,Toronto,33.4,Staff
+Airbnb Tech,Backend Developer,TensorFlow|React|Spark|Python,7,Dublin,42.6,Lead
+Snap ,Backend Developer,Docker|Next.js|System Design|Data Analysis,7,Berlin,23.2,Staff
+Google Software,Machine Learning Engineer,Java|Next.js|React|Python,4,London,31.2,Mid
+Lyft Inc,DevOps Engineer,Docker|Agile|Kubernetes|TypeScript,5,London,27.0,Entry
+Adobe Inc,Full Stack Developer,React|Next.js|Go|PyTorch,6,New York,34.0,Lead
+Amazon Corp,AI Engineer,Kafka|PyTorch|AWS|Data Analysis,6,Los Angeles,44.6,Mid
+Intel Software,Data Scientist,Hadoop|JavaScript|Rust,6,Seattle,42.6,Entry
+Dropbox Corp,Cloud Architect,React|System Design|AWS,6,Remote,29.4,Entry
+Snap Inc,Full Stack Developer,JavaScript|AWS|System Design|Hadoop,7,Bangalore,12.9,Lead
+Meta Inc,AI Engineer,SQL|C++|Data Analysis|Docker,3,Singapore,28.5,Senior
+Snap LLC,Software Engineer,Node.js|SQL|Python|Agile,5,Toronto,28.7,Entry
+Amazon Tech,UI/UX Designer,JavaScript|NoSQL|PyTorch|Next.js,7,Dublin,11.9,Senior
+IBM Tech,Software Engineer,C++|System Design|Data Analysis|Next.js,5,London,14.0,Lead
+Amazon Inc,Blockchain Developer,TypeScript|Java|Kubernetes|Data Analysis,6,London,16.4,Entry
+Microsoft Inc,Machine Learning Engineer,Kafka|Agile|Spark|Node.js,5,Remote,32.5,Mid
+Google Labs,Big Data Engineer,Deep Learning|Go|PyTorch|GraphQL,6,Hyderabad,24.5,Senior
+Oracle Inc,Backend Developer,Python|AWS|GraphQL|Agile,7,London,12.8,Mid
+Snap Software,Full Stack Developer,React|Machine Learning|Kubernetes|Docker,7,Bangalore,33.3,Senior
+Salesforce Studios,Backend Developer,Next.js|Java|AWS,5,New York,20.1,Senior
+Square Tech,Backend Developer,Deep Learning|Kafka|Data Analysis|PyTorch,3,Chicago,10.4,Lead
+Cisco Software,Product Manager,GraphQL|TypeScript|Node.js|TensorFlow,4,Bangalore,17.9,Mid
+Microsoft Studios,Big Data Engineer,Next.js|Machine Learning|AWS|Rust,5,Austin,30.2,Lead
+Amazon Software,Blockchain Developer,Docker|Data Analysis|Node.js|Deep Learning,4,Remote,34.9,Lead
+Dropbox Inc,Data Analyst,SQL|GraphQL|Agile,6,Los Angeles,22.5,Lead
+Apple Inc,Software Engineer,SQL|Kubernetes|Rust|Machine Learning,7,Dublin,19.5,Entry
+Salesforce Labs,Full Stack Developer,Agile|SQL|Kafka|Docker,5,London,19.2,Staff
+Oracle Tech,Blockchain Developer,AWS|Agile|C++|TypeScript,4,Remote,26.9,Entry
+Airbnb Software,Frontend Developer,Agile|NoSQL|React,4,Hyderabad,33.4,Staff
+Google LLC,Frontend Developer,PyTorch|React|Python,6,Hyderabad,23.2,Lead
+Meta LLC,Product Manager,Kubernetes|PyTorch|Java|Next.js,4,Seattle,34.0,Entry
+Airbnb Inc,AI Engineer,SQL|Kubernetes|System Design|JavaScript,4,London,36.8,Mid
+Cisco LLC,Software Engineer,Data Analysis|Deep Learning|Spark|Rust,3,Tokyo,13.2,Staff
+Uber Software,Product Manager,C++|Go|Spark|GraphQL,6,Remote,32.8,Senior
+Slack Tech,Product Manager,GraphQL|SQL|AWS,3,Toronto,12.2,Mid
+Snap Studios,Machine Learning Engineer,Java|React|TensorFlow|Agile,7,New York,30.4,Senior
+Slack Software,Full Stack Developer,TypeScript|AWS|Kafka|Spark,5,London,17.4,Lead
+Tesla Inc,Security Engineer,SQL|C++|TensorFlow,6,Berlin,15.5,Senior
+Netflix Inc,Cloud Architect,SQL|GraphQL|Data Analysis|AWS,7,Seattle,26.0,Senior
+Salesforce Studios,Security Engineer,React|NoSQL|Agile|GraphQL,3,Chicago,22.3,Lead
+Amazon LLC,DevOps Engineer,JavaScript|C++|Deep Learning,4,Los Angeles,29.0,Mid
+Lyft Studios,Full Stack Developer,Node.js|System Design|SQL|Hadoop,5,Singapore,31.4,Lead
+Adobe Studios,DevOps Engineer,C++|Java|Deep Learning|TypeScript,5,Boston,34.3,Mid
+Square ,Security Engineer,PyTorch|Spark|System Design|Java,7,Toronto,30.5,Lead
+Meta ,Full Stack Developer,PyTorch|Machine Learning|TypeScript|System Design,7,Tokyo,49.7,Staff
+Lyft Corp,Big Data Engineer,Agile|Hadoop|Python|Kafka,6,Hyderabad,29.4,Senior
+Microsoft Software,Backend Developer,PyTorch|Deep Learning|NoSQL|AWS,6,Seattle,18.0,Senior
+Lyft Corp,Product Manager,React|Agile|Kafka|Rust,6,Berlin,46.8,Mid
+Adobe Labs,Software Engineer,React|SQL|Data Analysis|Python,6,Berlin,35.1,Senior
+Microsoft Tech,Cloud Architect,TypeScript|React|Spark|System Design,3,Los Angeles,28.8,Lead
+Intel Studios,Machine Learning Engineer,Agile|C++|SQL|Next.js,7,Bangalore,24.4,Entry
+Intel LLC,Full Stack Developer,TypeScript|Deep Learning|PyTorch|System Design,6,New York,49.2,Mid
+Intel Inc,Data Analyst,Spark|Rust|Deep Learning|TensorFlow,5,Chicago,10.8,Lead
+Salesforce LLC,Data Analyst,Deep Learning|GraphQL|NoSQL|Hadoop,5,Bangalore,20.6,Senior
+Stripe LLC,DevOps Engineer,Kubernetes|Kafka|Rust,5,Los Angeles,47.1,Senior
+Intel Studios,Software Engineer,NoSQL|Kubernetes|GraphQL|JavaScript,4,San Francisco,29.5,Senior
+Intel Tech,UI/UX Designer,TypeScript|Java|JavaScript|React,5,Austin,32.6,Mid
+Twitter Inc,Cloud Architect,TensorFlow|Spark|SQL|Python,5,Pune,24.0,Staff
+Lyft ,Data Scientist,NoSQL|Rust|AWS|TensorFlow,7,San Francisco,30.1,Lead
+Oracle ,Product Manager,Agile|Python|Kafka,7,Pune,11.0,Staff
+Oracle ,Machine Learning Engineer,Agile|Node.js|JavaScript|C++,7,Seattle,33.5,Entry
+Stripe Labs,Big Data Engineer,Rust|Deep Learning|NoSQL|System Design,3,Toronto,12.0,Senior
+Tesla Inc,Security Engineer,Rust|System Design|TypeScript,6,Dublin,21.7,Staff
+Snap Corp,UI/UX Designer,SQL|PyTorch|AWS|React,4,Pune,28.3,Mid
+Uber Labs,Frontend Developer,JavaScript|Docker|PyTorch|C++,7,Seattle,30.2,Lead
+Adobe Software,Full Stack Developer,AWS|Next.js,4,Boston,24.8,Staff
+Google Inc,Product Manager,Spark|NoSQL|SQL|Deep Learning,7,Remote,29.1,Mid
+Apple Software,Software Engineer,PyTorch|TypeScript|Python|Machine Learning,4,Los Angeles,27.7,Mid
+Slack Tech,Frontend Developer,Agile|Deep Learning|GraphQL|SQL,6,Hyderabad,21.3,Entry
+Intel ,Product Manager,PyTorch|Next.js|SQL|C++,5,Los Angeles,20.1,Staff
+Apple Labs,UI/UX Designer,Node.js|Hadoop|Machine Learning|Go,3,Tokyo,40.2,Entry
+Intel Tech,Data Scientist,Deep Learning|JavaScript|Agile|Spark,3,Dublin,25.1,Mid
+Airbnb ,Blockchain Developer,C++|Hadoop|PyTorch|GraphQL,5,Pune,24.7,Senior
+Twitter Tech,Big Data Engineer,Kubernetes|Agile|GraphQL,6,Singapore,22.3,Entry
+Airbnb Studios,Data Scientist,Deep Learning|Machine Learning|PyTorch|Go,5,Pune,22.5,Entry
+Twitter Software,Security Engineer,Spark|TensorFlow|Java|Go,6,Bangalore,10.6,Senior
+Slack Corp,Data Scientist,Machine Learning|Docker|Hadoop|Kubernetes,5,London,31.8,Mid
+Twitter Tech,Machine Learning Engineer,Spark|Machine Learning|C++|SQL,3,Singapore,43.1,Entry
+Twitter Inc,Big Data Engineer,Go|TensorFlow|React|Hadoop,4,Berlin,44.1,Senior
+Salesforce Software,DevOps Engineer,Python|Java|Node.js|GraphQL,4,Pune,23.4,Entry
+Stripe Software,Backend Developer,Next.js|Data Analysis|JavaScript,4,Berlin,29.1,Entry
+Cisco Studios,DevOps Engineer,Kafka|JavaScript|Python,6,Bangalore,12.8,Staff
+Snap LLC,DevOps Engineer,Agile|GraphQL|Rust|System Design,6,Austin,35.8,Staff
+IBM Studios,Frontend Developer,C++|Kafka|Docker,6,Toronto,34.5,Staff
+Stripe Tech,Data Analyst,Python|AWS|SQL,7,Pune,30.9,Mid
+Adobe Tech,Data Analyst,TypeScript|Java|JavaScript|GraphQL,7,New York,33.6,Senior
+Lyft Studios,DevOps Engineer,JavaScript|Node.js,7,Pune,18.7,Mid
+Apple Inc,Frontend Developer,GraphQL|Agile|Kubernetes|AWS,5,Seattle,11.2,Senior
+Lyft Corp,Blockchain Developer,Rust|Java|System Design|PyTorch,5,Remote,21.0,Entry
+Tesla ,Software Engineer,Docker|React|AWS|GraphQL,6,Pune,18.5,Entry
+Apple ,Backend Developer,Data Analysis|Agile|PyTorch|Kafka,3,Dublin,22.1,Entry
+Cisco Software,Cloud Architect,TypeScript|Data Analysis|GraphQL|Go,4,Berlin,22.0,Senior
+Pinterest Labs,UI/UX Designer,GraphQL|React|Spark|Next.js,4,New York,31.1,Lead
+Twitter Corp,Backend Developer,Java|Hadoop|Machine Learning|PyTorch,3,Boston,28.2,Lead
+Netflix Studios,Security Engineer,JavaScript|Node.js|AWS|Next.js,7,Berlin,41.4,Staff
+Square Corp,Full Stack Developer,GraphQL|Next.js|Data Analysis|React,3,Dublin,38.8,Lead
+Netflix Inc,Blockchain Developer,GraphQL|Docker|Agile|Next.js,4,Bangalore,18.3,Lead
+Oracle Studios,Product Manager,GraphQL|Kubernetes|TypeScript|AWS,7,Austin,12.9,Lead
+Uber Software,Machine Learning Engineer,JavaScript|Data Analysis|Go|Kafka,4,Dublin,35.2,Entry
+Stripe Inc,Security Engineer,Agile|Hadoop|Docker|TypeScript,4,Berlin,40.6,Senior
+Square Studios,DevOps Engineer,Spark|JavaScript|PyTorch|Kubernetes,6,Berlin,28.9,Mid
+Twitter LLC,Machine Learning Engineer,Agile|Go|Node.js|Java,5,Tokyo,34.9,Lead
+Slack LLC,Security Engineer,Java|Node.js|Next.js|Data Analysis,3,Los Angeles,11.0,Senior
+Tesla Software,Backend Developer,System Design|SQL|PyTorch|Go,6,Pune,16.3,Entry
+Square LLC,Security Engineer,Docker|Kafka|Hadoop|Node.js,7,New York,40.9,Entry
+Dropbox Tech,UI/UX Designer,Deep Learning|Kafka|Java|C++,6,Berlin,26.8,Lead
+Lyft LLC,Software Engineer,AWS|Hadoop|Docker,7,Seattle,28.3,Mid
+Intel Inc,Data Scientist,React|NoSQL|Kubernetes|Rust,6,Pune,18.8,Lead
+Cisco Studios,Security Engineer,Kafka|Docker|Hadoop,3,Chicago,35.4,Entry
+Twitter Inc,Frontend Developer,Kafka|TensorFlow|Node.js,3,Remote,16.8,Staff
+Pinterest Labs,AI Engineer,AWS|Machine Learning|Deep Learning|System Design,5,Los Angeles,15.4,Entry
+Pinterest ,Frontend Developer,Agile|TensorFlow|Next.js|React,6,Boston,31.9,Staff
+Adobe ,Data Analyst,Node.js|Kubernetes|System Design|C++,7,Toronto,17.6,Lead
+Pinterest ,Full Stack Developer,Kafka|Machine Learning|React|C++,6,New York,10.8,Senior
+Cisco Software,Backend Developer,C++|Node.js|Kubernetes|AWS,7,Berlin,41.0,Mid
+Meta Corp,Full Stack Developer,AWS|Docker|React|NoSQL,3,Berlin,35.1,Mid
+Oracle LLC,Cloud Architect,Hadoop|Deep Learning|Data Analysis|SQL,5,London,24.3,Staff
+Salesforce Labs,DevOps Engineer,SQL|TensorFlow|System Design|Docker,3,Berlin,32.3,Entry
+Netflix LLC,Blockchain Developer,System Design|C++|AWS|Kafka,4,Bangalore,14.7,Staff
+Cisco Corp,Full Stack Developer,Machine Learning|Next.js|TensorFlow|C++,6,Dublin,32.3,Senior
+Stripe Inc,AI Engineer,Docker|Next.js|JavaScript,7,Remote,32.9,Mid
+Uber Software,Blockchain Developer,Java|AWS|Next.js,6,Berlin,48.4,Entry
+Amazon Software,Backend Developer,Go|JavaScript|Node.js|Java,6,Toronto,33.6,Mid
+Amazon Labs,Cloud Architect,Kubernetes|PyTorch|JavaScript|Hadoop,3,Chicago,10.7,Staff
+Amazon Corp,Backend Developer,Java|Go|Python|TypeScript,7,New York,27.9,Mid
+Amazon Studios,Software Engineer,AWS|Rust|Hadoop|NoSQL,4,New York,25.5,Senior
+Amazon Inc,Security Engineer,PyTorch|System Design|Agile,3,Singapore,29.0,Mid
+Salesforce Studios,UI/UX Designer,Deep Learning|C++|Spark|Rust,4,Hyderabad,33.7,Staff
+Salesforce Tech,Data Analyst,Rust|Kafka|Go|React,6,Los Angeles,33.0,Staff
+Slack Labs,Frontend Developer,Deep Learning|PyTorch|Hadoop|Go,3,San Francisco,33.7,Entry
+Salesforce ,AI Engineer,Spark|Java|AWS,3,Hyderabad,12.1,Lead
+Amazon Tech,Data Scientist,C++|Rust|Java|GraphQL,6,Hyderabad,31.7,Entry
+Snap Tech,AI Engineer,SQL|AWS|Kubernetes|Hadoop,5,Singapore,10.8,Lead
+Netflix Labs,Software Engineer,Python|TensorFlow|AWS|Next.js,4,Los Angeles,31.9,Staff
+IBM Corp,Backend Developer,Data Analysis|TensorFlow|NoSQL,3,Hyderabad,30.0,Staff
+Airbnb LLC,Data Scientist,JavaScript|PyTorch|GraphQL|TensorFlow,5,Pune,23.4,Senior
+Microsoft Inc,AI Engineer,Data Analysis|Machine Learning|Hadoop|GraphQL,6,Remote,36.8,Lead
+Microsoft Software,Product Manager,Node.js|JavaScript|Machine Learning|Spark,6,Los Angeles,47.8,Entry
+Adobe Studios,Frontend Developer,Java|React|Node.js,4,Dublin,20.5,Senior
+Snap Studios,Full Stack Developer,TensorFlow|Rust|Next.js,5,Tokyo,11.2,Senior
+Salesforce Software,Frontend Developer,Spark|Next.js|Java,7,Tokyo,31.9,Senior
+Meta Corp,UI/UX Designer,Docker|Go|Kubernetes,5,Seattle,45.8,Senior
+Adobe Corp,UI/UX Designer,SQL|GraphQL|Docker,4,Singapore,33.3,Senior
+Square Studios,Big Data Engineer,Data Analysis|Kafka|TypeScript,5,Austin,37.0,Senior
+Meta Corp,Frontend Developer,Hadoop|PyTorch|TensorFlow|AWS,6,Hyderabad,32.4,Senior
+Uber Corp,Data Analyst,Docker|Deep Learning|JavaScript|Rust,7,Pune,10.9,Lead
+Uber Tech,Big Data Engineer,Kubernetes|Java|AWS|Rust,7,Boston,49.9,Mid
+Salesforce Labs,Security Engineer,Data Analysis|Node.js|JavaScript,5,Pune,13.2,Lead
+Microsoft Labs,Backend Developer,Deep Learning|Data Analysis|GraphQL,7,Hyderabad,19.0,Entry
+Snap Software,Cloud Architect,PyTorch|Java|Go|Kafka,6,London,29.5,Mid
+Meta Tech,Cloud Architect,Python|Node.js|NoSQL|Data Analysis,3,Tokyo,32.7,Mid
+Pinterest Labs,Full Stack Developer,Agile|JavaScript|System Design|PyTorch,3,Chicago,18.0,Entry
+Tesla LLC,Software Engineer,Hadoop|TensorFlow|SQL|JavaScript,7,Toronto,18.5,Mid
+Amazon Studios,Cloud Architect,Hadoop|Kubernetes|Rust|Agile,7,Seattle,16.5,Mid
+Google Software,Big Data Engineer,Deep Learning|Kafka|Data Analysis|Kubernetes,7,Austin,22.2,Senior
+Slack Corp,Big Data Engineer,Spark|Docker|TypeScript,5,Toronto,21.8,Staff
+Pinterest Inc,Security Engineer,Deep Learning|Node.js|Spark,4,Toronto,33.1,Staff
+Uber Software,DevOps Engineer,AWS|Machine Learning|JavaScript|System Design,4,Seattle,24.4,Mid
+Salesforce LLC,Big Data Engineer,Next.js|Kubernetes|React|Spark,4,Remote,39.8,Staff
+Twitter Inc,DevOps Engineer,JavaScript|C++|React|Go,3,Dublin,12.3,Entry
+Stripe Software,Full Stack Developer,Python|Agile|NoSQL|TypeScript,7,Pune,21.7,Staff
+Microsoft ,UI/UX Designer,Node.js|Kafka|Kubernetes,4,Toronto,34.3,Senior
+Oracle Inc,UI/UX Designer,Java|C++|AWS|React,4,Pune,25.4,Entry
+Dropbox LLC,Frontend Developer,Go|System Design|C++,6,Remote,44.9,Staff
+Stripe Tech,Software Engineer,GraphQL|NoSQL|Python,4,Berlin,16.6,Lead
+Airbnb Software,Data Analyst,Python|Agile|System Design|Machine Learning,7,Bangalore,33.7,Mid
+Microsoft Labs,Blockchain Developer,C++|Go|System Design|Data Analysis,4,New York,28.7,Mid
+Oracle ,Blockchain Developer,TensorFlow|Machine Learning|Rust|React,7,Los Angeles,18.3,Mid
+Intel Inc,Full Stack Developer,Python|Java|PyTorch|Next.js,6,Austin,29.9,Staff
+Intel Tech,DevOps Engineer,PyTorch|Kubernetes|C++|AWS,6,Los Angeles,30.0,Lead
+Salesforce Labs,Security Engineer,Agile|Next.js|Deep Learning,7,New York,20.2,Entry
+Slack LLC,Backend Developer,Kafka|PyTorch|Go|Node.js,3,New York,47.5,Senior
+Twitter Tech,Backend Developer,Hadoop|Kafka|PyTorch|Python,5,London,20.9,Mid
+Tesla LLC,Data Analyst,GraphQL|Java|Python,3,London,34.8,Entry
+Snap Software,Machine Learning Engineer,Go|TypeScript|Node.js,5,Bangalore,38.3,Senior
+Slack Inc,Security Engineer,SQL|Docker|TensorFlow|JavaScript,3,Los Angeles,27.6,Senior
+Adobe Inc,Blockchain Developer,System Design|Kubernetes|Java,5,Seattle,14.2,Lead
+IBM Software,Big Data Engineer,Docker|Node.js|GraphQL,6,Berlin,18.6,Lead
+Oracle Inc,Frontend Developer,JavaScript|Node.js|Agile,6,Chicago,44.9,Mid
+Square Labs,Backend Developer,Data Analysis|React|Kubernetes|AWS,5,London,18.6,Lead
+Uber Labs,Machine Learning Engineer,NoSQL|System Design|TensorFlow|Docker,3,Austin,15.7,Senior
+Uber Labs,AI Engineer,Spark|Deep Learning|Kafka|TensorFlow,3,London,25.1,Mid
+Amazon Corp,Cloud Architect,JavaScript|Deep Learning|Agile|PyTorch,6,Austin,17.9,Mid
+Twitter LLC,Security Engineer,NoSQL|TypeScript|Rust,7,Singapore,12.6,Staff
+Stripe Corp,AI Engineer,Data Analysis|Java|React|Machine Learning,6,Berlin,15.0,Lead
+Netflix LLC,Product Manager,React|Next.js|Docker,7,Bangalore,22.7,Staff
+Tesla Inc,Big Data Engineer,NoSQL|Node.js|Spark|Kubernetes,4,Remote,30.7,Mid
+Meta Software,DevOps Engineer,C++|SQL|Spark|Go,3,Singapore,35.6,Entry
+Adobe Tech,Product Manager,Node.js|System Design|Data Analysis|Deep Learning,4,New York,25.0,Mid
+Tesla ,DevOps Engineer,Java|JavaScript|PyTorch,4,Dublin,21.0,Mid
+Dropbox Labs,AI Engineer,Hadoop|Python|TypeScript|NoSQL,5,New York,22.2,Senior
+Tesla Tech,Backend Developer,Deep Learning|JavaScript|Spark|Kafka,4,Hyderabad,29.4,Lead
+Slack ,Big Data Engineer,Agile|System Design,5,Chicago,28.8,Staff
+Dropbox Studios,Backend Developer,C++|Data Analysis|NoSQL|SQL,7,Remote,34.8,Lead
+Microsoft Corp,Frontend Developer,Java|Node.js|GraphQL|TensorFlow,6,Hyderabad,25.6,Lead
+Apple Labs,Blockchain Developer,Python|React|Machine Learning|Kafka,3,Austin,15.4,Lead
+Snap Software,Backend Developer,Java|NoSQL|TensorFlow|Machine Learning,4,Toronto,29.9,Lead
+Adobe Tech,Frontend Developer,Python|Rust|SQL|Spark,4,London,26.9,Lead
+Dropbox Labs,Cloud Architect,React|Agile|Kubernetes,7,Seattle,15.1,Staff
+Airbnb Inc,Frontend Developer,Data Analysis|GraphQL|Next.js|Spark,5,Austin,42.4,Mid
+Snap Corp,Product Manager,TensorFlow|System Design|Deep Learning|Agile,3,Seattle,32.6,Lead
+Lyft Software,Data Analyst,System Design|NoSQL|Deep Learning|Java,7,Hyderabad,11.8,Entry
+Airbnb Labs,Blockchain Developer,PyTorch|Kafka|Hadoop|GraphQL,6,Boston,29.2,Lead
+Oracle Studios,Data Analyst,Spark|Machine Learning|JavaScript|React,7,Bangalore,19.6,Senior
+Slack Inc,UI/UX Designer,Kafka|System Design|Rust|Docker,7,Chicago,24.7,Entry
+Microsoft Tech,AI Engineer,JavaScript|Node.js|GraphQL,7,Chicago,11.2,Mid
+Stripe LLC,Product Manager,Agile|AWS|Java|TensorFlow,6,Austin,41.4,Staff
+Google Software,Software Engineer,React|Rust|GraphQL,7,Tokyo,33.8,Staff
+Google Studios,Backend Developer,Machine Learning|Java|SQL|Data Analysis,5,Remote,34.2,Lead
+Tesla Labs,DevOps Engineer,System Design|PyTorch|Agile|Machine Learning,7,Dublin,29.0,Entry
+Meta Corp,Product Manager,Data Analysis|React|Kubernetes|Go,6,London,20.3,Lead
+Slack Inc,Full Stack Developer,Hadoop|AWS|System Design|JavaScript,6,London,25.1,Lead
+IBM Software,Machine Learning Engineer,Deep Learning|NoSQL|Kafka|Hadoop,4,Seattle,33.6,Entry
+Stripe Corp,Big Data Engineer,Machine Learning|SQL|Hadoop|NoSQL,5,New York,20.8,Senior
+Microsoft Tech,Security Engineer,Python|PyTorch|NoSQL|Go,3,Remote,19.6,Lead
+Tesla Labs,Machine Learning Engineer,JavaScript|Agile|Node.js|Go,3,Pune,38.4,Lead
+Adobe LLC,Security Engineer,Deep Learning|Hadoop|Go|React,6,Bangalore,33.9,Staff
+Twitter LLC,Full Stack Developer,Agile|TypeScript|Machine Learning|Next.js,6,Seattle,23.6,Mid
+Twitter Labs,Frontend Developer,Java|Hadoop|JavaScript|Go,7,New York,33.2,Senior
+Dropbox Labs,Cloud Architect,System Design|AWS|C++,5,Bangalore,47.5,Lead
+IBM Studios,Security Engineer,JavaScript|AWS|Hadoop|System Design,7,Singapore,19.6,Staff
+Oracle ,AI Engineer,Data Analysis|Agile|C++|Hadoop,6,Remote,15.5,Mid
+Intel Studios,Security Engineer,Go|System Design|NoSQL|Machine Learning,7,Los Angeles,34.7,Lead
+IBM ,Backend Developer,React|Deep Learning|TypeScript|GraphQL,6,Boston,10.3,Senior
+IBM Labs,Blockchain Developer,React|TypeScript|Python|NoSQL,7,Toronto,34.0,Staff
+Lyft Labs,Frontend Developer,Kafka|Data Analysis|React|PyTorch,7,Tokyo,33.4,Lead
+Tesla Tech,Backend Developer,GraphQL|Python|Kubernetes|SQL,4,Toronto,34.2,Mid
+Apple LLC,Software Engineer,Rust|Go|Java|Node.js,5,London,20.5,Staff
+Uber Software,UI/UX Designer,Kubernetes|AWS,3,Los Angeles,27.1,Entry
+Cisco Tech,Security Engineer,PyTorch|SQL|Docker|Deep Learning,7,Chicago,30.2,Staff
+Snap Inc,Frontend Developer,Kafka|React|Deep Learning|System Design,7,Dublin,36.6,Entry
+Airbnb LLC,Cloud Architect,GraphQL|Next.js|Kubernetes|NoSQL,7,Singapore,13.5,Mid
+Dropbox ,Cloud Architect,SQL|Python|System Design|Deep Learning,6,London,28.3,Staff
+Snap LLC,Cloud Architect,PyTorch|Kubernetes|SQL|React,4,Chicago,13.3,Staff
+Uber LLC,Big Data Engineer,JavaScript|Next.js|NoSQL|TypeScript,4,Tokyo,10.4,Mid
+Netflix Corp,DevOps Engineer,Python|Spark|Node.js,6,Los Angeles,20.2,Lead
+Intel Studios,UI/UX Designer,TypeScript|SQL|GraphQL|Docker,3,Toronto,24.5,Mid
+Adobe Inc,Cloud Architect,TypeScript|Python|Kubernetes|React,4,Berlin,42.3,Senior
+Oracle LLC,DevOps Engineer,Docker|TensorFlow|JavaScript,6,Boston,41.5,Senior
+Google Corp,Data Analyst,Next.js|Kubernetes|Rust|Java,4,Hyderabad,16.4,Senior
+Intel ,Software Engineer,Python|NoSQL|TensorFlow|Rust,6,Austin,15.2,Entry
+Lyft ,Machine Learning Engineer,Next.js|C++|SQL|Rust,6,Remote,38.8,Lead
+Netflix ,AI Engineer,Next.js|TypeScript|Data Analysis|PyTorch,7,Singapore,26.9,Lead
+Snap Labs,Software Engineer,Data Analysis|JavaScript|System Design|Hadoop,4,Los Angeles,39.3,Senior
+Google Software,Data Scientist,TypeScript|Machine Learning|Rust,6,Singapore,24.7,Lead
+Tesla LLC,Big Data Engineer,Data Analysis|Agile|System Design|Hadoop,4,Hyderabad,23.6,Senior
+Lyft ,Product Manager,Next.js|Deep Learning|NoSQL|TypeScript,3,Toronto,19.1,Senior
+Pinterest ,Backend Developer,Hadoop|Java|Agile,4,New York,21.0,Mid
+Apple LLC,Machine Learning Engineer,SQL|GraphQL|Hadoop|Agile,7,Tokyo,29.4,Lead
+Oracle Inc,Machine Learning Engineer,GraphQL|PyTorch|Agile|React,7,Toronto,43.7,Senior
+Slack Inc,Product Manager,Rust|Java|GraphQL,6,London,46.0,Senior
+Adobe Tech,AI Engineer,Hadoop|Agile|Docker|Go,3,Dublin,10.0,Entry
+Dropbox ,Product Manager,Go|SQL|Next.js|AWS,6,Remote,21.9,Staff
+Stripe Inc,Big Data Engineer,NoSQL|System Design|React|TypeScript,6,San Francisco,10.0,Mid
+Netflix LLC,Big Data Engineer,Agile|TensorFlow|C++|Kafka,6,Hyderabad,17.4,Staff
+Adobe Inc,Data Scientist,AWS|Rust|Data Analysis|JavaScript,4,Austin,33.8,Senior
+Apple Inc,DevOps Engineer,NoSQL|SQL|Data Analysis|PyTorch,5,Chicago,23.1,Staff
+Oracle ,Full Stack Developer,Hadoop|Deep Learning|Machine Learning,4,Boston,32.8,Lead
+Pinterest ,Data Scientist,Machine Learning|Agile|React|NoSQL,5,Bangalore,31.2,Staff
+Pinterest Corp,UI/UX Designer,React|C++|SQL|Deep Learning,5,Los Angeles,25.5,Staff
+Slack Tech,Machine Learning Engineer,Machine Learning|Deep Learning|SQL|Hadoop,4,Bangalore,20.1,Senior
+Amazon ,Machine Learning Engineer,Spark|Kubernetes|JavaScript|Go,6,Singapore,31.0,Lead
+Intel Inc,Backend Developer,TensorFlow|JavaScript|Deep Learning|System Design,3,Pune,18.9,Entry
+Tesla LLC,Data Analyst,PyTorch|Python|Machine Learning|Deep Learning,7,Los Angeles,49.6,Entry
+Tesla Tech,Big Data Engineer,Docker|Go|TypeScript,7,Boston,13.1,Senior
+Meta LLC,Cloud Architect,NoSQL|PyTorch|Next.js|Kubernetes,6,Bangalore,45.5,Staff
+Airbnb Labs,Backend Developer,Kafka|Python|Docker,6,Berlin,17.1,Entry
+Intel LLC,DevOps Engineer,Java|AWS|NoSQL|React,4,Bangalore,17.7,Lead
+Meta Corp,Software Engineer,System Design|C++|Next.js|Deep Learning,6,San Francisco,33.6,Mid
+Google Tech,Cloud Architect,Agile|Java|Go|Kubernetes,6,Singapore,35.8,Senior
+Adobe Studios,Software Engineer,JavaScript|Java|System Design|Node.js,6,San Francisco,27.5,Lead
+Cisco LLC,AI Engineer,Java|Spark|GraphQL|Data Analysis,4,Austin,18.6,Senior
+IBM Studios,Security Engineer,Java|Docker|Agile|Go,7,Boston,35.9,Staff
+Twitter Software,Product Manager,Rust|NoSQL|JavaScript|Java,6,San Francisco,24.2,Mid
+Twitter Software,Machine Learning Engineer,Kubernetes|System Design|C++|Hadoop,3,Tokyo,34.5,Lead
+Google Inc,DevOps Engineer,Python|Go|Kubernetes|Docker,4,Boston,21.8,Mid
+Microsoft ,AI Engineer,Go|React|Data Analysis|NoSQL,3,Hyderabad,25.7,Mid
+Dropbox Software,Data Scientist,Deep Learning|AWS|Agile|PyTorch,4,Los Angeles,32.3,Lead
+Adobe Software,Frontend Developer,AWS|Node.js|PyTorch|Agile,7,Bangalore,33.0,Entry
+Apple ,UI/UX Designer,Kafka|System Design|Hadoop|Rust,6,San Francisco,27.8,Entry
+Pinterest Labs,Product Manager,Next.js|Docker|C++|NoSQL,6,London,41.5,Senior
+Tesla Software,Blockchain Developer,Hadoop|Next.js|React|Kubernetes,7,Hyderabad,46.9,Staff
+Meta Software,Full Stack Developer,React|Data Analysis|SQL,7,Berlin,17.0,Senior
+Lyft Labs,Data Scientist,C++|Hadoop|Kafka|Machine Learning,6,Bangalore,12.5,Staff
+Cisco Studios,Big Data Engineer,System Design|SQL|PyTorch|Agile,7,Boston,26.9,Staff
+IBM Labs,Machine Learning Engineer,Deep Learning|Node.js|Agile|Docker,4,Berlin,12.8,Entry
+Airbnb Tech,Cloud Architect,JavaScript|Python|React|C++,5,Pune,33.6,Mid
+Microsoft ,UI/UX Designer,AWS|NoSQL|JavaScript|Next.js,4,London,18.4,Mid
+Salesforce ,Full Stack Developer,Spark|SQL|JavaScript|Machine Learning,4,Berlin,26.6,Senior
+Salesforce Labs,Machine Learning Engineer,Kafka|SQL|Next.js|Docker,3,Berlin,32.9,Mid
+Meta Inc,Data Scientist,Java|Rust|Go,5,Dublin,28.6,Staff
+Cisco Corp,DevOps Engineer,C++|SQL|PyTorch|Python,3,Los Angeles,18.5,Senior
+Oracle Inc,Data Analyst,JavaScript|GraphQL|Machine Learning,4,Los Angeles,10.5,Staff
+Pinterest Tech,Full Stack Developer,Rust|PyTorch|C++|SQL,6,Bangalore,33.4,Lead
+Slack Tech,Machine Learning Engineer,React|Spark|TensorFlow|Hadoop,7,Chicago,16.6,Entry
+Snap LLC,Machine Learning Engineer,TypeScript|Machine Learning|JavaScript|TensorFlow,7,Hyderabad,16.4,Mid
+Apple LLC,Big Data Engineer,Agile|Data Analysis|System Design|Kubernetes,7,Austin,17.6,Staff
+Meta Studios,Software Engineer,React|Java|Kafka|Next.js,3,Bangalore,36.6,Staff
+Dropbox ,Full Stack Developer,Java|SQL|AWS|Python,3,Austin,46.6,Lead
+Intel Studios,Software Engineer,Go|Deep Learning|Python|SQL,5,San Francisco,27.9,Entry
+Stripe Labs,Data Analyst,System Design|Data Analysis|GraphQL|C++,4,Tokyo,42.6,Lead
+Dropbox ,Data Analyst,Python|NoSQL|Agile|PyTorch,3,Seattle,12.9,Senior
+Square ,Big Data Engineer,TensorFlow|Rust|GraphQL,7,Remote,15.4,Staff
+Apple Labs,Data Scientist,Machine Learning|C++|Spark,6,Austin,21.2,Senior
+Square Tech,Product Manager,Docker|C++|Next.js|Kafka,7,Seattle,26.1,Lead
+Netflix ,AI Engineer,SQL|Spark|Next.js|Kubernetes,7,Austin,13.0,Mid
+Netflix Software,Blockchain Developer,Hadoop|TypeScript|Python|Go,4,Austin,28.0,Staff
+Tesla Software,Blockchain Developer,Data Analysis|Deep Learning|NoSQL|Machine Learning,6,Hyderabad,39.6,Staff
+IBM Software,Cloud Architect,Python|TensorFlow|Docker|AWS,4,New York,48.9,Entry
+Google ,AI Engineer,Go|Hadoop|Data Analysis|PyTorch,3,Austin,11.5,Staff
+Slack Labs,Security Engineer,Agile|Hadoop|C++,7,Pune,25.1,Staff
+Pinterest Labs,Blockchain Developer,Python|Data Analysis|Next.js|Rust,6,Remote,47.8,Staff
+IBM Corp,Backend Developer,Kafka|NoSQL|Go|PyTorch,6,Berlin,17.4,Staff
+Dropbox Studios,Data Analyst,C++|AWS|System Design,6,Bangalore,11.8,Senior
+Airbnb Software,UI/UX Designer,Kubernetes|Docker|Machine Learning|GraphQL,6,Dublin,32.9,Senior
+Intel LLC,DevOps Engineer,Spark|SQL|Python|Machine Learning,4,Toronto,30.0,Senior
+Airbnb LLC,Full Stack Developer,Next.js|AWS|System Design|Data Analysis,6,Singapore,23.8,Mid
+Lyft LLC,Data Scientist,Rust|GraphQL|Next.js|Deep Learning,6,Seattle,24.8,Entry
+Google Software,Security Engineer,Docker|Data Analysis|Go|Rust,4,Toronto,22.3,Mid
+Dropbox Inc,Product Manager,Go|Spark|Kubernetes|Machine Learning,7,Boston,17.9,Senior
+Uber Inc,AI Engineer,SQL|C++|TypeScript,3,Tokyo,23.5,Senior
+Tesla Corp,Data Scientist,Spark|GraphQL|Kafka,3,Boston,16.6,Mid
+Square Inc,Data Scientist,Hadoop|AWS|Data Analysis,4,London,27.4,Senior
+Meta Labs,Machine Learning Engineer,Next.js|JavaScript|Deep Learning|C++,5,Hyderabad,27.4,Lead
+Netflix Tech,Cloud Architect,Machine Learning|Rust|Deep Learning|Hadoop,6,Pune,13.5,Entry
+Dropbox Corp,Data Analyst,TensorFlow|Data Analysis|Spark|Go,5,Remote,23.3,Senior
+Twitter ,Cloud Architect,PyTorch|Deep Learning|TensorFlow,6,Los Angeles,32.1,Staff
+Salesforce Inc,Big Data Engineer,TensorFlow|Java|Data Analysis,6,Pune,13.0,Senior
+Salesforce Corp,DevOps Engineer,Java|AWS|Kubernetes|JavaScript,6,Seattle,27.3,Entry
+Intel Corp,Backend Developer,System Design|SQL|React,6,Hyderabad,30.2,Staff
+Google LLC,Software Engineer,Agile|JavaScript|TensorFlow|System Design,7,Austin,20.8,Entry
+Snap Inc,Data Scientist,AWS|TypeScript|Go|Java,3,Seattle,32.8,Senior
+IBM Software,Product Manager,Agile|GraphQL|NoSQL|PyTorch,5,Chicago,34.0,Mid
+Slack LLC,Data Scientist,TensorFlow|C++|Machine Learning,6,Seattle,20.7,Senior
+Lyft Studios,Software Engineer,PyTorch|NoSQL|Docker|AWS,6,Toronto,27.9,Mid
+Tesla Corp,Full Stack Developer,Kubernetes|Next.js|Go|Deep Learning,3,Boston,18.0,Staff
+Google ,Security Engineer,React|PyTorch|C++|AWS,7,Tokyo,27.6,Staff
+Oracle Inc,Product Manager,NoSQL|SQL|Agile,3,Austin,16.9,Entry
+Apple LLC,Data Scientist,Data Analysis|C++|Node.js,7,Pune,33.3,Staff
+Pinterest Inc,Big Data Engineer,PyTorch|Python|Node.js|Kubernetes,7,London,24.4,Lead
+Slack LLC,Frontend Developer,TypeScript|JavaScript|TensorFlow|C++,3,Chicago,27.6,Entry
+Netflix Studios,Security Engineer,JavaScript|TensorFlow|GraphQL,6,Chicago,28.9,Staff
+Oracle Tech,Product Manager,Docker|Kubernetes|AWS|React,4,Seattle,24.1,Entry
+IBM Tech,Cloud Architect,Machine Learning|TypeScript|Spark,5,New York,27.3,Senior
+Salesforce Inc,Product Manager,Agile|NoSQL|GraphQL|Deep Learning,7,Berlin,18.9,Senior
+Amazon ,Cloud Architect,TensorFlow|Agile|Rust|Kubernetes,7,Austin,12.6,Senior
+Amazon Labs,Data Analyst,AWS|Agile|SQL,3,Berlin,22.6,Entry
+Apple Inc,Data Scientist,SQL|TypeScript|Machine Learning|Hadoop,5,Boston,27.5,Entry
+Adobe Inc,Data Analyst,JavaScript|Docker|Java|Kubernetes,7,Austin,25.3,Lead
+Amazon Studios,Data Analyst,TensorFlow|C++|Agile|JavaScript,4,London,34.1,Senior
+Pinterest Software,Big Data Engineer,Docker|Kafka|Hadoop|PyTorch,6,Los Angeles,13.7,Entry
+Intel Labs,DevOps Engineer,Spark|TypeScript|Next.js,7,Dublin,11.4,Lead
+Uber Software,Cloud Architect,Rust|Spark|System Design,4,Singapore,31.2,Entry
+Microsoft Inc,Blockchain Developer,Node.js|Agile|Next.js,7,Pune,33.0,Entry
+Twitter Labs,Software Engineer,GraphQL|Rust|Java|Go,3,Dublin,16.6,Staff
+Apple Corp,Machine Learning Engineer,AWS|Rust|React|Data Analysis,7,Boston,15.6,Mid
+Dropbox Software,Backend Developer,AWS|TensorFlow|Agile|Hadoop,3,Seattle,46.2,Staff
+IBM ,Cloud Architect,System Design|Next.js|PyTorch|Deep Learning,3,Seattle,27.3,Senior
+Uber Labs,Full Stack Developer,Next.js|NoSQL|Node.js,4,Bangalore,32.6,Entry
+Oracle Corp,Big Data Engineer,Java|Machine Learning|Deep Learning|AWS,3,Hyderabad,24.6,Staff
+IBM ,Frontend Developer,Rust|NoSQL|SQL|Node.js,6,Boston,20.5,Senior
+IBM Corp,Frontend Developer,Docker|Python|NoSQL|Kubernetes,3,Seattle,19.1,Staff
+Google LLC,Full Stack Developer,Agile|Spark|Go|Rust,7,London,22.5,Lead
+Adobe Inc,AI Engineer,System Design|AWS|SQL|Deep Learning,7,Pune,28.9,Staff
+Salesforce Software,Product Manager,Python|Java|NoSQL|Machine Learning,4,Boston,13.2,Mid
+Netflix Software,Backend Developer,Rust|NoSQL|C++|Spark,7,Los Angeles,48.0,Mid
+Airbnb Software,DevOps Engineer,SQL|Go|Java|React,4,Los Angeles,34.2,Senior
+Apple Labs,Security Engineer,Agile|System Design|Spark|C++,7,Pune,22.2,Staff
+Airbnb LLC,Data Scientist,Next.js|Python|Go|Docker,5,San Francisco,31.0,Staff
+Salesforce LLC,Product Manager,TensorFlow|Go|Machine Learning|C++,5,Austin,32.8,Lead
+Netflix Inc,AI Engineer,Agile|AWS|Python|Machine Learning,7,Pune,33.3,Entry
+Adobe Corp,Security Engineer,Next.js|TensorFlow|Rust|GraphQL,5,Tokyo,34.6,Mid
+Oracle ,Software Engineer,React|Node.js|SQL,7,London,36.6,Lead
+Salesforce LLC,Software Engineer,TensorFlow|GraphQL|Go|Node.js,6,Dublin,46.0,Lead
+Microsoft Tech,Blockchain Developer,Go|Python|System Design,6,New York,18.1,Mid
+Tesla Studios,Frontend Developer,AWS|Next.js|GraphQL|SQL,3,Los Angeles,28.2,Entry
+Oracle LLC,UI/UX Designer,Next.js|Deep Learning|Java,5,San Francisco,39.1,Staff
+Apple LLC,Data Scientist,Deep Learning|GraphQL|JavaScript|Docker,5,Remote,26.0,Entry
+IBM Software,Full Stack Developer,Agile|JavaScript|React|Deep Learning,4,Los Angeles,41.3,Entry
+Google Corp,Full Stack Developer,TensorFlow|Python|TypeScript|Go,4,Hyderabad,45.9,Staff
+Square Software,Data Scientist,TensorFlow|NoSQL|PyTorch,3,Chicago,44.4,Senior
+Square LLC,Big Data Engineer,Kubernetes|Data Analysis|Node.js|React,3,Chicago,15.6,Staff
+Uber Software,UI/UX Designer,JavaScript|PyTorch|React|System Design,6,Boston,18.3,Staff
+Salesforce Studios,Big Data Engineer,Kafka|Next.js|NoSQL|Rust,7,Bangalore,11.5,Mid
+Uber LLC,Backend Developer,Kafka|Agile|Kubernetes|Spark,3,Pune,22.2,Staff
+Meta Tech,Big Data Engineer,Docker|SQL|NoSQL,3,Singapore,12.9,Staff
+Cisco Tech,UI/UX Designer,Spark|Go|TensorFlow|React,5,New York,33.9,Mid
+Apple Software,AI Engineer,Docker|Hadoop|Kubernetes|React,7,Singapore,10.6,Lead
+Adobe LLC,Data Scientist,TensorFlow|Java|GraphQL|Next.js,3,New York,34.1,Mid
+Meta Corp,Software Engineer,Docker|JavaScript|C++|AWS,7,Pune,33.6,Senior
+Apple Corp,Frontend Developer,System Design|SQL|C++,6,Pune,40.8,Entry
+Adobe Labs,AI Engineer,C++|GraphQL|Python|PyTorch,5,Bangalore,16.0,Mid
+Snap Inc,Backend Developer,Machine Learning|SQL|Agile|Go,5,Remote,32.7,Mid
+Adobe Corp,Product Manager,AWS|NoSQL|GraphQL|TypeScript,3,Chicago,34.0,Lead
+Slack Tech,Backend Developer,Data Analysis|NoSQL|Next.js|TensorFlow,3,London,14.2,Senior
+Netflix Labs,Full Stack Developer,Go|Kafka|Machine Learning|JavaScript,3,Singapore,37.5,Lead
+Lyft LLC,Data Scientist,Hadoop|System Design|Kubernetes|Node.js,5,Chicago,36.9,Mid
+IBM Software,UI/UX Designer,Hadoop|Python|GraphQL,7,Tokyo,43.4,Mid
+Amazon ,Frontend Developer,Data Analysis|NoSQL|Docker|TypeScript,3,Chicago,38.7,Entry
+Meta Labs,Blockchain Developer,React|Python|Hadoop|Rust,5,Hyderabad,33.2,Senior
+Adobe Corp,Full Stack Developer,Kubernetes|Data Analysis|Machine Learning|Node.js,4,Remote,19.5,Lead
+Tesla Labs,Security Engineer,TensorFlow|Data Analysis|TypeScript|JavaScript,4,Berlin,28.8,Mid
+IBM ,DevOps Engineer,GraphQL|JavaScript|Docker,6,New York,36.7,Lead
+Square Corp,Frontend Developer,TypeScript|JavaScript|Node.js|Deep Learning,3,Boston,37.1,Mid
+Square Labs,Full Stack Developer,SQL|TensorFlow|Data Analysis|Go,7,Singapore,19.1,Lead
+Google Software,UI/UX Designer,SQL|GraphQL|Go|TensorFlow,4,London,32.7,Mid
+Airbnb Studios,Data Scientist,Next.js|Node.js|Kafka|React,4,New York,30.5,Staff
+Dropbox Inc,Full Stack Developer,Kubernetes|Java|System Design,3,Bangalore,12.4,Lead
+Oracle Software,Data Analyst,NoSQL|System Design,3,Toronto,38.3,Mid
+Cisco Labs,Security Engineer,Kubernetes|Deep Learning|PyTorch|Spark,7,Boston,10.0,Mid
+Twitter Tech,Security Engineer,Deep Learning|C++|Kafka|Spark,3,Austin,18.3,Staff
+Airbnb Corp,Frontend Developer,SQL|Rust|System Design|Spark,5,New York,12.0,Mid
+Oracle Labs,AI Engineer,Java|Kubernetes|C++|Python,7,Chicago,26.5,Mid
+Microsoft Inc,Cloud Architect,Spark|Node.js|PyTorch|Kafka,5,Boston,41.4,Lead
+Google Studios,Blockchain Developer,GraphQL|Kafka|Rust|C++,7,London,26.0,Entry
+Meta Inc,Big Data Engineer,JavaScript|Deep Learning|TypeScript|Kubernetes,5,Berlin,42.6,Lead
+Intel Studios,Full Stack Developer,React|Rust|Docker|GraphQL,4,Seattle,27.4,Senior
+Twitter Corp,Big Data Engineer,System Design|TypeScript|Deep Learning,6,Austin,15.1,Lead
+Lyft LLC,Data Scientist,SQL|GraphQL|Node.js|PyTorch,4,Seattle,33.3,Senior
+Airbnb LLC,Full Stack Developer,Kubernetes|Go|TypeScript|SQL,4,Los Angeles,37.0,Staff
+Tesla LLC,Cloud Architect,Data Analysis|Kubernetes|System Design|Spark,7,Remote,22.2,Staff
+Apple Corp,Blockchain Developer,AWS|GraphQL|TypeScript|Data Analysis,7,Dublin,42.8,Entry
+Snap Labs,UI/UX Designer,Kafka|Kubernetes|AWS,7,London,11.9,Mid
+Microsoft Labs,Machine Learning Engineer,Kafka|GraphQL|SQL|NoSQL,6,Seattle,49.7,Senior
+Uber Inc,Software Engineer,NoSQL|Machine Learning|GraphQL|Go,4,Tokyo,29.7,Entry
+Oracle Studios,Security Engineer,Kubernetes|Java|Python,3,Dublin,28.3,Mid
+Amazon Software,Machine Learning Engineer,TypeScript|System Design|Rust|TensorFlow,4,Remote,45.0,Entry
+IBM Labs,Blockchain Developer,TensorFlow|React|PyTorch,7,Pune,11.4,Mid
+Slack Corp,Big Data Engineer,AWS|Java|Docker|Machine Learning,3,Los Angeles,46.8,Senior
+Google Tech,Frontend Developer,TensorFlow|AWS|NoSQL|Kafka,3,Dublin,15.3,Mid
+Twitter Labs,Data Analyst,Data Analysis|GraphQL|Python|PyTorch,7,Pune,47.4,Mid
+Lyft Inc,Data Analyst,Machine Learning|Python|GraphQL|System Design,7,San Francisco,20.5,Entry
+Pinterest ,Data Analyst,Node.js|GraphQL|TypeScript|AWS,6,Bangalore,12.9,Entry
+Slack Corp,Frontend Developer,Docker|Python|Hadoop|JavaScript,4,Pune,48.4,Mid
+Dropbox Labs,Cloud Architect,Node.js|Go|System Design|JavaScript,4,Singapore,21.5,Entry
+Cisco Corp,UI/UX Designer,Spark|PyTorch|NoSQL|Hadoop,3,Tokyo,16.4,Entry
+Tesla Software,DevOps Engineer,Spark|Agile|NoSQL|System Design,6,Remote,28.0,Entry
+Microsoft Studios,UI/UX Designer,System Design|Spark|Hadoop|TensorFlow,6,Boston,11.0,Lead
+Twitter Corp,AI Engineer,Spark|Machine Learning|Java,7,Seattle,24.1,Entry
+Oracle LLC,Security Engineer,System Design|Rust|Spark,3,Berlin,32.4,Entry
+Cisco Corp,Data Scientist,Spark|Next.js|Agile|Go,7,Seattle,32.5,Mid
+Slack Software,Machine Learning Engineer,Java|Agile,6,Los Angeles,29.6,Staff
+Lyft Studios,Cloud Architect,Machine Learning|Node.js|System Design,5,Los Angeles,29.9,Mid
+Meta Software,Blockchain Developer,Data Analysis|Deep Learning|JavaScript|Docker,6,Bangalore,13.5,Staff
+Stripe Inc,Cloud Architect,TensorFlow|Next.js|Kubernetes|Docker,5,Bangalore,34.9,Mid
+Slack LLC,AI Engineer,PyTorch|Python|Machine Learning|Node.js,5,Singapore,20.6,Staff
+Pinterest ,Cloud Architect,Hadoop|PyTorch|SQL|NoSQL,7,Tokyo,36.0,Lead
+Lyft Labs,Security Engineer,Node.js|React|Spark,3,San Francisco,12.9,Staff
+Tesla Software,DevOps Engineer,SQL|Deep Learning|Rust|AWS,3,Singapore,19.3,Entry
+Cisco Labs,UI/UX Designer,GraphQL|Rust|PyTorch|Agile,6,Toronto,30.8,Lead
+Apple Inc,Cloud Architect,GraphQL|React|Node.js,5,Remote,29.4,Staff
+Salesforce Software,Blockchain Developer,PyTorch|JavaScript|GraphQL,3,Seattle,34.1,Staff
+Oracle Labs,Software Engineer,Hadoop|Rust|Kubernetes|PyTorch,3,Bangalore,33.0,Entry
+Apple Studios,Frontend Developer,Machine Learning|JavaScript|Next.js|Spark,5,Remote,20.4,Lead
+Amazon Tech,Machine Learning Engineer,Node.js|Deep Learning|AWS,7,Bangalore,38.9,Entry
+Dropbox Tech,Data Analyst,Kafka|React|TypeScript|JavaScript,7,Tokyo,46.3,Staff
+Dropbox Studios,Frontend Developer,C++|Kafka|Go|Java,4,Berlin,12.9,Lead
+Dropbox Inc,Cloud Architect,Data Analysis|Hadoop|Docker|Kafka,7,New York,32.2,Staff
+Google Studios,Backend Developer,Data Analysis|PyTorch|Rust|Docker,3,Berlin,29.1,Staff
+Uber Tech,Backend Developer,Hadoop|C++|TypeScript|NoSQL,5,Berlin,34.4,Lead
+Lyft Labs,DevOps Engineer,GraphQL|Kafka|Node.js|AWS,7,Singapore,13.7,Staff
+Airbnb LLC,Frontend Developer,Next.js|SQL|Spark|NoSQL,4,Pune,34.1,Mid
+Twitter Inc,Software Engineer,Agile|Spark|TypeScript,3,Tokyo,23.1,Lead
+Meta Inc,Big Data Engineer,Next.js|TensorFlow|Spark|Java,6,Toronto,32.7,Lead
+IBM LLC,Data Scientist,NoSQL|Python|Node.js|Deep Learning,5,London,30.9,Staff
+Amazon Tech,Data Analyst,Python|AWS|TensorFlow|JavaScript,5,Bangalore,30.0,Senior
+Netflix Software,Data Analyst,System Design|Node.js|Spark|Java,6,London,43.1,Lead
+Slack Software,Frontend Developer,SQL|Kafka|TensorFlow|Next.js,4,Seattle,39.9,Lead
+Intel Corp,Data Scientist,Data Analysis|Kafka|Machine Learning|NoSQL,3,Singapore,34.4,Staff
+Google Corp,Product Manager,Rust|Deep Learning|Node.js|Data Analysis,4,Tokyo,27.8,Senior
+Uber Studios,Big Data Engineer,Deep Learning|Agile|GraphQL,7,Boston,36.4,Senior
+Uber Software,Data Scientist,C++|Python|Hadoop|Agile,4,Chicago,18.8,Mid
+Salesforce Labs,Frontend Developer,TensorFlow|Docker|Hadoop|Python,6,New York,15.3,Senior
+Amazon Labs,UI/UX Designer,Hadoop|Node.js|NoSQL|Deep Learning,4,Seattle,31.0,Senior
+Square Corp,UI/UX Designer,Java|Data Analysis|Machine Learning|Hadoop,4,Austin,46.9,Lead
+Tesla Corp,Data Analyst,C++|TypeScript,6,New York,39.5,Mid
+Lyft Inc,Frontend Developer,Go|System Design|AWS|GraphQL,5,Dublin,27.7,Lead
+Google Software,Machine Learning Engineer,React|Hadoop|System Design,5,Chicago,28.7,Entry
+Twitter Tech,Security Engineer,Go|GraphQL|Rust|System Design,4,Berlin,29.3,Staff
+Google LLC,AI Engineer,Next.js|SQL|Deep Learning,4,Singapore,22.2,Senior
+Intel LLC,Machine Learning Engineer,Rust|Docker,3,London,18.9,Entry
+Snap Tech,UI/UX Designer,Data Analysis|Hadoop|Rust|NoSQL,5,Tokyo,19.2,Senior
+Netflix Inc,Full Stack Developer,Go|Kafka|Agile|React,4,Dublin,21.2,Senior
+Uber ,Backend Developer,TypeScript|Hadoop|GraphQL|Docker,6,Berlin,20.8,Entry
+Pinterest Software,Blockchain Developer,Kubernetes|React|Spark|NoSQL,3,Seattle,10.8,Entry
+Airbnb Labs,Machine Learning Engineer,Hadoop|NoSQL|TensorFlow|Python,6,Boston,28.3,Senior
+Meta Tech,Frontend Developer,AWS|TensorFlow|Python,7,London,37.3,Staff
+Dropbox LLC,DevOps Engineer,Go|Docker|GraphQL|AWS,3,San Francisco,27.6,Senior
+Twitter Tech,Backend Developer,Go|Node.js|Agile|AWS,4,Los Angeles,30.1,Entry
+Intel Studios,DevOps Engineer,Java|Deep Learning|Agile,4,London,29.1,Lead
+Snap LLC,Backend Developer,TensorFlow|PyTorch|C++|Docker,7,Pune,25.9,Senior
+Meta Labs,Product Manager,Go|System Design|Docker,6,Los Angeles,36.3,Mid
+Apple Tech,UI/UX Designer,Rust|Machine Learning|TensorFlow|Go,6,Dublin,13.2,Entry
+Lyft Software,Blockchain Developer,Next.js|Go|SQL|Kafka,7,Hyderabad,34.3,Mid
+Snap Software,Data Scientist,AWS|Docker|React|Next.js,7,London,21.5,Lead
+Netflix ,AI Engineer,Machine Learning|Spark|PyTorch|Python,7,Seattle,24.3,Entry
+Twitter Inc,Cloud Architect,Kafka|Deep Learning|System Design,7,New York,31.1,Senior
+Google Software,Software Engineer,Next.js|NoSQL|TypeScript,3,New York,12.4,Entry
+Airbnb Studios,Data Analyst,JavaScript|Machine Learning|Go,6,Hyderabad,28.9,Senior
+Stripe Labs,Frontend Developer,JavaScript|Kafka|System Design|Next.js,5,London,25.7,Entry
+Salesforce Labs,DevOps Engineer,C++|AWS|Data Analysis|TypeScript,6,Toronto,29.8,Staff
+Airbnb Labs,Machine Learning Engineer,React|Agile|AWS|Next.js,6,London,28.2,Staff
+Pinterest Tech,Data Analyst,Go|GraphQL|React|JavaScript,7,Singapore,29.1,Senior
+Pinterest LLC,Product Manager,Node.js|Java|PyTorch|C++,4,Toronto,47.7,Entry
