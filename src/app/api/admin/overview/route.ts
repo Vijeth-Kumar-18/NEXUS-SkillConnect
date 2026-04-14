@@ -12,11 +12,14 @@ export async function GET() {
   try {
     const countsResult = await session.run(
       `
-      RETURN
-        size([(c:Company) | c]) AS companies,
-        size([(s:Student) | s]) AS students,
-        size([(a:Alumni) | a]) AS alumni,
-        size([(sk:Skill) | sk]) AS skills
+      MATCH (c:Company)
+      WITH count(c) AS companies
+      MATCH (s:Student)
+      WITH companies, count(s) AS students
+      MATCH (a:Alumni)
+      WITH companies, students, count(a) AS alumni
+      MATCH (sk:Skill)
+      RETURN companies, students, alumni, count(sk) AS skills
       `
     );
 

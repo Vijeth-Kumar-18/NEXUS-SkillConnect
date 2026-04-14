@@ -31,9 +31,10 @@ function computeMatch(edges: SkillEdge[]): { score: number; missingSkills: strin
   const tags: string[] = [];
 
   edges.forEach((edge) => {
-    const skillWeight = Math.max(1, edge.weight);
-    const demandWeight = Math.max(1, edge.demandWeight);
-    const normalizedLevel = Math.min(edge.level, 5) / 5;
+    const level = toNumber(edge.level);
+    const skillWeight = Math.max(1, toNumber(edge.weight));
+    const demandWeight = Math.max(1, toNumber(edge.demandWeight));
+    const normalizedLevel = Math.min(level, 5) / 5;
 
     weightedTotal += skillWeight;
     weightedEarned += normalizedLevel * skillWeight;
@@ -41,9 +42,9 @@ function computeMatch(edges: SkillEdge[]): { score: number; missingSkills: strin
     demandTotal += demandWeight;
     demandEarned += normalizedLevel * demandWeight;
 
-    if (edge.level === 0) {
+    if (level === 0) {
       missingSkills.push(edge.name);
-    } else if (edge.level >= 3 && tags.length < 4) {
+    } else if (level >= 3 && tags.length < 4) {
       tags.push(edge.name);
     }
   });

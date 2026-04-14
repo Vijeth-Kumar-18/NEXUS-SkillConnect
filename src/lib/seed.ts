@@ -470,10 +470,12 @@ export async function seedFromLocalDatasets(): Promise<{ companies: number; stud
   try {
     const result = await verifySession.run(
       `
-      RETURN
-        size([(c:Company) | c]) AS companies,
-        size([(s:Student) | s]) AS students,
-        size([(a:Alumni) | a]) AS alumni
+      MATCH (c:Company)
+      WITH count(c) AS companies
+      MATCH (s:Student)
+      WITH companies, count(s) AS students
+      MATCH (a:Alumni)
+      RETURN companies, students, count(a) AS alumni
       `
     );
 

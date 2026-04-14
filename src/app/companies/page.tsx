@@ -17,11 +17,23 @@ interface CompanyListItem {
 
 export default function CompaniesPage() {
   const [companies, setCompanies] = useState<CompanyListItem[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
+    setLoading(true);
     fetchJson<{ companies: CompanyListItem[] }>("/api/companies")
-      .then((data) => setCompanies(data.companies))
-      .catch(() => setCompanies([]));
+      .then((data) => {
+        setCompanies(data.companies);
+        setError("");
+      })
+      .catch((err) => {
+        setCompanies([]);
+        setError(err instanceof Error ? err.message : "Failed to load companies");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -31,7 +43,11 @@ export default function CompaniesPage() {
         <p className="text-sm font-medium text-slate-400 mt-1">
           Explore hiring partners, their roles, and skill profiles.
         </p>
+        {error ? <p className="text-xs mt-2 text-rose-300">{error}</p> : null}
       </div>
+
+      {loading ? <p className="text-sm text-slate-400 mb-4">Loading companies...</p> : null}
+      {!loading && !companies.length && !error ? <p className="text-sm text-slate-500 mb-4">No companies found.</p> : null}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {companies.map((company) => (

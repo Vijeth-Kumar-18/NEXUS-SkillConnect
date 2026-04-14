@@ -1,6 +1,7 @@
 export async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
   const response = await fetch(url, {
     credentials: "include",
+    cache: "no-store",
     ...init,
     headers: {
       "Content-Type": "application/json",
@@ -9,7 +10,10 @@ export async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> 
   });
 
   if (!response.ok) {
-    const data = await response.json().catch(() => ({}));
+    const contentType = response.headers.get("content-type") || "";
+    const data = contentType.includes("application/json")
+      ? await response.json().catch(() => ({}))
+      : {};
     const message = typeof data.error === "string" ? data.error : `Request failed: ${response.status}`;
     throw new Error(message);
   }

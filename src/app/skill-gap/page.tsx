@@ -13,10 +13,19 @@ import SkillTable from "@/components/skill-gap/SkillTable";
 import PriorityBars from "@/components/skill-gap/PriorityBars";
 import Roadmap from "@/components/skill-gap/Roadmap";
 
+interface ApiCompany {
+  id: string;
+  name: string;
+  role: string;
+  requiredSkills: Company["requiredSkills"];
+}
+
 export default function SkillGapPage() {
   const [student, setStudent] = useState<Student>({ name: "Student", skills: [] });
-  const [companies, setCompanies] = useState<Company[]>([]);
-  const [companyIndex, setCompanyIndex] = useState(0);
+  const [companies, setCompanies] = useState<ApiCompany[]>([]);
+  const [selectedCompanyId, setSelectedCompanyId] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   const [result, setResult] = useState<SkillGapResult>({
     student: { name: "Student", skills: [] },
     company: { name: "Company", role: "Role", requiredSkills: [] },
@@ -26,32 +35,40 @@ export default function SkillGapPage() {
   });
 
   useEffect(() => {
+    setLoading(true);
     Promise.all([
       fetchJson<{ companies: Array<{ id: string; name: string; role: string }> }>("/api/companies"),
       fetchJson<{ name: string; skills: string[] }>("/api/students/me/profile"),
     ])
       .then(([companyData, profile]) => {
-        setCompanies(
-          companyData.companies.map((company) => ({
-            name: company.name,
-            role: company.role,
-            requiredSkills: [],
-          }))
-        );
+        const normalizedCompanies = companyData.companies.map((company) => ({
+          id: company.id,
+          name: company.name,
+          role: company.role,
+          requiredSkills: [],
+        }));
+
+        setCompanies(normalizedCompanies);
+        setSelectedCompanyId(normalizedCompanies[0]?.id || "");
         setStudent({
           name: profile.name,
           skills: profile.skills.map((name) => ({ name, level: 2 })),
         });
+        setError("");
       })
-      .catch(() => {
+      .catch((err) => {
         setCompanies([]);
+        setSelectedCompanyId("");
+        setError(err instanceof Error ? err.message : "Failed to load skill-gap inputs");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   }, []);
 
   useEffect(() => {
     async function loadGap() {
-      const companyResponse = await fetchJson<{ companies: Array<{ id: string; name: string; role: string }> }>("/api/companies");
-      const selected = companyResponse.companies[companyIndex];
+      const selected = companies.find((company) => company.id === selectedCompanyId);
       if (!selected) {
         return;
       }
@@ -73,18 +90,26 @@ export default function SkillGapPage() {
         readinessPercent: gap.readinessPercent,
         roadmap: gap.roadmap,
       });
+      setError("");
     }
 
-    if (companies.length) {
-      loadGap().catch(() => undefined);
+    if (companies.length && selectedCompanyId) {
+      loadGap().catch((err) => {
+        setError(err instanceof Error ? err.message : "Failed to load skill-gap analysis");
+      });
     }
-  }, [companyIndex, companies.length, student]);
+  }, [selectedCompanyId, companies, student]);
 
-  const selectionKey = `${student.name}-${companyIndex}`;
+  const selectionKey = `${student.name}-${selectedCompanyId || "none"}`;
+
+  const selectedCompanyIndex = useMemo(
+    () => Math.max(0, companies.findIndex((company) => company.id === selectedCompanyId)),
+    [companies, selectedCompanyId]
+  );
 
   const selectedCompany = useMemo(
-    () => companies[companyIndex] || { name: "Company", role: "Role", requiredSkills: [] },
-    [companies, companyIndex]
+    () => companies.find((company) => company.id === selectedCompanyId) || { id: "", name: "Company", role: "Role", requiredSkills: [] },
+    [companies, selectedCompanyId]
   );
 
   return (
@@ -103,6 +128,7 @@ export default function SkillGapPage() {
           Your personalized path to top companies — powered by graph-based
           skill analysis.
         </p>
+        {error ? <p className="text-xs mt-2 text-rose-300">{error}</p> : null}
 
         {/* Active badges */}
         <div className="flex flex-wrap gap-2 mt-4">
@@ -128,10 +154,13 @@ export default function SkillGapPage() {
         />
         <CompanySelector
           companies={companies}
-          selectedIndex={companyIndex}
-          onChange={setCompanyIndex}
+          selectedIndex={selectedCompanyIndex}
+          onChange={(index) => setSelectedCompanyId(companies[index]?.id || "")}
         />
       </section>
+
+      {loading ? <p className="text-sm text-slate-400 mb-4">Loading skill-gap data...</p> : null}
+      {!loading && !companies.length && !error ? <p className="text-sm text-slate-500 mb-4">No companies available for skill-gap analysis.</p> : null}
 
       {/* ── Dynamic content ───────────────────────────── */}
       <motion.div

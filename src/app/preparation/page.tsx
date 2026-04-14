@@ -21,16 +21,27 @@ export default function PreparationPage() {
   const [companies, setCompanies] = useState<CompanyOption[]>([]);
   const [selectedId, setSelectedId] = useState("");
   const [detail, setDetail] = useState<CompanyDetail | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [detailLoading, setDetailLoading] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
+    setLoading(true);
     fetchJson<{ companies: CompanyOption[] }>("/api/companies")
       .then((data) => {
         setCompanies(data.companies);
         if (data.companies[0]) {
           setSelectedId(data.companies[0].id);
         }
+        setError("");
       })
-      .catch(() => setCompanies([]));
+      .catch((err) => {
+        setCompanies([]);
+        setError(err instanceof Error ? err.message : "Failed to load company list");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   useEffect(() => {
@@ -38,9 +49,19 @@ export default function PreparationPage() {
       return;
     }
 
+    setDetailLoading(true);
     fetchJson<CompanyDetail>(`/api/companies/${encodeURIComponent(selectedId)}`)
-      .then((data) => setDetail(data))
-      .catch(() => setDetail(null));
+      .then((data) => {
+        setDetail(data);
+        setError("");
+      })
+      .catch((err) => {
+        setDetail(null);
+        setError(err instanceof Error ? err.message : "Failed to load preparation details");
+      })
+      .finally(() => {
+        setDetailLoading(false);
+      });
   }, [selectedId]);
 
   const groupedQuestions = useMemo(() => {
@@ -61,6 +82,7 @@ export default function PreparationPage() {
         <p className="text-sm font-medium text-slate-400 mt-1">
           Company-wise rounds, question focus, and targeted prep path.
         </p>
+        {error ? <p className="text-xs mt-2 text-rose-300">{error}</p> : null}
       </div>
 
       <Card className="mb-6">
@@ -68,6 +90,7 @@ export default function PreparationPage() {
         <select
           value={selectedId}
           onChange={(e) => setSelectedId(e.target.value)}
+          disabled={loading || !companies.length}
           className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500/40"
         >
           {companies.map((company) => (
@@ -81,6 +104,7 @@ export default function PreparationPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card>
           <h3 className="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-4">Round Flow</h3>
+          {detailLoading ? <p className="text-xs text-slate-400 mb-3">Loading rounds...</p> : null}
           <div className="space-y-3">
             {(detail?.rounds || []).map((round) => (
               <div key={round.id} className="rounded-lg border border-white/10 px-3 py-3 flex items-center justify-between">
@@ -94,6 +118,7 @@ export default function PreparationPage() {
 
         <Card>
           <h3 className="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-4">Question Bank</h3>
+          {detailLoading ? <p className="text-xs text-slate-400 mb-3">Loading question bank...</p> : null}
           <div className="space-y-4">
             {groupedQuestions.map(([topic, questions]) => (
               <div key={topic} className="rounded-lg border border-white/10 px-3 py-3">

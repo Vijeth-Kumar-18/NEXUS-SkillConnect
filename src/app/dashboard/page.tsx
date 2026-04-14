@@ -25,11 +25,18 @@ interface DashboardPayload {
 
 export default function DashboardPage() {
   const [payload, setPayload] = useState<DashboardPayload | null>(null);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     fetchJson<DashboardPayload>("/api/dashboard")
-      .then((data) => setPayload(data))
-      .catch(() => setPayload(null));
+      .then((data) => {
+        setPayload(data);
+        setError("");
+      })
+      .catch((err) => {
+        setPayload(null);
+        setError(err instanceof Error ? err.message : "Failed to load dashboard data");
+      });
   }, []);
 
   const roadmapItems = useMemo(
@@ -51,6 +58,7 @@ export default function DashboardPage() {
         <p className="text-sm font-medium" style={{ color: 'var(--color-weak)' }}>
           Here is your comprehensive placement readiness OS.
         </p>
+        {error ? <p className="text-xs mt-2 text-rose-300">{error}</p> : null}
       </div>
 
       {/* Stats row */}

@@ -21,16 +21,24 @@ function inferCategory(name: string): string {
 export default function SkillsPage() {
   const [skills, setSkills] = useState<StudentSkill[]>([]);
   const [newSkill, setNewSkill] = useState("");
+  const [error, setError] = useState("");
 
   async function loadSkills() {
     const data = await fetchJson<{ skills: StudentSkill[] }>("/api/students/me/skills");
     setSkills(data.skills);
+    setError("");
   }
 
   useEffect(() => {
     fetchJson<{ skills: StudentSkill[] }>("/api/students/me/skills")
-      .then((data) => setSkills(data.skills))
-      .catch(() => setSkills([]));
+      .then((data) => {
+        setSkills(data.skills);
+        setError("");
+      })
+      .catch((err) => {
+        setSkills([]);
+        setError(err instanceof Error ? err.message : "Failed to load skills");
+      });
   }, []);
 
   async function addSkill() {
@@ -59,6 +67,7 @@ export default function SkillsPage() {
         <p className="text-sm font-medium text-slate-400 mt-1">
           Catalog and upgrade your technical proficiency vectors in the Nexus grid.
         </p>
+        {error ? <p className="text-xs mt-2 text-rose-300">{error}</p> : null}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

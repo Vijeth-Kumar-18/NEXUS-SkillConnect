@@ -2,6 +2,7 @@
 
 import PageWrapper from "@/components/layout/PageWrapper";
 import Card from "@/components/common/Card";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { fetchJson } from "@/lib/apiClient";
 
@@ -15,11 +16,23 @@ interface RecommendationItem {
 
 export default function RecommendationsPage() {
   const [recommendations, setRecommendations] = useState<RecommendationItem[]>([]);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     fetchJson<{ recommendations: RecommendationItem[] }>("/api/recommendations")
-      .then((data) => setRecommendations(data.recommendations))
-      .catch(() => setRecommendations([]));
+      .then((data) => {
+        setRecommendations(data.recommendations);
+        setError("");
+      })
+      .catch((err) => {
+        setRecommendations([]);
+        setError(err instanceof Error ? err.message : "Failed to load recommendations");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -29,9 +42,14 @@ export default function RecommendationsPage() {
         <p className="text-sm font-medium text-slate-400 mt-1">
           AI-driven company matches based on your current skill proficiency graph.
         </p>
+        {error ? <p className="text-xs mt-2 text-rose-300">{error}</p> : null}
       </div>
 
       <div className="space-y-4 max-w-4xl">
+        {loading ? <p className="text-sm text-slate-400">Loading recommendations...</p> : null}
+        {!loading && !recommendations.length && !error ? (
+          <p className="text-sm text-slate-500">No recommendations available yet. Add skills to improve your matching.</p>
+        ) : null}
         {recommendations
           .sort((a, b) => b.match - a.match)
           .map((rec, i) => {
@@ -83,6 +101,11 @@ export default function RecommendationsPage() {
                 {/* Progress bar matching */}
                 <div className="mt-4 h-1.5 w-full bg-black/30 rounded-full overflow-hidden">
                   <div className={`h-full rounded-full ${barColor}`} style={{ width: `${rec.match}%` }} />
+                </div>
+                <div className="mt-3">
+                  <Link href={`/companies/${rec.companyId}`} className="text-[10px] uppercase font-bold tracking-wider text-indigo-300 hover:text-indigo-200">
+                    Open Company Profile →
+                  </Link>
                 </div>
               </Card>
             );

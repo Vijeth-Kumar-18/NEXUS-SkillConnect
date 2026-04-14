@@ -4,6 +4,7 @@ const path = require("path");
 const ROOT = process.cwd();
 const OUTPUT_DIR = path.join(ROOT, "filtered-data");
 const OUTPUT_FILE = path.join(OUTPUT_DIR, "filtered-dataset.json");
+const OUTPUT_CSV_FILE = path.join(OUTPUT_DIR, "filtered-dataset.csv");
 
 function splitCsvLine(line) {
   const out = [];
@@ -78,6 +79,11 @@ function splitPipeList(value) {
     .filter(Boolean);
 }
 
+function ensureList(value, fallbackItem) {
+  const out = Array.isArray(value) ? value.filter(Boolean) : [];
+  return out.length > 0 ? out : [fallbackItem];
+}
+
 function normalizeSkillName(name) {
   return String(name || "").replace(/\s+/g, " ").trim();
 }
@@ -106,6 +112,227 @@ function stableLevel(seed) {
   return (Math.abs(hash) % 5) + 1;
 }
 
+function stableIndex(seed, size) {
+  if (!size) {
+    return 0;
+  }
+  let hash = 0;
+  for (let i = 0; i < String(seed).length; i += 1) {
+    hash = (hash << 5) - hash + String(seed).charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash) % size;
+}
+
+function pickFromPool(seed, pool, fallback) {
+  if (!Array.isArray(pool) || pool.length === 0) {
+    return fallback;
+  }
+  return pool[stableIndex(seed, pool.length)] || fallback;
+}
+
+function buildValuePools(students) {
+  const rolePool = Array.from(
+    new Set(
+      students
+        .map((student) => String(student.targetRole || "").trim())
+        .filter(Boolean)
+    )
+  );
+
+  const skillPool = Array.from(
+    new Set(
+      students
+        .flatMap((student) => (Array.isArray(student.topSkills) ? student.topSkills : []))
+        .map((skill) => String(skill || "").trim())
+        .filter(Boolean)
+    )
+  );
+
+  const projectPool = Array.from(
+    new Set(
+      students
+        .flatMap((student) => (Array.isArray(student.projects) ? student.projects : []))
+        .map((project) => String(project || "").trim())
+        .filter(Boolean)
+    )
+  );
+
+  const interestPool = Array.from(
+    new Set(
+      students
+        .flatMap((student) => (Array.isArray(student.interests) ? student.interests : []))
+        .map((interest) => String(interest || "").trim())
+        .filter(Boolean)
+    )
+  );
+
+  return {
+    rolePool: rolePool.length ? rolePool : ["Software Engineer", "Data Scientist"],
+    skillPool: skillPool.length ? skillPool : ["Problem Solving", "SQL", "Python"],
+    projectPool: projectPool.length ? projectPool : ["Career Tracker"],
+    interestPool: interestPool.length ? interestPool : ["Placement Preparation", "Interview Practice"],
+  };
+}
+
+function csvEscape(value) {
+  const text = String(value == null ? "" : value);
+  if (/[",\n\r]/.test(text)) {
+    return `"${text.replace(/"/g, '""')}"`;
+  }
+  return text;
+}
+
+function joinList(value) {
+  return Array.isArray(value) ? value.join(" | ") : "";
+}
+
+function serializeSkillLevels(skillLevels) {
+  if (!Array.isArray(skillLevels)) {
+    return "";
+  }
+
+  return skillLevels
+    .map((row) => `${String(row.name || "").trim()}=${Number(row.level) || 2}`)
+    .filter((item) => String(item).trim() !== "")
+    .join(" | ");
+}
+
+function buildDefaultCsvRow(recordType, id, name, seedEmail, pools) {
+  const primarySkill = pickFromPool(`${id}:skill:1`, pools.skillPool, "Problem Solving");
+  const secondarySkill = pickFromPool(`${id}:skill:2`, pools.skillPool, "SQL");
+  const generatedRole = pickFromPool(`${id}:role`, pools.rolePool, "Software Engineer");
+  const generatedProject = pickFromPool(`${id}:project`, pools.projectPool, "Career Tracker");
+  const generatedInterest = pickFromPool(`${id}:interest`, pools.interestPool, "Placement Preparation");
+
+  return {
+    recordType,
+    id,
+    name,
+    email: seedEmail,
+    defaultPassword: seedEmail,
+    role: recordType === "STUDENT" ? "STUDENT" : `${recordType}_ENTITY`,
+    degree: "B.S. Computer Science",
+    expectedGraduation: "2026",
+    cgpa: 7,
+    targetRole: generatedRole,
+    github: "https://github.com/nexus-generated",
+    linkedin: "https://linkedin.com/in/nexus-generated",
+    topSkills: `${primarySkill} | ${secondarySkill}`,
+    skillLevels: `${primarySkill}=3 | ${secondarySkill}=2`,
+    projects: generatedProject,
+    interests: generatedInterest,
+    company: pickFromPool(`${id}:company`, ["Nexus Labs", "GraphEdge Tech", "CloudCraft Systems"], "Nexus Labs"),
+    jobRole: generatedRole,
+    requiredSkills: `${primarySkill} | ${secondarySkill}`,
+    rounds: 3,
+    location: "Remote",
+    packageLpa: 12,
+    experienceLevel: "Entry",
+    eligibilityCgpa: 7,
+    gradYear: "2022",
+    currentCompany: "Unknown",
+    currentRole: "Professional",
+    priorCompanies: "Unknown",
+    timeline: "Career progression available",
+  };
+}
+
+function buildCsvRows(companies, students, alumni) {
+  const pools = buildValuePools(students);
+  const headers = [
+    "recordType",
+    "id",
+    "name",
+    "email",
+    "defaultPassword",
+    "role",
+    "degree",
+    "expectedGraduation",
+    "cgpa",
+    "targetRole",
+    "github",
+    "linkedin",
+    "topSkills",
+    "skillLevels",
+    "projects",
+    "interests",
+    "company",
+    "jobRole",
+    "requiredSkills",
+    "rounds",
+    "location",
+    "packageLpa",
+    "experienceLevel",
+    "eligibilityCgpa",
+    "gradYear",
+    "currentCompany",
+    "currentRole",
+    "priorCompanies",
+    "timeline",
+  ];
+
+  const lines = [headers.join(",")];
+
+  companies.forEach((company) => {
+    const safeCompanyName = company.name || "Unknown Company";
+    const seedEmail = `${safeSlug(safeCompanyName) || String(company.id || "company").toLowerCase()}@nexus.generated`;
+    const row = {
+      ...buildDefaultCsvRow("COMPANY", company.id, safeCompanyName, seedEmail, pools),
+      company: company.name,
+      jobRole: company.role,
+      requiredSkills: joinList(company.requiredSkills),
+      rounds: company.rounds,
+      location: company.location,
+      packageLpa: company.packageLpa,
+      experienceLevel: company.experienceLevel,
+      eligibilityCgpa: company.eligibilityCgpa,
+    };
+
+    lines.push(headers.map((header) => csvEscape(row[header])).join(","));
+  });
+
+  students.forEach((student) => {
+    const seedEmail = student.email || `${safeSlug(student.name) || String(student.id || "student").toLowerCase()}@nexus.edu`;
+    const row = {
+      ...buildDefaultCsvRow("STUDENT", student.id, student.name, seedEmail, pools),
+      email: seedEmail,
+      defaultPassword: student?.auth?.defaultPassword || seedEmail,
+      role: student?.auth?.role || "STUDENT",
+      degree: student.degree,
+      expectedGraduation: student.expectedGraduation,
+      cgpa: student.cgpa,
+      targetRole: student.targetRole,
+      github: student.github,
+      linkedin: student.linkedin,
+      topSkills: joinList(student.topSkills),
+      skillLevels: serializeSkillLevels(student.skillLevels),
+      projects: joinList(student.projects),
+      interests: joinList(student.interests),
+    };
+
+    lines.push(headers.map((header) => csvEscape(row[header])).join(","));
+  });
+
+  alumni.forEach((person) => {
+    const seedEmail = `${safeSlug(person.name) || String(person.id || "alumni").toLowerCase()}@nexus.alumni`;
+    const row = {
+      ...buildDefaultCsvRow("ALUMNI", person.id, person.name, seedEmail, pools),
+      gradYear: person.gradYear,
+      currentCompany: person.currentCompany,
+      currentRole: person.currentRole,
+      priorCompanies: joinList(person.priorCompanies),
+      topSkills: joinList(person.skills),
+      projects: joinList(person.projects),
+      timeline: person.timeline,
+    };
+
+    lines.push(headers.map((header) => csvEscape(row[header])).join(","));
+  });
+
+  return `${lines.join("\n")}\n`;
+}
+
 function normalizeCompanyRows(raw) {
   const rows = parseCsv(raw);
   const companies = [];
@@ -130,7 +357,7 @@ function normalizeCompanyRows(raw) {
       id,
       name,
       role,
-      requiredSkills: splitPipeList(requiredSkillsRaw).map(normalizeSkillName),
+      requiredSkills: ensureList(splitPipeList(requiredSkillsRaw).map(normalizeSkillName), "General Aptitude"),
       rounds: Math.max(1, Math.min(8, Math.round(Number(roundsRaw) || 3))),
       location: location || "Remote",
       packageLpa: Number(packageRaw) || 12,
@@ -163,25 +390,27 @@ function normalizeStudentRows(raw) {
 
     const id = isCanonical ? String(row.StudentID || "").trim() : `S${String(index + 1001).padStart(4, "0")}`;
     const slug = safeSlug(name) || `student-${id.toLowerCase()}`;
-    const topSkills = splitPipeList(topSkillsRaw).map(normalizeSkillName);
-    const projects = splitPipeList(projectsRaw);
+    const email = `${slug}.${id.toLowerCase()}@nexus.edu`;
+    const topSkills = ensureList(splitPipeList(topSkillsRaw).map(normalizeSkillName), "General Aptitude");
+    const projects = ensureList(splitPipeList(projectsRaw), "General Project");
+    const interests = ensureList([targetRole, "Placement Preparation", "Interview Practice"], "Placement Preparation");
 
     students.push({
       id,
       name,
-      email: `${slug}.${id.toLowerCase()}@nexus.edu`,
+      email,
       degree,
       expectedGraduation,
       cgpa: Number(cgpaRaw) || 7.5,
       targetRole,
       projects,
       topSkills,
-      interests: [targetRole, "Placement Preparation", "Interview Practice"],
+      interests,
       github: `https://github.com/${slug}`,
       linkedin: `https://linkedin.com/in/${slug}`,
       auth: {
         role: "STUDENT",
-        defaultPassword: "password",
+        defaultPassword: email,
       },
       skillLevels: topSkills.map((skill) => ({
         name: skill,
@@ -216,12 +445,13 @@ function normalizeAlumniRows(raw) {
       gradYear,
       currentCompany,
       currentRole,
-      priorCompanies: splitPipeList(isCanonical ? row.PriorCompanies : row.CurrentCompany).filter(
-        (item) => item.toLowerCase() !== "none"
+      priorCompanies: ensureList(
+        splitPipeList(isCanonical ? row.PriorCompanies : row.CurrentCompany).filter((item) => item.toLowerCase() !== "none"),
+        currentCompany
       ),
-      skills: splitPipeList(isCanonical ? row.Skills : "").map(normalizeSkillName),
-      projects: splitPipeList(isCanonical ? row.KeyProjects : ""),
-      timeline: (isCanonical ? row.Timeline : row.CurrentRole || "Career progression available").trim(),
+      skills: ensureList(splitPipeList(isCanonical ? row.Skills : "").map(normalizeSkillName), "General Aptitude"),
+      projects: ensureList(splitPipeList(isCanonical ? row.KeyProjects : ""), "General Project"),
+      timeline: (isCanonical ? row.Timeline : row.CurrentRole || "Career progression available").trim() || "Career progression available",
     });
   });
 
@@ -251,7 +481,9 @@ function main() {
   }
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), "utf8");
+  fs.writeFileSync(OUTPUT_CSV_FILE, buildCsvRows(companies, students, alumni), "utf8");
   console.log(`Filtered dataset written: ${OUTPUT_FILE}`);
+  console.log(`Filtered CSV written: ${OUTPUT_CSV_FILE}`);
   console.log(`Companies: ${output.stats.companies}, Students: ${output.stats.students}, Alumni: ${output.stats.alumni}`);
 }
 

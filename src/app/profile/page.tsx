@@ -19,11 +19,18 @@ interface ProfilePayload {
 
 export default function ProfilePage() {
   const [profile, setProfile] = useState<ProfilePayload | null>(null);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     fetchJson<ProfilePayload>("/api/students/me/profile")
-      .then((data) => setProfile(data))
-      .catch(() => setProfile(null));
+      .then((data) => {
+        setProfile(data);
+        setError("");
+      })
+      .catch((err) => {
+        setProfile(null);
+        setError(err instanceof Error ? err.message : "Failed to load profile data");
+      });
   }, []);
 
   const details = useMemo(
@@ -47,6 +54,7 @@ export default function ProfilePage() {
         <p className="text-sm font-medium text-slate-400 mt-1">
           Identity management and core attributes mapping.
         </p>
+        {error ? <p className="text-xs mt-2 text-rose-300">{error}</p> : null}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -190,6 +190,7 @@ npm run filter:data
 Output file:
 
 - filtered-data/filtered-dataset.json
+- filtered-data/filtered-dataset.csv
 
 Push filtered data to Neo4j:
 
@@ -214,9 +215,16 @@ During generation, raw records are normalized and enriched:
 - missing student profile fields (github/linkedin/interests) are auto-filled
 - default student auth payload is included (`role: STUDENT`, `defaultPassword: password`)
 
+CSV exports also include these same normalized fields and are generated as separate artifacts for direct inspection.
+
 ### Neo4j push behavior
 
-The push command reads filtered-data/filtered-dataset.json and writes graph data via Cypher MERGE logic, including:
+The push command automatically prefers CSV if present:
+
+- filtered-data/filtered-neo4j-dataset.csv
+- filtered-data/filtered-dataset.csv
+
+If CSV is not available, it falls back to JSON filtered artifacts. Data is then written to Neo4j via Cypher MERGE logic, including:
 
 - users (ADMIN, STUDENT)
 - students, companies, alumni
