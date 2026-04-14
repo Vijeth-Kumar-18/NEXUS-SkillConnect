@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Placement Analysis System",
-  description: "Graph-Based College Placement Analysis System using Neo4j",
+  title: "NEXUS | Placement Intelligence",
+  description: "Next-Generation Placement & Skill Analytics Platform",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full">
         <AppShell>{children}</AppShell>
