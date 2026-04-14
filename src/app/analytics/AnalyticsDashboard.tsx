@@ -206,11 +206,11 @@ export default function AnalyticsDashboard({
                   innerRadius={60} outerRadius={100} 
                   paddingAngle={5} 
                   dataKey="value"
-                  label={({ name, percent }) => \`\${name} (\${(percent * 100).toFixed(0)}%)\`}
+                  label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
                   labelLine={{ stroke: 'rgba(255,255,255,0.2)' }}
                 >
                   {companyStats.topSkills.map((_, index) => (
-                    <Cell key={\`cell-\${index}\`} fill={COLORS[index % COLORS.length]} />
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
                 <Tooltip 
@@ -257,10 +257,10 @@ export default function AnalyticsDashboard({
               <LineChart data={alumniStats.placementRateData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
                 <XAxis dataKey="year" stroke="rgba(255,255,255,0.5)" tick={{ fontSize: 12 }} />
-                <YAxis domain={['dataMin - 5', 100]} stroke="rgba(255,255,255,0.5)" tick={{ fontSize: 12 }} tickFormatter={v => \`\${Math.round(v)}%\`} />
+                <YAxis domain={['dataMin - 5', 100]} stroke="rgba(255,255,255,0.5)" tick={{ fontSize: 12 }} tickFormatter={v => `${Math.round(v)}%`} />
                 <Tooltip 
                   contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '12px' }} 
-                  formatter={(value: number) => [\`\${value.toFixed(1)}%\`, "Placement Rate"]}
+                  formatter={(value: number) => [`${value.toFixed(1)}%`, "Placement Rate"]}
                 />
                 <Line type="step" dataKey="rate" stroke="#f472b6" strokeWidth={3} dot={{ r: 6, fill: '#f472b6', strokeWidth: 2, stroke: '#000' }} activeDot={{ r: 8 }} />
               </LineChart>
