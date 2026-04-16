@@ -6,19 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "filter:data": "node scripts/generate-filtered-data.js",
+    "prepare:neo4j-filtered-data": "node scripts/prepare-neo4j-filtered-data.js",
+    "push:neo4j": "node scripts/push-filtered-to-neo4j.js",
+    "sync:neo4j": "npm run filter:data && npm run prepare:neo4j-filtered-data && npm run push:neo4j",
+    "sync:neo4j:from-filtered": "npm run prepare:neo4j-filtered-data && npm run push:neo4j"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
+    "jose": "^6.2.2",
+    "neo4j-driver": "^6.0.1",
     "next": "16.2.3",
+    "nodemailer": "^8.0.5",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^25.6.0",
-    "@types/react": "^19.2.14",
+    "@types/node": "25.6.0",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",

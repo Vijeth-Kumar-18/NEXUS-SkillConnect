@@ -1,34 +1,59 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import PageWrapper from "@/components/layout/PageWrapper";
-import Card from "@/components/common/Card";
-import GraphView from "@/components/graph/GraphView";
+import AnalyticsDashboard from "./AnalyticsDashboard";
+import { fetchJson } from "@/lib/apiClient";
+
+export interface AnalyticsPayload {
+  overall: {
+    companiesCount: number;
+    studentsCount: number;
+    alumniCount: number;
+    skillsCount: number;
+  };
+  companyStats: {
+    topRoles: Array<{ name: string; value: number }>;
+    topSkills: Array<{ name: string; value: number }>;
+    packageDistribution: Array<{ name: string; value: number }>;
+  };
+  studentStats: {
+    cgpaDistribution: Array<{ name: string; value: number }>;
+  };
+  alumniStats: {
+    alumniPlacements: Array<{ year: string; count: number }>;
+    placementRateData: Array<{ year: string; rate: number }>;
+  };
+}
+
+const fallback: AnalyticsPayload = {
+  overall: { companiesCount: 0, studentsCount: 0, alumniCount: 0, skillsCount: 0 },
+  companyStats: { topRoles: [], topSkills: [], packageDistribution: [] },
+  studentStats: { cgpaDistribution: [] },
+  alumniStats: { alumniPlacements: [], placementRateData: [] },
+};
 
 export default function AnalyticsPage() {
+  const [payload, setPayload] = useState<AnalyticsPayload>(fallback);
+
+  useEffect(() => {
+    fetchJson<AnalyticsPayload>("/api/analytics")
+      .then((data) => setPayload(data))
+      .catch(() => setPayload(fallback));
+  }, []);
+
   return (
     <PageWrapper>
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold gradient-text">Analytics</h1>
-        <p className="text-sm text-slate-500 mt-1">
-          Placement trends and graph-based insights
+      <div className="mb-10 lg:pl-4">
+        <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4">
+          Data <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">Analytics</span>
+        </h1>
+        <p className="text-lg font-medium text-slate-300 max-w-3xl leading-relaxed">
+          Graph-native analytics from Neo4j on role demand, skill trends, and alumni outcomes.
         </p>
       </div>
 
-      {/* Stats summary */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-        {[
-          { label: "Total Students", value: "3", color: "text-indigo-400" },
-          { label: "Total Companies", value: "4", color: "text-cyan-400" },
-          { label: "Avg Readiness", value: "32%", color: "text-amber-400" },
-          { label: "Skills Tracked", value: "11", color: "text-emerald-400" },
-        ].map((stat) => (
-          <Card key={stat.label}>
-            <p className="text-[10px] uppercase tracking-wider text-slate-500 mb-1">{stat.label}</p>
-            <p className={`text-xl font-bold ${stat.color}`}>{stat.value}</p>
-          </Card>
-        ))}
-      </div>
-
-      {/* Graph visualization */}
-      <GraphView />
+      <AnalyticsDashboard payload={payload} />
     </PageWrapper>
   );
 }
