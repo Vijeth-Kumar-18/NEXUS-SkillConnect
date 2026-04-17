@@ -27,7 +27,6 @@ export default function GraphView({ className = "" }: GraphViewProps) {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    setLoading(true);
     fetchJson<{ nodes: GraphNode[]; links: GraphLink[] }>("/api/graph")
       .then((data) => {
         setNodes(data.nodes);

@@ -17,7 +17,7 @@ export default function ContactPage() {
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Get in Touch</h1>
             <p className="text-lg text-gray-400 mb-12">
-              Whether you're a university looking to integrate NEXUS, an enterprise seeking top talent, or a student needing support, our detailed teams are ready to help.
+              Whether you&apos;re a university looking to integrate NEXUS, an enterprise seeking top talent, or a student needing support, our detailed teams are ready to help.
             </p>
 
             <div className="space-y-6">

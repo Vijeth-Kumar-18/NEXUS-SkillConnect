@@ -35,7 +35,6 @@ export default function SkillGapPage() {
   });
 
   useEffect(() => {
-    setLoading(true);
     Promise.all([
       fetchJson<{ companies: Array<{ id: string; name: string; role: string }> }>("/api/companies"),
       fetchJson<{ name: string; skills: string[] }>("/api/students/me/profile"),

@@ -11,7 +11,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">Your Data, Your Control</h2>
             <p className="text-lg leading-relaxed">
-              We believe your data belongs to you. NEXUS collects information about your academic history and projects solely to match you with the best career opportunities. We don't sell your data to third parties.
+              We believe your data belongs to you. NEXUS collects information about your academic history and projects solely to match you with the best career opportunities. We don&apos;t sell your data to third parties.
             </p>
           </section>
 

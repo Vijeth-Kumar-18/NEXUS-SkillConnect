@@ -28,13 +28,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const isPublicPage = PUBLIC_ROUTES.includes(pathname);
   const showHeaderFooter = HEADER_FOOTER_ROUTES.includes(pathname);
   const isAdminRoute = pathname.startsWith("/admin");
-  const [authChecked, setAuthChecked] = useState(false);
-  const [isAllowed, setIsAllowed] = useState(false);
+  const [authChecked, setAuthChecked] = useState(isPublicPage && !isAdminRoute);
+  const [isAllowed, setIsAllowed] = useState(isPublicPage && !isAdminRoute);
 
   useEffect(() => {
-    if (isPublicPage) {
-      setAuthChecked(true);
-      setIsAllowed(true);
+    if (isPublicPage && !isAdminRoute) {
       return;
     }
 

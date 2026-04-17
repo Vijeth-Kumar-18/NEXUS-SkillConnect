@@ -16,6 +16,19 @@ export interface Recommendation {
   match: number;
   tags: string[];
   missingSkills: string[];
+  alumniCount: number;
+  eligibilityStatus: "Eligible" | "Ineligible";
+  reasoning: string[];
+}
+
+export interface MentorRecommendation {
+  alumniId: string;
+  name: string;
+  role: string;
+  company: string;
+  matchReason: string;
+  sharedSkills: string[];
+  strength: number;
 }
 
 function computeMatch(edges: SkillEdge[]): { score: number; missingSkills: string[]; tags: string[] } {
@@ -125,10 +138,139 @@ export async function getRecommendationsForStudent(studentId: string): Promise<R
         match: score,
         tags,
         missingSkills,
+        alumniCount: 0,
+        eligibilityStatus: "Eligible" as const,
+        reasoning: ["Basic skill match analysis"],
       };
     });
 
     return recommendations.sort((a, b) => b.match - a.match);
+  } finally {
+    await session.close();
+  }
+}
+
+export async function getEnhancedRecommendations(studentId: string): Promise<Recommendation[]> {
+  const session = getSession("READ");
+  try {
+    const result = await session.run(
+      `
+      MATCH (s:Student {id: $studentId})
+      MATCH (c:Company)
+      
+      // Skills & Requirements
+      OPTIONAL MATCH (c)-[r:REQUIRES_SKILL]->(sk:Skill)
+      OPTIONAL MATCH (s)-[hs:HAS_SKILL]->(sk)
+      
+      // Alumni Connections
+      OPTIONAL MATCH (a:Alumni)-[:WORKS_AT|WORKED_AT]->(c)
+      
+      WITH s, c, 
+           count(DISTINCT a) as alumniCount,
+           collect({
+             name: sk.name,
+             level: coalesce(hs.level, 0),
+             weight: coalesce(r.weight, 1),
+             demandWeight: coalesce(sk.demandWeight, 1)
+           }) AS skillEdges
+           
+      RETURN c, skillEdges, alumniCount, s.cgpa as cgpa, s.targetRole as targetRole
+      `,
+      { studentId }
+    );
+
+    const recommendations: Recommendation[] = result.records.map((row) => {
+      const company = row.get("c").properties;
+      const skillEdges = (row.get("skillEdges") as SkillEdge[]).filter((e) => e.name);
+      const alumniCount = toNumber(row.get("alumniCount"));
+      const studentCgpa = toNumber(row.get("cgpa"));
+      const targetRole = String(row.get("targetRole")).toLowerCase();
+      const companyRole = String(company.role || "").toLowerCase();
+
+      const { score: baseSkillScore, missingSkills, tags } = computeMatch(skillEdges);
+      
+      // Additional logic for Role Fit
+      const roleMatch = companyRole.includes(targetRole) || targetRole.includes(companyRole);
+      const roleBonus = roleMatch ? 15 : 0;
+      
+      // Alumni Bonus
+      const alumniBonus = Math.min(alumniCount * 5, 20); // Max 20% bonus for many alumni
+      
+      // Eligibility
+      const minCgpa = toNumber(company.eligibilityCgpa || 7.0);
+      const isEligible = studentCgpa >= minCgpa;
+      const eligibilityPenalty = isEligible ? 0 : -30;
+
+      const finalScore = Math.min(100, Math.max(0, baseSkillScore + roleBonus + alumniBonus + eligibilityPenalty));
+
+      const reasoning = [];
+      if (baseSkillScore > 70) reasoning.push("Strong skill overlap");
+      if (roleMatch) reasoning.push(`Direct match for your goal as ${company.role}`);
+      if (alumniCount > 0) reasoning.push(`Connected via ${alumniCount} Nexus alumni`);
+      if (!isEligible) reasoning.push(`Below required CGPA (${minCgpa}+)`);
+
+      return {
+        companyId: String(company.id),
+        company: String(company.name),
+        role: String(company.role || "Unknown"),
+        location: String(company.location || "Unknown"),
+        packageLpa: toNumber(company.packageLpa),
+        match: finalScore,
+        tags,
+        missingSkills,
+        alumniCount,
+        eligibilityStatus: isEligible ? "Eligible" : "Ineligible",
+        reasoning,
+      };
+    });
+
+    return recommendations.sort((a, b) => b.match - a.match);
+  } finally {
+    await session.close();
+  }
+}
+
+export async function getRecommendedMentors(studentId: string): Promise<MentorRecommendation[]> {
+  const session = getSession("READ");
+  try {
+    const result = await session.run(
+      `
+      MATCH (s:Student {id: $studentId})
+      MATCH (a:Alumni)
+      WHERE a.id <> $studentId // Ensure not matching self if same node type (though they aren't here)
+      
+      // Match via Shared Skills (Alumni must have higher or equal level)
+      MATCH (s)-[hs:HAS_SKILL]->(sk:Skill)<-[has:HAS_SKILL]-(a)
+      WHERE has.level >= hs.level
+      
+      // Optional: Alumni works at a company the student might like
+      OPTIONAL MATCH (a)-[:WORKS_AT]->(c:Company)
+      
+      WITH s, a, c, collect(sk.name) as sharedSkills
+      WHERE size(sharedSkills) > 0
+      
+      RETURN a, c, sharedSkills, size(sharedSkills) as skillCount
+      ORDER BY skillCount DESC
+      LIMIT 6
+      `,
+      { studentId }
+    );
+
+    return result.records.map((row) => {
+      const alumni = row.get("a").properties;
+      const company = row.get("c")?.properties;
+      const sharedSkills = row.get("sharedSkills") as string[];
+
+      return {
+        alumniId: String(alumni.id),
+        name: String(alumni.name),
+        role: String(alumni.currentRole || "Professional"),
+        company: company ? String(company.name) : "Various Companies",
+        matchReason: `Expertise in ${sharedSkills.slice(0, 2).join(", ")}`,
+        sharedSkills,
+        strength: Math.min(100, sharedSkills.length * 20),
+      };
+    });
   } finally {
     await session.close();
   }

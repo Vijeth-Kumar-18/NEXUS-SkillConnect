@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireAuth, resolveStudentIdFromUser } from "@/lib/apiAuth";
-import { getRecommendationsForStudent } from "@/lib/queries";
+import { getEnhancedRecommendations, getRecommendedMentors } from "@/lib/queries";
 
 export async function GET() {
   const auth = await requireAuth(["STUDENT"]);
@@ -13,6 +13,17 @@ export async function GET() {
     return NextResponse.json({ error: "Student profile not found" }, { status: 404 });
   }
 
-  const recommendations = await getRecommendationsForStudent(studentId);
-  return NextResponse.json({ recommendations });
+  const [companies, mentors] = await Promise.all([
+    getEnhancedRecommendations(studentId),
+    getRecommendedMentors(studentId),
+  ]);
+
+  return NextResponse.json({ 
+    recommendations: companies,
+    mentors: mentors,
+    summary: {
+      totalCompanies: companies.length,
+      totalMentors: mentors.length
+    }
+  });
 }

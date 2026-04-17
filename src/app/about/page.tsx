@@ -11,7 +11,7 @@ export default function AboutPage() {
           <section className="text-center">
             <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
             <p className="text-lg leading-relaxed">
-              We built NEXUS because navigating early career steps is too confusing. You're expected to know exactly what companies want, but no one gives you a straight answer. We decided to fix that by building a platform that breaks down real job requirements and tells you exactly where you stand.
+              We built NEXUS because navigating early career steps is too confusing. You&apos;re expected to know exactly what companies want, but no one gives you a straight answer. We decided to fix that by building a platform that breaks down real job requirements and tells you exactly where you stand.
             </p>
           </section>
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
             <div>
               <h3 className="text-xl font-bold text-indigo-400 mb-4">The Problem</h3>
               <p className="leading-relaxed">
-                Students waste time applying to jobs they aren't ready for, or worse, they miss out on great roles because they didn't know they needed one specific skill.
+                Students waste time applying to jobs they aren&apos;t ready for, or worse, they miss out on great roles because they didn&apos;t know they needed one specific skill.
               </p>
             </div>
             

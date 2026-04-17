@@ -21,7 +21,6 @@ export default function CompaniesPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    setLoading(true);
     fetchJson<{ companies: CompanyListItem[] }>("/api/companies")
       .then((data) => {
         setCompanies(data.companies);

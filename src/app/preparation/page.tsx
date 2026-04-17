@@ -26,12 +26,13 @@ export default function PreparationPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    setLoading(true);
+    // loading is true by default
     fetchJson<{ companies: CompanyOption[] }>("/api/companies")
       .then((data) => {
         setCompanies(data.companies);
         if (data.companies[0]) {
           setSelectedId(data.companies[0].id);
+          setDetailLoading(true);
         }
         setError("");
       })
@@ -49,7 +50,6 @@ export default function PreparationPage() {
       return;
     }
 
-    setDetailLoading(true);
     fetchJson<CompanyDetail>(`/api/companies/${encodeURIComponent(selectedId)}`)
       .then((data) => {
         setDetail(data);
@@ -89,7 +89,10 @@ export default function PreparationPage() {
         <label className="block text-[11px] uppercase tracking-wider text-slate-500 mb-2">Select Company</label>
         <select
           value={selectedId}
-          onChange={(e) => setSelectedId(e.target.value)}
+          onChange={(e) => {
+            setSelectedId(e.target.value);
+            setDetailLoading(true);
+          }}
           disabled={loading || !companies.length}
           className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500/40"
         >
@@ -124,8 +127,8 @@ export default function PreparationPage() {
               <div key={topic} className="rounded-lg border border-white/10 px-3 py-3">
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">{topic}</p>
                 <ul className="space-y-2">
-                  {questions.slice(0, 3).map((question) => (
-                    <li key={question} className="text-xs text-slate-300">• {question}</li>
+                  {questions.slice(0, 3).map((question, i) => (
+                    <li key={`${question}-${i}`} className="text-xs text-slate-300">• {question}</li>
                   ))}
                 </ul>
               </div>

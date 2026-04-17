@@ -54,11 +54,11 @@ export default function SkillTable({ skills }: SkillTableProps) {
       animate="show"
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
     >
-      {skills.map((skill) => {
+      {skills.map((skill, i) => {
         const cfg = statusConfig[skill.status];
         return (
           <motion.div
-            key={skill.name}
+            key={`${skill.name}-${i}`}
             variants={card}
             whileHover={{ scale: 1.03, y: -2 }}
             className="

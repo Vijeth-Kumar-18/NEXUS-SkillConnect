@@ -77,7 +77,7 @@ export default function Roadmap({ steps }: RoadmapProps) {
 
         {steps.map((skill, i) => (
           <motion.li
-            key={skill}
+            key={`${skill}-${i}`}
             variants={step}
             className="relative pl-10 pb-7 last:pb-0 group"
           >
